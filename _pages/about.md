@@ -31,6 +31,7 @@ I am a Ph.D. candidate in Civil Engineering (Transportation Engineering) at the 
 Prior to joining UMass, I received my M.S. and B.S. degrees from Chang'an University, China, where I worked on pavement asset management and airport curbside vehicle detection.
 
 My current research includes:
+
 - **LiDAR-based Object Detection & Tracking**: Developing unsupervised and reliability-weighted methods for roadside LiDAR traffic monitoring
 - **Multi-objective Optimization**: Integrated roadway asset maintenance and rehabilitation planning considering traffic dynamics and environmental impacts
 - **Intelligent Transportation Systems**: Computer vision and deep learning applications for traffic safety and infrastructure management
