@@ -7,9 +7,9 @@ first_name: Siyuan (Max)
 middle_name:
 last_name: Meng
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to reach out via email for research collaborations or questions.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Ph.D. Candidate in Transportation Engineering at UMass Amherst. Research interests include LiDAR-based traffic monitoring, transportation optimization, and machine learning.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -264,8 +264,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Meng]
+  first_name: [Siyuan, S.]
 
   style: apa
   locale: en
