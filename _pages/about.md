@@ -6,7 +6,7 @@ subtitle: Ph.D. Candidate in Transportation Engineering @ <a href='https://www.u
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: max_profile.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>University of Massachusetts Amherst</p>
