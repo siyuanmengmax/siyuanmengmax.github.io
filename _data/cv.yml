@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Full Name
-      value: Siyuan (Max) Meng
+      value: Siyuan (Max) Meng / 蒙思源
     - name: Email
       value: siyuanmeng@umass.edu
     - name: Languages
@@ -11,17 +11,19 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in Civil Engineering (Transportation Engineering)
+    - title: Ph.D. in Civil & Environmental Engineering (Transportation Engineering)
       institution: University of Massachusetts Amherst, USA
       year: 2023 - 2026 (Expected)
       description:
         - Fully funded
-        - "GPA: 3.98/4.0"
+        - "GPA: 3.97/4.0"
+        - "Advisor: Dr. Chengbo Ai"
     - title: M.S. in Transportation Engineering
       institution: Chang'an University, China
       year: 2020 - 2023
       description:
         - "GPA: 3.74/4.0"
+        - "Advisor: Dr. Qiang Bai"
     - title: B.S. in Roadway, Bridge, and River-Crossing Engineering
       institution: Chang'an University, China
       year: 2016 - 2020
@@ -35,19 +37,28 @@
       institution: University of Massachusetts Amherst
       year: 2023 - Present
       description:
-        - LiDAR-based object detection and tracking for roadside traffic monitoring
-        - Multi-objective optimization for integrated roadway asset management
+        - title: "Infrastructure-Centric Multi-LiDAR Perception Pipeline:"
+          contents:
+            - "FRGB3D: reliability-weighted Gaussian background model for roadside LiDAR (Accepted, ASCE JCCE)"
+            - "MulDet3D: multi-objective unsupervised 3D detection across multiple roadside LiDARs (Under Review after Revision, JTE Part A)"
+            - "MulTrack3D: reliability-enhanced self-correcting multi-point tracking for LiDAR networks (Under Review, JTE Part A)"
+            - Quality-aware vehicle conflict detection with spatial precision enhancement for roadside multi-LiDAR systems
+        - title: "Transportation System Optimization:"
+          contents:
+            - Robust MPC framework for system-optimal EV charging scheduling under demand uncertainty (Under Review, TRC)
+            - Multi-objective optimization for ultra-fast EV charging infrastructure planning under grid constraints
     - title: Graduate Research Assistant
       institution: Chang'an University
       year: 2020 - 2023
       description:
+        - Multi-objective optimization for network-level pavement maintenance planning (Published in ASCE JIS and TRR)
         - Pavement performance modeling and multi-year maintenance planning
-        - Airport curbside vehicle detection using computer vision
+        - Airport curbside vehicle detection using deep learning
     - title: Teaching Assistant
       institution: University of Massachusetts Amherst
       year: 2024
       description:
-        - "Course: Programming for Civil Engineers"
+        - "Course: Programming for Civil Engineers (Python-based)"
 
 - title: Honors and Awards
   type: time_table
@@ -59,8 +70,6 @@
       items:
         - First Prize Scholarship, Chang'an University
         - Second Prize, English Speech Contest (Northwest China)
-        - Third Prize, National English Competition for College Students
-        - Third Prize, Mathematical Modeling Competition, Chang'an University
     - year: 2020
       items:
         - Excellent Undergraduate Thesis, Chang'an University
@@ -68,73 +77,53 @@
 - title: Presentations
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - "<b>Meng, S.</b> FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring. TRB 2026 Annual Meeting, Washington D.C."
+        - "<b>Meng, S.</b> Quality-Aware Vehicle Conflict Detection for Roadside Multi-LiDAR Systems. Safety Mobility Conference 2026, Seattle, WA."
     - year: 2025
       items:
-        - "<b>Meng, S.</b>, et al. Multi-objective Optimization Method for Integrated Roadway Asset Maintenance and Rehabilitation Considering Traffic Impacts. Poster presented at TRB 2025 Annual Meeting, Washington D.C., USA."
+        - "<b>Meng, S.</b> Multi-objective Optimization for Integrated Roadway Asset Maintenance. TRB 2025 Annual Meeting, Washington D.C."
     - year: 2022
       items:
-        - "<b>Meng, S.</b>, Shao, Y., Cao, R., & Wu, S. Multi-objective optimization of network-level pavement maintenance decisions considering user costs. Poster presented at WTC 2022, Wuhan, China."
+        - "<b>Meng, S.</b>, Shao, Y., Cao, R., & Wu, S. Multi-objective optimization of network-level pavement maintenance decisions. WTC 2022, Wuhan, China."
 
-- title: Under Review / In Preparation
+- title: Under Review / Submitting
   type: nested_list
   contents:
+    - title: Under Review after Revision
+      items:
+        - "MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs (JTE Part A)"
     - title: Under Review
       items:
-        - "MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs (IEEE T-ITS)"
-        - "FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring (Journal of Computing in Civil Engineering)"
-        - "Multi-objective Optimization Method for Integrated Roadway Asset Management Considering Traffic Dynamics and Environmental Impacts (TRR)"
-    - title: In Preparation
+        - "MulTrack3D: Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs (JTE Part A)"
+        - "A Robust MPC Framework for System-Optimal EV Charging Scheduling under Demand Uncertainty (Transportation Research Part C)"
+    - title: Submitting
       items:
-        - "MulTrack3D: Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs (Target: IEEE T-ITS)"
-        - "Quality-Aware Traffic Safety Assessment for Roadside Multi-LiDAR Systems: A Time-Varying Reliability Framework for Infrastructure-Based Surrogate Safety Measures (Target: Accident Analysis & Prevention)"
-        - "Personalized VISTA: Vision-Language Safety Assistant for Trustworthy Autonomy (Target: NeurIPS)"
-        - "Coordinated Multi-modal Emergency Evacuation of Airport Landside Passengers under Unexpected Large Passenger Flow (Target: Transportation Systems Part A)"
-        - "Cross-Modal Feature Alignment for LiDAR-NIR Image Fusion in 3D Object Detection (Target: Transportation Research Part C)"
+        - "Quality-Aware Vehicle Conflict Detection with Spatial Precision Enhancement for Roadside Multi-LiDAR Systems (Accident Analysis & Prevention)"
 
 - title: Patents and Software
   type: list
   contents:
-    - "Wu, S., <b>Meng, S.</b>, Cao, R., & Bai, Q. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning: 202111642183.3 [Granted Patent, in Chinese]."
-    - "<b>Meng, S.</b> (2023). Airport curbside illegal vehicle monitoring system [Software Copyright, in Chinese]."
+    - "Bai, Q., Shao, Y., <b>Meng, S.</b>, et al. (2025). Deep learning-based automatic detection of illegal vehicles at airport departure levels. Granted Patent No. 202111642183.3 [in Chinese]."
+    - "<b>Meng, S.</b>, et al. (2023). Airport curbside illegal vehicle monitoring system [Software Copyright, in Chinese]."
 
-- title: Industry Experience
-  type: time_table
+- title: Research Vision
+  type: list
   contents:
-    - title: Highway Design Intern
-      institution: Shaanxi Hongsidao Transportation Planning and Design Co., Ltd, China
-      year: Jul 2019 – Aug 2019
-      description:
-        - Participated in rural highway design in Ankang, Shaanxi Province.
-        - Completed partial design drawings of a highway bridge in Jiangsu Province using AutoCAD.
-    - title: Highway Engineering Practice
-      institution: Taibai Campus, Chang'an University, China
-      year: Mar 2019 – Apr 2019
-      description:
-        - Completed horizontal, vertical, and cross-section designs for a Class IV highway project.
-        - Conducted GPS-based highway surveying on campus.
-
-- title: Research Interests
-  type: nested_list
-  contents:
-    - title: LiDAR-based Traffic Monitoring
-      items:
-        - Unsupervised object detection for multiple roadside LiDARs
-        - Reliability-weighted Gaussian background modeling
-        - Multi-point tracking with self-correction
-    - title: Transportation Optimization
-      items:
-        - Multi-objective optimization for roadway asset management
-        - Network-level pavement maintenance planning
-        - Chance-constrained programming under uncertainties
-    - title: Intelligent Transportation Systems
-      items:
-        - Computer vision for traffic safety
-        - Deep learning applications in civil infrastructure
+    - 'My research centers on <b>Infrastructure-Centric World Models (I-WM)</b> — a framework that leverages the unique "temporal depth" of fixed roadside sensors to build rich, evolving representations of traffic environments. This vision unifies my doctoral work on quality-aware multi-LiDAR perception (background modeling → detection → tracking → safety analysis) with emerging directions in V2X cooperative perception and spatial intelligence.'
+    - "A second research thrust extends multi-objective optimization methods to EV charging infrastructure and transportation asset management, addressing critical needs in sustainable and intelligent transportation systems."
+    - "See preprint: <a href='https://arxiv.org/abs/2604.17651'>arXiv:2604.17651</a>"
 
 - title: Technical Skills
   type: list
   contents:
-    - "<u>Programming:</u> Python, MATLAB, C++, LaTeX"
-    - "<u>ML/DL Frameworks:</u> TensorFlow, PyTorch, OpenCV, Open3D"
-    - "<u>Simulation:</u> Carla, SUMO, RoadRunner, ROS2, SLAM"
-    - "<u>Other:</u> GIS, optimization modeling, statistical analysis, LiDAR data processing"
+    - "<u>Programming:</u> Python, C++, MATLAB, LaTeX"
+    - "<u>ML/CV:</u> PyTorch, TensorFlow, OpenCV, Open3D"
+    - "<u>Simulation:</u> CARLA, SUMO, RoadRunner, ROS2, SLAM"
+    - "<u>Other:</u> GIS, optimization modeling, LiDAR point cloud processing"
+
+- title: Professional Service
+  type: list
+  contents:
+    - Reviewer for peer-reviewed journals in transportation and pavement engineering.

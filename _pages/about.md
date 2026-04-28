@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate in Transportation Engineering @ <a href='https://www.umass.edu/'>UMass Amherst</a>
+subtitle: Ph.D. Candidate in Civil & Environmental Engineering @ <a href='https://www.umass.edu/'>UMass Amherst</a>
 
 profile:
   align: right
@@ -26,16 +26,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Ph.D. candidate in Civil Engineering (Transportation Engineering) at the University of Massachusetts Amherst (GPA: 3.98/4.0), fully funded. My research sits at the intersection of **sensing**, **optimization**, and **machine learning** for intelligent transportation systems.
+I am a Ph.D. candidate in Civil & Environmental Engineering (Transportation Engineering) at the University of Massachusetts Amherst (GPA: 3.97/4.0), fully funded, advised by [Dr. Chengbo Ai](https://www.umass.edu/).
 
-My current work focuses on two interconnected themes:
+My research centers on **Infrastructure-Centric World Models (I-WM)** — a framework that leverages the unique "temporal depth" of fixed roadside sensors to build rich, evolving representations of traffic environments. This vision unifies my doctoral work on quality-aware multi-LiDAR perception with emerging directions in V2X cooperative perception and spatial intelligence. See: [arXiv:2604.17651](https://arxiv.org/abs/2604.17651).
 
-- **Infrastructure-based LiDAR Sensing**: I develop unsupervised object detection, background modeling, and multi-object tracking algorithms for roadside LiDAR systems (MulDet3D, FRGB3D, MulTrack3D). These methods enable scalable, annotation-free traffic monitoring across multiple sensors — a foundation for real-time intersection management and traffic safety assessment.
+My current work spans two interconnected thrusts:
 
-- **Transportation Systems Optimization**: I design multi-objective optimization frameworks for integrated roadway asset management, jointly minimizing agency costs, user delay costs, and environmental impacts under real-world constraints and uncertainties.
+- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, under review at _JTE Part A_), multi-object tracking (MulTrack3D, under review), and traffic safety analysis — for roadside infrastructure-based sensing systems.
 
-Prior to UMass, I received my M.S. and B.S. degrees from **Chang'an University**, China, where I worked on pavement performance modeling, multi-year network-level maintenance planning, and deep learning-based airport curbside vehicle detection — the latter resulting in a granted patent and software copyright.
+- **Transportation Systems Optimization**: I design multi-objective optimization frameworks for roadway asset management and EV charging infrastructure planning, addressing critical needs in sustainable and intelligent transportation.
 
-I am also broadly interested in **vision-language models for autonomous driving** (Personalized VISTA) and **traffic safety assessment** using infrastructure-based surrogate safety measures.
+Prior to UMass, I received my M.S. and B.S. degrees from **Chang'an University**, China (advised by Dr. Qiang Bai), where I worked on pavement maintenance optimization and deep learning-based airport curbside vehicle detection — resulting in a granted patent and software copyright.
 
-**Research Interests:** Transportation systems optimization · LiDAR-based traffic monitoring · Multi-objective optimization · Computer vision · Intelligent transportation systems · Machine learning for civil infrastructure
+**Research keywords:** Infrastructure-centric perception · Roadside LiDAR · Multi-objective optimization · EV charging · Intelligent transportation systems

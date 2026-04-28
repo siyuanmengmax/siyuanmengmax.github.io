@@ -6,7 +6,7 @@ importance: 1
 category: LiDAR
 ---
 
-**Status:** Under Review at _IEEE Transactions on Intelligent Transportation Systems_
+**Status:** Under Review after Revision at _Journal of Transportation Engineering Part A: Systems_
 
 Roadside LiDAR systems offer a promising infrastructure-based approach for traffic monitoring, but detecting objects across multiple sensors with varying fields of view remains challenging — especially without labeled training data.
 

@@ -6,7 +6,7 @@ importance: 2
 category: LiDAR
 ---
 
-**Status:** Under Review at _Journal of Computing in Civil Engineering_
+**Status:** Accepted at _Journal of Computing in Civil Engineering (ASCE JCCE)_
 
 Background subtraction is a fundamental step in LiDAR-based traffic monitoring. However, existing methods struggle with environmental noise, sensor drift, and the sparse, non-uniform nature of roadside point clouds.
 

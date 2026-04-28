@@ -6,7 +6,7 @@ importance: 3
 category: LiDAR
 ---
 
-**Status:** In Preparation — Target: _IEEE Transactions on Intelligent Transportation Systems_
+**Status:** Under Review at _Journal of Transportation Engineering Part A: Systems_
 
 Accurate multi-object tracking across multiple roadside LiDAR sensors is essential for intersection management, traffic flow analysis, and safety assessment. Sensor handoff errors and occlusions make this particularly challenging in real-world deployments.
 
