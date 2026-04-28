@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Ph.D. Candidate in Transportation Engineering at UMass Amherst. Research focuses on LiDAR-based traffic monitoring, multi-objective optimization for roadway asset management, and intelligent transportation systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -448,6 +448,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-presented-a-poster-on-multi-objective-optimization-method-for-integrated-roadway-asset-maintenance-and-rehabilitation-considering-traffic-impacts-at-trb-2025-annual-meeting-in-washington-d-c",
           title: 'Presented a poster on “Multi-objective Optimization Method for Integrated Roadway Asset Maintenance and...',
+          description: "",
+          section: "News",},{id: "news-two-papers-published-in-proc-spie-13575-stce-2024-estimating-travel-mode-choices-of-residents-in-stockholm-region-and-analysis-of-expressway-maintenance-decision-based-on-complete-information-static-game-theory",
+          title: 'Two papers published in Proc. SPIE 13575 (STCE 2024): “Estimating travel mode choices...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
