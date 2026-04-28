@@ -1,19 +1,27 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{geometry}
-\geometry{margin=0.6in}  % 从1in缩小到0.6in
+\geometry{margin=0.55in}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
-\usepackage{fontawesome}
 \usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{tabularx}
 
-\setstretch{1.0}  % 从1.15减少到1.0
+\setstretch{1.0}
 \titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{6pt}{4pt}  % 减少section spacing
+\titlespacing{\section}{0pt}{8pt}{4pt}
+\titleformat{\subsection}{\small\bfseries\itshape}{}{0em}{}
+\titlespacing{\subsection}{0pt}{4pt}{2pt}
 
-% 减少列表间距
-\setlist{nosep, leftmargin=1em}
+\setlist{nosep, leftmargin=1.2em}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    urlcolor=blue!70!black,
+    citecolor=blue!70!black
+}
 
 \begin{document}
 
@@ -21,10 +29,12 @@
 % Header
 %==================
 \begin{center}
-{\LARGE \textbf{Siyuan Meng}}\\[4pt]
-Email: siyuanmeng@umass.edu \quad|\quad 
-GitHub: https://github.com/siyuanmengmax \\
-ResearchGate: https://www.researchgate.net/profile/Max-Siyuan-Meng?ev=hdr_xprf 
+{\LARGE \textbf{Siyuan (Max) Meng}} \quad {\large \textbf{蒙思源}}\\[4pt]
+Ph.D. Candidate, Civil \& Environmental Engineering, University of Massachusetts Amherst\\[2pt]
+Email: \href{mailto:siyuanmeng@umass.edu}{siyuanmeng@umass.edu} \quad|\quad 
+Homepage: \href{https://siyuanmengmax.github.io/}{siyuanmengmax.github.io}\\[2pt]
+GitHub: \href{https://github.com/siyuanmengmax}{github.com/siyuanmengmax} \quad|\quad
+\href{https://www.researchgate.net/profile/Max-Siyuan-Meng}{ResearchGate}
 \end{center}
 
 %==================
@@ -32,120 +42,124 @@ ResearchGate: https://www.researchgate.net/profile/Max-Siyuan-Meng?ev=hdr_xprf
 %==================
 \begin{itemize}[leftmargin=1.2em]
     \item \textbf{University of Massachusetts Amherst}, USA \hfill 2023.09 -- 2026.08 (Expected)  
-    Ph.D. in Civil Engineering (Transportation Engineering), Fully funded  
-    GPA: 3.98/4.0  
-
+    Ph.D. in Civil Engineering (Transportation Engineering), Fully Funded \quad GPA: 3.97/4.0  
+    Advisor: Dr.\ Chengbo Ai
+    
     \item \textbf{Chang'an University}, China \hfill 2020.09 -- 2023.07  
-    M.S. in Transportation Engineering  
-    GPA: 3.74/4.0
+    M.S. in Transportation Engineering \quad GPA: 3.74/4.0  
+    Advisor: Dr.\ Qiang Bai
 
     \item \textbf{Chang'an University}, China \hfill 2016.09 -- 2020.07  
-    B.S. in Roadway, Bridge, and River-Crossing Engineering  
-    GPA: 3.76/4.0
+    B.S. in Roadway, Bridge, and River-Crossing Engineering \quad GPA: 3.76/4.0
 \end{itemize}
 
 %==================
-\section*{Research Interests}
+\section*{Research Vision}
 %==================
-Transportation systems optimization, pavement asset management, LiDAR-based traffic monitoring and simulation, computer vision, intelligent transportation systems, machine learning applications in civil infrastructure.
+My research centers on \textbf{Infrastructure-Centric World Models (I-WM)}---a framework that leverages the unique ``temporal depth'' of fixed roadside sensors to build rich, evolving representations of traffic environments. This vision unifies my doctoral work on quality-aware multi-LiDAR perception (background modeling $\rightarrow$ detection $\rightarrow$ tracking $\rightarrow$ safety analysis) with emerging directions in V2X cooperative perception and spatial intelligence. A second research thrust extends multi-objective optimization methods to electric vehicle charging infrastructure and transportation asset management, addressing critical needs in sustainable and intelligent transportation systems. See: \href{https://arxiv.org/abs/2604.17651}{arXiv:2604.17651}.
 
 %==================
 \section*{Research Experience}
 %==================
 \begin{itemize}[leftmargin=1.2em]
-    \item \textbf{Graduate Research Assistant}, UMass Amherst \hfill 2023 -- Present  
-    Lead multiple projects on LiDAR-based object detection/tracking, multi-objective optimization for roadway asset management.
-    \item \textbf{Graduate Research Assistant}, Chang'an University \hfill 2020 -- 2023  
-    Conducted research on pavement performance modeling, multi-year maintenance planning, airport curbside vehicle detection.
-    \item \textbf{Teaching Assistant}, UMass Amherst \hfill 2024  
-    Course: Programming for Civil Engineers.
+    \item \textbf{Graduate Research Assistant}, UMass Amherst \hfill 2023.09 -- Present\\
+    \textit{Infrastructure-Centric Multi-LiDAR Perception Pipeline:}
+    \begin{itemize}[leftmargin=1em, topsep=1pt]
+        \item Developed FRGB3D, a fast reliability-weighted Gaussian background model for roadside LiDAR that propagates sensor-level uncertainty into foreground extraction. Published in \textit{ASCE JCCE}.
+        \item Designed MulDet3D, a multi-objective optimization-based unsupervised 3D detection framework that jointly calibrates and detects objects across multiple roadside LiDARs without manual annotation. Under review at \textit{JTE Part A}.
+        \item Built MulTrack3D, a reliability-enhanced self-correcting multi-point tracking system for roadside LiDAR networks with quality-aware data association. Under review at \textit{JTE Part A}.
+        \item Developed a quality-aware vehicle conflict detection method with spatial precision enhancement for traffic safety analysis from roadside multi-LiDAR systems.
+    \end{itemize}
+    \textit{Transportation System Optimization:}
+    \begin{itemize}[leftmargin=1em, topsep=1pt]
+        \item Formulated a robust MPC framework for system-optimal EV charging scheduling under demand uncertainty with mixed autonomous/human fleet routing.
+        \item Developing a multi-objective optimization framework for ultra-fast EV charging infrastructure planning under power grid constraints.
+    \end{itemize}
+
+    \item \textbf{Graduate Research Assistant}, Chang'an University \hfill 2020.09 -- 2023.07\\
+    Developed multi-objective optimization methods for network-level pavement maintenance planning, including segment grouping strategies and user cost modeling. Published in \textit{ASCE JIS} and \textit{TRR}.
+
+    \item \textbf{Teaching Assistant}, UMass Amherst \hfill 2024\\
+    Course: Programming for Civil Engineers (Python-based).
 \end{itemize}
 
 %==================
 \section*{Publications}
 %==================
-\subsection*{Journal Articles}
+
+\subsection*{First-Author Journal Articles}
 \begin{enumerate}[leftmargin=1.2em]
-    \item Hu, A., Bai, Q., Chen, L., \textbf{Meng, S.}, Li, Q., \& Xu, Z. (2022). A review on empirical methods of pavement performance modeling. \textit{Construction and Building Materials}, 342, 127968.
+    \item \textbf{Meng, S.}, Parasha, P., Yang, Y., \& Ai, C. (2026). FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring. \textit{Journal of Computing in Civil Engineering}. \textbf{(Accepted)}
+    \item \textbf{Meng, S.}, Bai, Q., \& Shao, Y. (2026). A multi-objective optimization method for integrated road asset management considering traffic dynamics and environmental impacts. \textit{Transportation Research Record}. \textbf{(Accepted)}
     \item \textbf{Meng, S.}, Bai, Q., Chen, L., \& Hu, A. (2023). Multiobjective optimization method for pavement segment grouping in multiyear network-level planning of maintenance and rehabilitation. \textit{Journal of Infrastructure Systems}, 29(1), 04022047.
-    \item Cao, R., \textbf{Meng, S.}, Feng, S., Dong, S., \& Bai, Q. (2024). Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming. \textit{International Journal of Pavement Engineering}, 25(1), 2340001.
-    \item Bai, Q., Wu, S., Cao, R., \textbf{Meng, S.}, \& Xu, Z. (2022). Review of optimization methods for civil airport passenger boarding processes [in Chinese]. \textit{Journal of Transportation Engineering}, 22(04), 68-88. \href{https://doi.org/10.19818/j.cnki.1671-1637.2022.04.005}{doi}.
-    \item Bai, Q., Shao, Y., \textbf{Meng, S.}, Wang, Y., Chen, X., \& Feng, H. (2022). Video-based detection method for illegal pick-up vehicles at airport departure levels [in Chinese]. \textit{Journal of Chang'an University (Natural Science Edition)}, 42(04), 73-86. \href{https://doi.org/10.19721/j.cnki.1671-8879.2022.04.008}{doi}.
 \end{enumerate}
 
-\subsection*{Conference Papers}
+\subsection*{First-Author Papers Under Review}
 \begin{enumerate}[leftmargin=1.2em]
-    \item \textbf{Meng, S.}, Shao, Y., Cao, R., \& Wu, S. (2022). Multi-objective optimization of network-level pavement maintenance decisions considering user costs [in Chinese]. In \textit{Proc. World Transport Convention (WTC 2022) – Transportation Planning and Interdisciplinary}, pp. 693–701. \href{https://doi.org/10.26914/c.cnkihy.2022.019338}{doi}.
-    \item Fang, Z., \textbf{Meng, S.} (2025). Estimating travel mode choices of residents in Stockholm region based on multinomial logit model and mixed logit model. \textit{Proc. SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)}, 135753V.
-    \item Li, C., \textbf{Meng, S.} (2025). Analysis of expressway maintenance decision based on complete information static game theory. \textit{Proc. SPIE 13575, STCE 2024}, 135751T.
+    \item \textbf{Meng, S.}, Zhang, Y., Raucci, D., \& Ai, C. MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs. \textit{Journal of Transportation Engineering Part A: Systems}. (Under Review after Revision)
+    \item \textbf{Meng, S.}, Cheng, R., \& Ai, C. MulTrack3D: Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs. \textit{Journal of Transportation Engineering Part A: Systems}. (Under Review)
+    \item \textbf{Meng, S.} \& Ai, C. A Robust MPC Framework for System-Optimal EV Charging Scheduling under Demand Uncertainty. \textit{Transportation Research Part C: Emerging Technologies}. (Under Review)
+    \item \textbf{Meng, S.}, Yang, Y., \& Ai, C. Quality-Aware Vehicle Conflict Detection with Spatial Precision Enhancement for Roadside Multi-LiDAR Systems. Target: \textit{Accident Analysis \& Prevention}. (Submitting)
+\end{enumerate}
+
+\subsection*{First-Author Preprint}
+\begin{enumerate}[leftmargin=1.2em]
+    \item \textbf{Meng, S.} \& Ai, C. (2026). Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception. \textit{arXiv preprint arXiv:2604.17651}. \href{https://arxiv.org/abs/2604.17651}{[Link]}
+\end{enumerate}
+
+\subsection*{First-Author Conference Paper}
+\begin{enumerate}[leftmargin=1.2em]
+    \item \textbf{Meng, S.}, Shao, Y., Cao, R., \& Wu, S. (2022). Multi-objective optimization of network-level pavement maintenance decisions considering user costs [in Chinese]. In \textit{Proc.\ World Transport Convention (WTC 2022)}, pp.\ 693--701. \href{https://doi.org/10.26914/c.cnkihy.2022.019338}{doi}.
+\end{enumerate}
+
+\subsection*{Co-Authored Publications}
+\begin{enumerate}[leftmargin=1.2em]
+    \item Hu, A., Bai, Q., Chen, L., \textbf{Meng, S.}, Li, Q., \& Xu, Z. (2022). A review on empirical methods of pavement performance modeling. \textit{Construction and Building Materials}, 342, 127968. (Cited 75+)
+    \item Cao, R., \textbf{Meng, S.}, Feng, S., Dong, S., \& Bai, Q. (2024). Network-level pavement maintenance and rehabilitation planning considering uncertainties. \textit{International Journal of Pavement Engineering}, 25(1), 2340001.
+    \item Bai, Q., Wu, S., Cao, R., \textbf{Meng, S.}, \& Xu, Z. (2022). Review of optimization methods for civil airport passenger boarding processes. \textit{Journal of Traffic and Transportation Engineering} [in Chinese], 22(04), 68--88.
+    \item Bai, Q., Shao, Y., \textbf{Meng, S.}, Wang, Y., Chen, X., \& Feng, H. (2022). Video-based detection method for illegal pick-up vehicles at airport departure levels. \textit{Journal of Chang'an University (Natural Science Edition)} [in Chinese], 42(04), 73--86.
+    \item Fang, Z., \textbf{Meng, S.} (2025). Estimating travel mode choices based on multinomial logit and mixed logit models. \textit{Proc.\ SPIE 13575, STCE 2024}, 135753V.
+    \item Li, C., \textbf{Meng, S.} (2025). Analysis of expressway maintenance decision based on game theory. \textit{Proc.\ SPIE 13575, STCE 2024}, 135751T.
 \end{enumerate}
 
 %==================
-\section*{Patents and Software}
+\section*{Selected Presentations}
 %==================
 \begin{itemize}[leftmargin=1.2em]
-    \item Wu, S., \textbf{Meng, S.}, Cao, R., \& Bai, Q. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning: 202111642183.3 [Granted Patent, in Chinese].
-    \item \textbf{Meng, S.} (2023). Airport curbside illegal vehicle monitoring system [Software Copyright, in Chinese].
+    \item \textbf{Meng, S.} (2026). FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring. \textit{TRB 2026 Annual Meeting}, Washington D.C.
+    \item \textbf{Meng, S.} (2026). Quality-Aware Vehicle Conflict Detection for Roadside Multi-LiDAR Systems. \textit{Safety Mobility Conference 2026}, Seattle, WA.
+    \item \textbf{Meng, S.} (2025). Multi-objective Optimization for Integrated Roadway Asset Maintenance. \textit{TRB 2025 Annual Meeting}, Washington D.C.
 \end{itemize}
 
 %==================
-\section*{Presentations}
+\section*{Patents \& Software}
 %==================
 \begin{itemize}[leftmargin=1.2em]
-    \item \textbf{Meng, S.}, Shao, Y., Cao, R., \& Wu, S. (2022). Multi-objective optimization of network-level pavement maintenance decisions considering user costs. Poster presented at WTC 2022, Wuhan, China.
-    \item \textbf{Meng, S.} (2025). Multi-objective Optimization Method for Integrated Roadway Asset Maintenance and Rehabilitation Considering Traffic Impacts. Poster presented at TRB 2025 Annual Meeting, Washington D.C., USA.
-\end{itemize}
-
-%==================
-\section*{Under Review / In Preparation}
-%==================
-\textit{Under Review:}  
-\begin{itemize}[leftmargin=1.2em]
-    \item MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs (IEEE T-ITS).
-    \item FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring (Journal of Computing in Civil Engineering).
-    \item Multi-objective Optimization Method for Integrated Roadway Asset Management Considering Traffic Dynamics and Environmental Impacts (TRR).
-\end{itemize}
-
-\textit{In Preparation:}  
-\begin{itemize}[leftmargin=1.2em]
-    \item MulTrack3D: Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs (Target: IEEE T-ITS).
-    \item Quality-Aware Traffic Safety Assessment for Roadside Multi-LiDAR Systems: A Time-Varying Reliability Framework for Infrastructure-Based Surrogate Safety Measures (Target: Accident Analysis \& Prevention).
-    \item Personalized VISTA: Vision–Language Safety Assistant
-    for Trustworthy Autonomy (Target: NeuroIPS).
-    \item Coordinated Multi-modal Emergency Evacuation of Airport Landside Passengers under Unexpected Large Passenger Flow (Target: Journal of Transportation Systems Part A)
-    \item Cross-Modal Feature Alignment for LiDAR-NIR Image Fusion in 3D Object Detection (Target: Transportation Research Part C)
+    \item Bai, Q., Shao, Y., \textbf{Meng, S.}, et al. (2025). Deep learning-based automatic detection of illegal vehicles at airport departure levels. Granted Patent No.\ 202111642183.3 [in Chinese].
+    \item \textbf{Meng, S.}, et al. (2023). Airport curbside illegal vehicle monitoring system. Software Copyright [in Chinese].
 \end{itemize}
 
 %==================
 \section*{Honors \& Awards}
 %==================
 \begin{itemize}[leftmargin=1.2em]
-    \item Outstanding Graduate Student, Chang’an University (May 2023)
-    \item First Prize Scholarship, Chang’an University (Dec 2021)
-    \item Second Prize, English Speech Contest (Northwest China) (May 2021)
-    \item Third Prize, National English Competition for College Students (May 2021)
-    \item Third Prize, Mathematical Modeling Competition, Chang’an University (May 2021)
-    \item Excellent Undergraduate Thesis, Chang’an University (Jun 2020)
+    \item Outstanding Graduate Student, Chang'an University (2023)
+    \item First Prize Scholarship, Chang'an University (2021)
+    \item Second Prize, English Speech Contest, Northwest China (2021)
+    \item Excellent Undergraduate Thesis, Chang'an University (2020)
 \end{itemize}
 
 %==================
-\section*{Industry Experience}
+\section*{Technical Skills}
 %==================
-\textbf{Shaanxi Hongsidao Transportation Planning and Design Co., Ltd} \hfill Jul 2019 -- Aug 2019 \\
-\begin{itemize}[leftmargin=1.2em]
-    \item Participated in rural highway design in Ankang, Shaanxi Province, China.
-    \item Completed partial design drawings of a highway bridge in Jiangsu Province using AutoCAD.
-\end{itemize}
-
-\textbf{Taibai Campus, Chang’an University} \hfill Mar 2019 -- Apr 2019 \\
-\begin{itemize}[leftmargin=1.2em]
-    \item Completed horizontal, vertical, and cross-section designs for a Class IV highway project.
-    \item Conducted GPS-based highway surveying on campus.
-\end{itemize}
+\textbf{Programming:} Python, C++, MATLAB, LaTeX \quad
+\textbf{ML/CV:} PyTorch, TensorFlow, OpenCV, Open3D \\
+\textbf{Simulation:} CARLA, SUMO, RoadRunner, ROS2 \quad
+\textbf{Other:} GIS, SLAM, optimization modeling, LiDAR point cloud processing
 
 %==================
-\section*{Skills}
+\section*{Professional Service}
 %==================
-Python, MATLAB, C++, LaTeX, TensorFlow, PyTorch, OpenCV, Open3D, GIS, Carla, SUMO, RoadRunner, ROS2, SLAM, optimization modeling, statistical analysis, machine learning, LiDAR data processing.
+Reviewer for peer-reviewed journals in transportation and pavement engineering.
 
 \end{document}

@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "Ph.D. Candidate in Transportation Engineering at UMass Amherst. Research focuses on LiDAR-based traffic monitoring, multi-objective optimization for roadway asset management, and intelligent transportation systems.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Teaching and mentoring experience.",
@@ -423,6 +416,18 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-two-papers-published-in-proc-spie-13575-stce-2024-estimating-travel-mode-choices-of-residents-in-stockholm-region-and-analysis-of-expressway-maintenance-decision-based-on-complete-information-static-game-theory",
           title: 'Two papers published in Proc. SPIE 13575 (STCE 2024): “Estimating travel mode choices...',
+          description: "",
+          section: "News",},{id: "news-presented-two-papers-at-trb-2026-annual-meeting-in-washington-d-c-frgb3d-roadside-lidar-background-modeling-and-quality-aware-vehicle-conflict-detection",
+          title: 'Presented two papers at TRB 2026 Annual Meeting in Washington D.C.: FRGB3D (roadside...',
+          description: "",
+          section: "News",},{id: "news-paper-frgb3d-fast-reliability-weighted-gaussian-background-modeling-for-roadside-lidar-traffic-monitoring-accepted-at-journal-of-computing-in-civil-engineering-asce-jcce",
+          title: 'Paper “FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring” accepted...',
+          description: "",
+          section: "News",},{id: "news-paper-a-multi-objective-optimization-method-for-integrated-road-asset-management-considering-traffic-dynamics-and-environmental-impacts-accepted-at-transportation-research-record-trr",
+          title: 'Paper “A multi-objective optimization method for integrated road asset management considering traffic dynamics...',
+          description: "",
+          section: "News",},{id: "news-preprint-infrastructure-centric-world-models-bridging-temporal-depth-and-spatial-breadth-for-roadside-perception-posted-on-arxiv-arxiv-2604-17651",
+          title: 'Preprint “Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception”...',
           description: "",
           section: "News",},{id: "projects-muldet3d",
           title: 'MulDet3D',
