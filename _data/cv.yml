@@ -65,6 +65,54 @@
       items:
         - Excellent Undergraduate Thesis, Chang'an University
 
+- title: Presentations
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - "<b>Meng, S.</b>, et al. Multi-objective Optimization Method for Integrated Roadway Asset Maintenance and Rehabilitation Considering Traffic Impacts. Poster presented at TRB 2025 Annual Meeting, Washington D.C., USA."
+    - year: 2022
+      items:
+        - "<b>Meng, S.</b>, Shao, Y., Cao, R., & Wu, S. Multi-objective optimization of network-level pavement maintenance decisions considering user costs. Poster presented at WTC 2022, Wuhan, China."
+
+- title: Under Review / In Preparation
+  type: nested_list
+  contents:
+    - title: Under Review
+      items:
+        - "MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs (IEEE T-ITS)"
+        - "FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring (Journal of Computing in Civil Engineering)"
+        - "Multi-objective Optimization Method for Integrated Roadway Asset Management Considering Traffic Dynamics and Environmental Impacts (TRR)"
+    - title: In Preparation
+      items:
+        - "MulTrack3D: Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs (Target: IEEE T-ITS)"
+        - "Quality-Aware Traffic Safety Assessment for Roadside Multi-LiDAR Systems: A Time-Varying Reliability Framework for Infrastructure-Based Surrogate Safety Measures (Target: Accident Analysis & Prevention)"
+        - "Personalized VISTA: Vision-Language Safety Assistant for Trustworthy Autonomy (Target: NeurIPS)"
+        - "Coordinated Multi-modal Emergency Evacuation of Airport Landside Passengers under Unexpected Large Passenger Flow (Target: Transportation Systems Part A)"
+        - "Cross-Modal Feature Alignment for LiDAR-NIR Image Fusion in 3D Object Detection (Target: Transportation Research Part C)"
+
+- title: Patents and Software
+  type: list
+  contents:
+    - "Wu, S., <b>Meng, S.</b>, Cao, R., & Bai, Q. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning: 202111642183.3 [Granted Patent, in Chinese]."
+    - "<b>Meng, S.</b> (2023). Airport curbside illegal vehicle monitoring system [Software Copyright, in Chinese]."
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: Highway Design Intern
+      institution: Shaanxi Hongsidao Transportation Planning and Design Co., Ltd, China
+      year: Jul 2019 – Aug 2019
+      description:
+        - Participated in rural highway design in Ankang, Shaanxi Province.
+        - Completed partial design drawings of a highway bridge in Jiangsu Province using AutoCAD.
+    - title: Highway Engineering Practice
+      institution: Taibai Campus, Chang'an University, China
+      year: Mar 2019 – Apr 2019
+      description:
+        - Completed horizontal, vertical, and cross-section designs for a Class IV highway project.
+        - Conducted GPS-based highway surveying on campus.
+
 - title: Research Interests
   type: nested_list
   contents:
