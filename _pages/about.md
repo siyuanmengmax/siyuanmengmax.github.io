@@ -26,12 +26,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Ph.D. candidate in Civil Engineering (Transportation Engineering) at the University of Massachusetts Amherst. My research focuses on **transportation systems optimization**, **LiDAR-based traffic monitoring and simulation**, and **machine learning applications in civil infrastructure**.
+I am a Ph.D. candidate in Civil Engineering (Transportation Engineering) at the University of Massachusetts Amherst (GPA: 3.98/4.0), fully funded. My research sits at the intersection of **sensing**, **optimization**, and **machine learning** for intelligent transportation systems.
 
-Prior to joining UMass, I received my M.S. and B.S. degrees from Chang'an University, China, where I worked on pavement asset management and airport curbside vehicle detection.
+My current work focuses on two interconnected themes:
 
-My current research includes:
+- **Infrastructure-based LiDAR Sensing**: I develop unsupervised object detection, background modeling, and multi-object tracking algorithms for roadside LiDAR systems (MulDet3D, FRGB3D, MulTrack3D). These methods enable scalable, annotation-free traffic monitoring across multiple sensors — a foundation for real-time intersection management and traffic safety assessment.
 
-- **LiDAR-based Object Detection & Tracking**: Developing unsupervised and reliability-weighted methods for roadside LiDAR traffic monitoring
-- **Multi-objective Optimization**: Integrated roadway asset maintenance and rehabilitation planning considering traffic dynamics and environmental impacts
-- **Intelligent Transportation Systems**: Computer vision and deep learning applications for traffic safety and infrastructure management
+- **Transportation Systems Optimization**: I design multi-objective optimization frameworks for integrated roadway asset management, jointly minimizing agency costs, user delay costs, and environmental impacts under real-world constraints and uncertainties.
+
+Prior to UMass, I received my M.S. and B.S. degrees from **Chang'an University**, China, where I worked on pavement performance modeling, multi-year network-level maintenance planning, and deep learning-based airport curbside vehicle detection — the latter resulting in a granted patent and software copyright.
+
+I am also broadly interested in **vision-language models for autonomous driving** (Personalized VISTA) and **traffic safety assessment** using infrastructure-based surrogate safety measures.
+
+**Research Interests:** Transportation systems optimization · LiDAR-based traffic monitoring · Multi-objective optimization · Computer vision · Intelligent transportation systems · Machine learning for civil infrastructure
