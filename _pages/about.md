@@ -38,4 +38,4 @@ My current work spans two interconnected thrusts:
 
 Prior to UMass, I received my M.S. (GPA: 3.74/4.0) and B.S. (GPA: 3.76/4.0) degrees from [Chang'an University](https://en.chd.edu.cn/), China (advised by [Dr. Qiang Bai](https://js.chd.edu.cn/ysgcxy/bq/list.htm)), where I worked on pavement maintenance optimization and deep learning-based airport curbside vehicle detection — resulting in a granted patent and software copyright.
 
-**Research keywords:** Infrastructure-centric perception · Roadside LiDAR · Multi-objective optimization · EV charging · Intelligent transportation systems · Safety analysis · World model · Transportation asset manegement
+**Research keywords:** Infrastructure-centric perception · Roadside LiDAR · Multi-objective optimization · EV charging · Intelligent transportation systems · Safety analysis · World model · Transportation asset management
