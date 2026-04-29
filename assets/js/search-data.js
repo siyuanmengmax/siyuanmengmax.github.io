@@ -489,13 +489,6 @@ ninja.data = [{
           window.open("https://www.researchgate.net/profile/Max-Siyuan-Meng/", "_blank");
         },
       },{
-        id: 'social-google_scholar ID',
-        title: 'Google_scholar id',
-        section: 'Socials',
-        handler: () => {
-          window.open("", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
