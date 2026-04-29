@@ -412,25 +412,25 @@ ninja.data = [{
           title: 'Paper on “Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming”...',
           description: "",
           section: "News",},{id: "news-presented-a-poster-on-multi-objective-optimization-method-for-integrated-roadway-asset-maintenance-and-rehabilitation-considering-traffic-impacts-at-trb-2025-annual-meeting-in-washington-d-c",
-          title: 'Presented a poster on “Multi-objective Optimization Method for Integrated Roadway Asset Maintenance and...',
+          title: 'Presented a poster on “Multi-objective optimization method for integrated roadway asset maintenance and...',
           description: "",
           section: "News",},{id: "news-two-papers-published-in-proc-spie-13575-stce-2024-estimating-travel-mode-choices-of-residents-in-stockholm-region-and-analysis-of-expressway-maintenance-decision-based-on-complete-information-static-game-theory",
           title: 'Two papers published in Proc. SPIE 13575 (STCE 2024): “Estimating travel mode choices...',
           description: "",
           section: "News",},{id: "news-presented-a-poster-on-frgb3d-fast-reliability-weighted-gaussian-background-modeling-for-roadside-lidar-traffic-monitoring-at-trb-2026-annual-meeting-in-washington-d-c",
-          title: 'Presented a poster on “FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR...',
+          title: 'Presented a poster on “FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR...',
           description: "",
           section: "News",},{id: "news-paper-a-multi-objective-optimization-method-for-integrated-road-asset-management-considering-traffic-dynamics-and-environmental-impacts-accepted-at-transportation-research-record-trr",
           title: 'Paper “A multi-objective optimization method for integrated road asset management considering traffic dynamics...',
           description: "",
           section: "News",},{id: "news-presented-a-poster-on-quality-aware-vehicle-conflict-detection-with-spatial-precision-enhancement-for-roadside-multi-lidar-systems-at-safety-mobility-conference-2026-in-seattle-wa",
-          title: 'Presented a poster on “Quality-Aware Vehicle Conflict Detection with Spatial Precision Enhancement for...',
+          title: 'Presented a poster on “Quality-aware vehicle conflict detection with spatial precision enhancement for...',
           description: "",
           section: "News",},{id: "news-preprint-infrastructure-centric-world-models-bridging-temporal-depth-and-spatial-breadth-for-roadside-perception-posted-on-arxiv-arxiv-2604-17651",
-          title: 'Preprint “Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception”...',
+          title: 'Preprint “Infrastructure-centric world models: bridging temporal depth and spatial breadth for roadside perception”...',
           description: "",
           section: "News",},{id: "news-paper-frgb3d-fast-reliability-weighted-gaussian-background-modeling-for-roadside-lidar-traffic-monitoring-accepted-at-journal-of-computing-in-civil-engineering-asce-jcce",
-          title: 'Paper “FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring” accepted...',
+          title: 'Paper “FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring” accepted...',
           description: "",
           section: "News",},{id: "projects-muldet3d",
           title: 'MulDet3D',
@@ -487,6 +487,27 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.researchgate.net/profile/Max-Siyuan-Meng/", "_blank");
+        },
+      },{
+        id: 'social-google_scholar ID',
+        title: 'Google_scholar id',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0003-3302-6111", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/max-siyuan-meng-30ba312a8", "_blank");
         },
       },{
         id: 'social-rss',
