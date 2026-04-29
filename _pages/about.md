@@ -26,16 +26,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Ph.D. candidate in Civil & Environmental Engineering (Transportation Engineering) at the University of Massachusetts Amherst (GPA: 3.97/4.0), fully funded, advised by [Dr. Chengbo Ai](https://www.umass.edu/).
+I am a Ph.D. candidate in Civil & Environmental Engineering (Transportation Engineering) at the University of Massachusetts Amherst (GPA: 3.97/4.0), fully funded, advised by [Dr. Chengbo Ai](https://aichengbo.com/).
 
 My research centers on **Infrastructure-Centric World Models (I-WM)** — a framework that leverages the unique "temporal depth" of fixed roadside sensors to build rich, evolving representations of traffic environments. This vision unifies my doctoral work on quality-aware multi-LiDAR perception with emerging directions in V2X cooperative perception and spatial intelligence. See: [arXiv:2604.17651](https://arxiv.org/abs/2604.17651).
 
 My current work spans two interconnected thrusts:
 
-- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, under review at _JTE Part A_), multi-object tracking (MulTrack3D, under review), and traffic safety analysis — for roadside infrastructure-based sensing systems.
+- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, under review at _JTE Part A_), multi-object tracking (MulTrack3D, under review at _JTE Part A_), and traffic safety analysis — for roadside infrastructure-based sensing systems.
 
 - **Transportation Systems Optimization**: I design multi-objective optimization frameworks for roadway asset management and EV charging infrastructure planning, addressing critical needs in sustainable and intelligent transportation.
 
-Prior to UMass, I received my M.S. and B.S. degrees from **Chang'an University**, China (advised by Dr. Qiang Bai), where I worked on pavement maintenance optimization and deep learning-based airport curbside vehicle detection — resulting in a granted patent and software copyright.
+Prior to UMass, I received my M.S. and B.S. degrees from **Chang'an University**, China (advised [Dr. Qiang Bai](https://js.chd.edu.cn/ysgcxy/bq/list.htm)), where I worked on pavement maintenance optimization and deep learning-based airport curbside vehicle detection — resulting in a granted patent and software copyright.
 
 **Research keywords:** Infrastructure-centric perception · Roadside LiDAR · Multi-objective optimization · EV charging · Intelligent transportation systems
