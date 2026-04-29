@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper "FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring" accepted at **Journal of Computing in Civil Engineering (ASCE JCCE)**.
+Paper "FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring" accepted at **Journal of Computing in Civil Engineering (ASCE JCCE)**.

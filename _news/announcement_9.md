@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented a poster on "Quality-Aware Vehicle Conflict Detection with Spatial Precision Enhancement for Roadside Multi-LiDAR Systems" at **Safety Mobility Conference 2026** in Seattle WA.
+Presented a poster on "Quality-aware vehicle conflict detection with spatial precision enhancement for roadside multi-LiDAR systems" at **Safety Mobility Conference 2026** in Seattle WA.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Preprint "Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception" posted on arXiv. [<a href="https://arxiv.org/abs/2604.17651">arXiv:2604.17651</a>]
+Preprint "Infrastructure-centric world models: bridging temporal depth and spatial breadth for roadside perception" posted on arXiv. [<a href="https://arxiv.org/abs/2604.17651">arXiv:2604.17651</a>]
