@@ -423,7 +423,7 @@ ninja.data = [{
           section: "News",},{id: "news-paper-a-multi-objective-optimization-method-for-integrated-road-asset-management-considering-traffic-dynamics-and-environmental-impacts-accepted-at-transportation-research-record-trr",
           title: 'Paper “A multi-objective optimization method for integrated road asset management considering traffic dynamics...',
           description: "",
-          section: "News",},{id: "news-presented-a-poster-on-quality-aware-vehicle-conflict-detection-with-spatial-precision-enhancement-for-roadside-multi-lidar-systems-at-safety-mobility-conference-2026-in-seattle-wa",
+          section: "News",},{id: "news-presented-a-poster-on-quality-aware-vehicle-conflict-detection-with-spatial-precision-enhancement-for-roadside-multi-lidar-systems-at-safe-mobility-conference-2026-in-seattle-wa",
           title: 'Presented a poster on “Quality-aware vehicle conflict detection with spatial precision enhancement for...',
           description: "",
           section: "News",},{id: "news-preprint-infrastructure-centric-world-models-bridging-temporal-depth-and-spatial-breadth-for-roadside-perception-posted-on-arxiv-arxiv-2604-17651",
