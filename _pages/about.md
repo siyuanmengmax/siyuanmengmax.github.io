@@ -32,7 +32,7 @@ My research centers on **Infrastructure-Centric World Models (I-WM)** — a fram
 
 My current work spans two interconnected thrusts:
 
-- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, under review at _JTE Part A_), multi-object tracking (MulTrack3D, under review at _JTE Part A_), and traffic safety analysis — for roadside infrastructure-based sensing systems (under review at _AAP_).
+- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, accepted at _JTE Part A_), multi-object tracking (MulTrack3D, under review at _JTE Part A_), and traffic safety analysis — for roadside infrastructure-based sensing systems (under review at _AAP_).
 
 - **Transportation Systems Optimization**: I design multi-objective optimization frameworks for roadway asset management (accepted at _TRR_) and EV charging infrastructure planning (under review at _TRC_), addressing critical needs in sustainable and intelligent transportation.
 
