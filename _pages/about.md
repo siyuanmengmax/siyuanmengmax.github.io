@@ -28,7 +28,7 @@ latest_posts:
 
 I am a Ph.D. candidate in Civil & Environmental Engineering (Transportation Engineering) at the University of Massachusetts Amherst (GPA: 3.97/4.0), fully funded, advised by [Dr. Chengbo Ai](https://aichengbo.com/).
 
-My research centers on **Infrastructure-Centric World Models (I-WM)** — a framework that leverages the unique "temporal depth" of fixed roadside sensors to build rich, evolving representations of traffic environments. This vision is increasingly enabled by emerging hardware paradigms, including native color LiDAR sensors (e.g., [Ouster REV8](https://ouster.com/products/hardware/rev8), released May 2026) that bring hardware-level multi-modal alignment to roadside deployments. This research unifies my doctoral work on quality-aware multi-LiDAR perception with emerging directions in V2X cooperative perception and spatial intelligence. See: [arXiv:2604.17651](https://arxiv.org/abs/2604.17651).
+My research centers on **Infrastructure-Centric World Models (I-WM)** — a framework that leverages the unique "temporal depth" of fixed roadside sensors to build rich, evolving representations of traffic environments. This vision is increasingly enabled by emerging hardware paradigms, including native color LiDAR sensors (e.g., Hesai Picasso SPAD-SoC, April 2026; Ouster REV8, May 2026) that bring hardware-level multi-modal alignment to roadside deployments. This research unifies my doctoral work on quality-aware multi-LiDAR perception with emerging directions in V2X cooperative perception and spatial intelligence. See: [arXiv:2604.17651](https://arxiv.org/abs/2604.17651).
 
 My current work spans two interconnected thrusts:
 
