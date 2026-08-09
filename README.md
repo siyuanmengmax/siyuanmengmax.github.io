@@ -20,7 +20,7 @@ Then visit `http://localhost:4000`
 ```bash
 npx prettier . --write  # Fix formatting
 git add .
-git commit -m"update4"
+git commit -m"update30"
 git push
 ```
 
