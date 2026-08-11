@@ -32,9 +32,9 @@ My research centers on **Infrastructure-Centric World Models (I-WM)** — a fram
 
 My current work spans two interconnected thrusts:
 
-- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, accepted at _JTE Part A_), multi-object tracking (MulTrack3D, under review at _JTE Part A_), and traffic safety analysis — for roadside infrastructure-based sensing systems (under review at _AAP_).
+- **Infrastructure-based LiDAR Perception**: I build the full multi-LiDAR pipeline — from background modeling (FRGB3D, accepted at _ASCE JCCE_) to unsupervised detection (MulDet3D, accepted at _JTE Part A_), multi-object tracking (MulTrack3D, under review at _AIC_), and traffic safety analysis — for roadside infrastructure-based sensing systems (under review at _AAP_).
 
-- **Transportation Systems Optimization**: I design multi-objective optimization frameworks for roadway asset management (accepted at _TRR_) and EV charging infrastructure planning (under review at _TRC_), addressing critical needs in sustainable and intelligent transportation.
+- **Transportation Systems Optimization**: I design multi-objective optimization frameworks for roadway asset management (accepted at _TRR_) and EV charging infrastructure planning (under review at _IEEE T-ITS_), addressing critical needs in sustainable and intelligent transportation.
 
 Prior to UMass, I received my M.S. (GPA: 3.74/4.0) and B.S. (GPA: 3.76/4.0) degrees from [Chang'an University](https://en.chd.edu.cn/), China (advised by [Dr. Qiang Bai](https://js.chd.edu.cn/ysgcxy/bq/list.htm)), where I worked on pavement maintenance optimization and deep learning-based airport curbside vehicle detection — resulting in a granted patent and software copyright.
 
