@@ -1,5 +1,5 @@
 <div class="col mb-4">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{% if page.lang == 'zh-CN' and project.permalink_zh %}{{ project.permalink_zh | relative_url }}{% else %}{{ project.url | relative_url }}{% endif %}{% endif %}">
     <div class="card h-100 hoverable">
       <div class="row no-gutters">
         {% if project.img %}
@@ -9,8 +9,12 @@
         {% endif %}
         <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
           <div class="card-body">
-            <h3 class="card-title">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
+            <h3 class="card-title">
+              {% if page.lang == 'zh-CN' %}{{ project.title_zh | default: project.title }}{% else %}{{ project.title }}{% endif %}
+            </h3>
+            <p class="card-text">
+              {% if page.lang == 'zh-CN' %}{{ project.description_zh | default: project.description }}{% else %}{{ project.description }}{% endif %}
+            </p>
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">

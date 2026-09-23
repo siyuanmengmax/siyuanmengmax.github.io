@@ -1,4 +1,8 @@
 ---
+lang: en
+translation_key: about
+permalink_en: /
+permalink_zh: /zh/
 layout: about
 
 title: about

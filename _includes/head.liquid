@@ -1,3 +1,4 @@
+{% include locale.liquid %}
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
@@ -187,3 +188,10 @@
 {% if page.tikzjax %}
   <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
 {% endif %}
+
+{% if page.translation_key %}
+  <link rel="alternate" hreflang="en" href="{{ english_url | absolute_url }}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ page.permalink_zh | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ english_url | absolute_url }}">
+{% endif %}
+<script defer src="{{ '/assets/js/language.js' | relative_url }}"></script>

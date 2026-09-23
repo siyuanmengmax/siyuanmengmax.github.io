@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_4
+permalink_en: /projects/4_project/
+permalink_zh: /zh/projects/4_project/
+title_zh: 道路资产管理优化
+description_zh: 考虑交通动态与环境影响的道路资产综合养护多目标优化
 layout: page
 title: Roadway Asset Management Optimization
 description: Multi-objective optimization for integrated roadway asset maintenance and rehabilitation considering traffic dynamics and environmental impacts
@@ -6,7 +12,7 @@ importance: 1
 category: Optimization
 ---
 
-**Status:** Under Review at _Transportation Research Record (TRR)_
+**Status:** Accepted at _Transportation Research Record (TRR)_
 
 Roadway asset management involves complex trade-offs between agency costs, user costs, environmental impacts, and network-level performance. Traditional single-objective approaches fail to capture this complexity.
 

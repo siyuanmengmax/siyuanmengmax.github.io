@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_5
+permalink_en: /projects/5_project/
+permalink_zh: /zh/projects/5_project/
+title_zh: 不确定性下的路面养护规划
+description_zh: 基于机会约束规划的路网级路面养护决策
 layout: page
 title: Pavement Maintenance Planning under Uncertainty
 description: Network-level pavement maintenance and rehabilitation planning using chance-constrained programming

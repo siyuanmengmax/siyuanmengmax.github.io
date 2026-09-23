@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_2
+permalink_en: /projects/2_project/
+permalink_zh: /zh/projects/2_project/
+title_zh: FRGB3D
+description_zh: 面向路侧激光雷达交通监测的快速可靠性加权高斯背景建模
 layout: page
 title: FRGB3D
 description: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring

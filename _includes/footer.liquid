@@ -1,8 +1,10 @@
+{% include locale.liquid %}
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
+  {{ display_name }}.
+  {% if current_lang == 'zh-CN' %}
+    基于 <a href="https://jekyllrb.com/">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio">al-folio</a> 构建，由 <a href="https://pages.github.com/">GitHub Pages</a> 托管。图片来自 <a href="https://unsplash.com">Unsplash</a>。
+  {% else %}{{ site.footer_text }}{% endif %}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}

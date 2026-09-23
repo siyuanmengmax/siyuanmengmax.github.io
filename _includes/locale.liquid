@@ -1,0 +1,11 @@
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[current_lang] %}
+{% assign locale_prefix = '' %}
+{% if current_lang == 'zh-CN' %}{% assign locale_prefix = '/zh' %}{% endif %}
+{% assign english_url = page.permalink_en %}
+{% if page.translation_key %}
+  {% assign english_project = site.projects | where: 'translation_key', page.translation_key | first %}
+  {% if english_project %}{% assign english_url = english_project.url %}{% endif %}
+{% endif %}
+{% capture display_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% if current_lang == 'zh-CN' and site.name_zh %}{% assign display_name = site.name_zh %}{% endif %}

@@ -1,0 +1,28 @@
+{
+  "en":
+    {
+      "about": "about",
+      "news": "news",
+      "papers": "selected publications",
+      "contact": "Feel free to reach out via email for research collaborations or questions.",
+      "filter": "Type to filter",
+      "navigation": "Toggle navigation",
+      "search": "Search",
+      "theme": "Change theme",
+      "empty_news": "No news so far...",
+      "categories": { "LiDAR": "LiDAR", "Optimization": "Optimization", "Vision": "Vision" },
+    },
+  "zh-CN":
+    {
+      "about": "关于我",
+      "news": "最新动态",
+      "papers": "代表论文",
+      "contact": "欢迎通过邮件联系我，交流研究问题或探讨合作机会。",
+      "filter": "输入关键词筛选论文",
+      "navigation": "展开或收起导航",
+      "search": "搜索",
+      "theme": "切换主题",
+      "empty_news": "暂无动态",
+      "categories": { "LiDAR": "激光雷达感知", "Optimization": "交通优化", "Vision": "计算机视觉" },
+    },
+}

@@ -14,7 +14,8 @@
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 {% endif %}
 
-{% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% include locale.liquid %}
+{% assign author_name = display_name %}
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
@@ -61,7 +62,7 @@
   {% if page.og_image or site.og_image %}
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
   {% endif %}
-  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="og:locale" content="{{ page.lang | default: site.lang | replace: "-", "_" }}">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">

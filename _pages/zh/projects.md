@@ -1,13 +1,13 @@
 ---
-lang: en
+lang: zh-CN
 translation_key: projects
 permalink_en: /projects/
 permalink_zh: /zh/projects/
 layout: page
-title: projects
-permalink: /projects/
-description: My research spans LiDAR-based traffic monitoring, transportation optimization, and intelligent transportation systems.
-nav: true
+title: 研究项目
+permalink: /zh/projects/
+description: 研究涵盖路侧激光雷达交通感知、交通系统优化与智能交通系统。
+nav: false
 nav_order: 3
 display_categories: [LiDAR, Optimization, Vision]
 horizontal: false

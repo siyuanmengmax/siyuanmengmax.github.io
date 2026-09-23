@@ -2,6 +2,7 @@
 layout: post
 date: 2026-05-18 09:00:00-0500
 inline: true
+content_zh: "MulDet3D: multi-objective optimization based unsupervised object detection for multiple roadside LiDARs被 **Journal of Transportation Engineering Part A: Systems（ASCE JTE Part A）**接收。"
 related_posts: false
 ---
 

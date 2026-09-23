@@ -1423,3 +1423,29 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+// Keep language choices together in both desktop and collapsed navigation.
+.language-switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .nav-link {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  [aria-current] {
+    font-weight: 700;
+    color: var(--global-theme-color);
+  }
+}
+html[lang="zh-CN"] {
+  body {
+    font-family: "Roboto", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  }
+  article {
+    line-height: 1.85;
+  }
+  .profile .more-info {
+    font-family: inherit;
+  }
+}

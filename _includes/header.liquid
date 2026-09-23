@@ -1,20 +1,25 @@
+{% include locale.liquid %}
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      {% if page.translation_key != 'about' %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ locale_prefix | append: '/' | relative_url }}">
           {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
+            {% if current_lang == 'zh-CN' and site.name_zh %}
+              <span class="font-weight-bold">{{ display_name }}</span>
+            {% else %}
+              {% if site.first_name %}
+                <span class="font-weight-bold">
+                  {{- site.first_name -}}
+                </span>
+              {% endif %}
+              {% if site.middle_name %}
+                {{- site.middle_name -}}
+              {% endif %}
+              {% if site.last_name %}
+                {{- site.last_name -}}
+              {% endif %}
             {% endif %}
           {% else %}
             {{- site.title -}}
@@ -32,9 +37,9 @@
         data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-label="{{ t.navigation }}"
       >
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">{{ t.navigation }}</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -42,15 +47,11 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
-
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
-              {% if page.permalink == '/' %}
+          <li class="nav-item {% if page.translation_key == 'about' %}active{% endif %}">
+            <a class="nav-link" href="{{ locale_prefix | append: '/' | relative_url }}">
+              {{- t.about }}
+              {% if page.translation_key == 'about' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -60,6 +61,10 @@
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
+              {% assign nav_page = p %}
+              {% if current_lang == 'zh-CN' and p.translation_key %}
+                {% assign nav_page = site.pages | where: 'translation_key', p.translation_key | where: 'lang', 'zh-CN' | first %}
+              {% endif %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -77,7 +82,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    {{- p.title }}
+                    {{- nav_page.title }}
                     {% if page.title == p.title or has_active_child %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -98,18 +103,18 @@
                   </div>
                 </li>
               {% else %}
-                {% assign parent_link = p.permalink | remove: 'index.html' %}
+                {% assign parent_link = nav_page.permalink | remove: 'index.html' %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
                     {%- assign url = '/blog/' -%}
                   {%- else -%}
-                    {%- assign url = p.url -%}
+                    {%- assign url = nav_page.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
-                    {% if page.url contains p.url %}
+                    {{- nav_page.title }}
+                    {% if page.url == nav_page.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>
@@ -117,10 +122,21 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <li class="nav-item language-switch" aria-label="Language / 语言">
+            {% if current_lang == 'zh-CN' %}
+              <a class="nav-link" data-language="en" href="{{ english_url | default: '/' | relative_url }}" lang="en" hreflang="en">EN</a>
+              <span class="nav-link" aria-current="true" lang="zh-CN">中文</span>
+            {% else %}
+              <span class="nav-link" aria-current="true" lang="en">EN</span>
+              <a class="nav-link" data-language="zh-CN" href="{{ page.permalink_zh | default: '/zh/' | relative_url }}" lang="zh-CN" hreflang="zh-CN"
+                >中文</a
+              >
+            {% endif %}
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+              <button id="search-toggle" title="{{ t.search }}" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
               </button>
             </li>
@@ -128,7 +144,7 @@
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
+              <button id="light-toggle" title="{{ t.theme }}">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>

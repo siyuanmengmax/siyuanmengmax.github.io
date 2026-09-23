@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_7
+permalink_en: /projects/7_project/
+permalink_zh: /zh/projects/7_project/
+title_zh: Personalized VISTA
+description_zh: 面向可信自主系统的视觉语言安全助手
 layout: page
 title: Personalized VISTA
 description: Vision-Language Safety Assistant for Trustworthy Autonomy

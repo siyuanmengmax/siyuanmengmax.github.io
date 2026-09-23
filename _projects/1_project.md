@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_1
+permalink_en: /projects/1_project/
+permalink_zh: /zh/projects/1_project/
+title_zh: MulDet3D
+description_zh: 基于多目标优化的多路侧激光雷达无监督目标检测
 layout: page
 title: MulDet3D
 description: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs
@@ -6,7 +12,7 @@ importance: 1
 category: LiDAR
 ---
 
-**Status:** Under Review after Revision at _Journal of Transportation Engineering Part A: Systems_
+**Status:** Accepted at _Journal of Transportation Engineering Part A: Systems_
 
 Roadside LiDAR systems offer a promising infrastructure-based approach for traffic monitoring, but detecting objects across multiple sensors with varying fields of view remains challenging — especially without labeled training data.
 

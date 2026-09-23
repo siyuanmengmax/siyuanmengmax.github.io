@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_3
+permalink_en: /projects/3_project/
+permalink_zh: /zh/projects/3_project/
+title_zh: MulTrack3D
+description_zh: 面向多路侧激光雷达的可靠性增强自校正多点跟踪
 layout: page
 title: MulTrack3D
 description: Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs

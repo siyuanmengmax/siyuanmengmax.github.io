@@ -1,4 +1,8 @@
 ---
+lang: en
+translation_key: teaching
+permalink_en: /teaching/
+permalink_zh: /zh/teaching/
 layout: page
 permalink: /teaching/
 title: teaching

@@ -6,6 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Siyuan (Max)
 middle_name:
 last_name: Meng
+name_zh: 蒙思源 # Display name on Chinese pages
 contact_note: >
   Feel free to reach out via email for research collaborations or questions.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"

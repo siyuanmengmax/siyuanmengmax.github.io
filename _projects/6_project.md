@@ -1,4 +1,10 @@
 ---
+lang: en
+translation_key: project_6
+permalink_en: /projects/6_project/
+permalink_zh: /zh/projects/6_project/
+title_zh: 机场路侧车辆检测
+description_zh: 基于深度学习的机场出发层违规接客车辆检测
 layout: page
 title: Airport Curbside Vehicle Detection
 description: Deep learning-based detection of illegal pick-up vehicles at airport departure levels
