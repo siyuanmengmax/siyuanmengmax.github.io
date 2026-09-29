@@ -48,6 +48,6 @@ latest_posts:
 
 博士阶段，我构建了涵盖背景建模、目标检测、跟踪与交通安全分析的完整质量感知多激光雷达流程。FRGB3D 已被 _ASCE Journal of Computing in Civil Engineering_ 接收，MulDet3D 已被 _ASCE Journal of Transportation Engineering, Part A: Systems_ 接收，道路资产管理研究已被 _Transportation Research Record_ 接收。多目标跟踪与路侧激光雷达安全分析相关工作正在审稿中。
 
-在赴美攻读博士之前，我在[长安大学](https://en.chd.edu.cn/)获得硕士（GPA：3.74/4.0）和学士（GPA：3.76/4.0）学位，导师为 [柏强教授](https://js.chd.edu.cn/ysgcxy/bq/list.htm)。此前的研究聚焦于路面养护优化，以及基于深度学习的机场路侧车辆检测，相关成果包括一项授权专利与软件著作权。
+在赴美攻读博士之前，我在[长安大学](https://en.chd.edu.cn/)获得硕士（GPA：3.76/4.0）和学士（GPA：3.74/4.0）学位，导师为 [柏强教授](https://js.chd.edu.cn/ysgcxy/bq/list.htm)。此前的研究聚焦于路面养护优化，以及基于深度学习的机场路侧车辆检测，相关成果包括一项授权专利与软件著作权。
 
 **研究关键词：** 基础设施中心世界模型 · 路侧激光雷达 · 多激光雷达感知 · 交通安全 · 不确定性感知 · 多目标优化 · 智能交通系统 · 交通资产管理
