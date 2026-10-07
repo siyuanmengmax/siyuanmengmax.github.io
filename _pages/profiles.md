@@ -4,6 +4,7 @@ permalink: /people/
 title: people
 description: members of the lab or group
 nav: false
+published: false # Demo page; its about_einstein.md content has been removed.
 nav_order: 7
 
 profiles:
