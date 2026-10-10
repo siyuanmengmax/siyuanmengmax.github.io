@@ -1,12 +1,14 @@
 # Siyuan (Max) Meng · 蒙思源
 
-个人学术网站：[English](https://siyuanmengmax.github.io/) · [中文](https://siyuanmengmax.github.io/zh/)
+**English** · [简体中文](README.zh-CN.md)
 
-借鉴 [TPWM Lab](https://github.com/siyuanmengmax/tpwm-lab) 的轻量静态架构：结构化双语内容、共享页面组件、原生 CSS / JavaScript。保留原首页设计与页面地址，内页使用相同的绿色配色及中英文字体。
+Personal academic website: [English](https://siyuanmengmax.github.io/) · [中文](https://siyuanmengmax.github.io/zh/)
 
-## 本地运行
+A lightweight, bilingual static website with structured content, shared page components, and vanilla CSS and JavaScript. Its architecture follows [TPWM Lab](https://github.com/siyuanmengmax/tpwm-lab). The site preserves the portfolio homepage and existing page URLs, with consistent green styling and typography across the inner pages.
 
-需要 **Node.js 20 或更新版本**，推荐 Node.js 24。没有第三方依赖，**不需要 `npm install`**。
+## Local development
+
+Requires **Node.js 20 or later**; Node.js 24 is recommended. There are no third-party dependencies, so **`npm install` is not needed**.
 
 ```sh
 npm run build
@@ -14,95 +16,95 @@ npm run check
 npm run dev
 ```
 
-打开 `http://localhost:4173/` 或 `http://localhost:4173/zh/`。修改内容后，重新运行 `npm run build` 并刷新浏览器。端口被占用时可使用 `PORT=4174 npm run dev`。
+Open `http://localhost:4173/` for English or `http://localhost:4173/zh/` for Chinese. After editing source files, run `npm run build` again and refresh the browser. To use another port, run `PORT=4174 npm run dev`.
 
-构建过程完全离线。`dist/` 为自动生成的网站，不提交到 Git，也不直接编辑。关闭浏览器 JavaScript 后，所有正文、论文与项目仍可阅读。
+The build works offline. The generated `dist/` directory is excluded from Git and should not be edited directly. All page content, publications, and project descriptions remain readable with JavaScript disabled.
 
-## 目录
+## Project structure
 
 ```text
 src/
-  content/              # 网站内容，日常更新主要在这里
-    site.json           # 站点信息、双语首页文案、联系方式、实验室链接
-    profile.json        # 个人简介、入职信息、教育、奖励与学术服务
-    publications.json   # 全部论文及中文论文信息，BibTeX 的唯一数据来源
-    projects.json       # 项目简介与完整中英文详情
-    news.json           # 双语动态及日期
-    framework.json      # 四项博士研究的说明与关联论文 ID
-    pages.json          # 内页标题、简介、教学正文及分类名称
-  components/           # 共享导航、页脚、首页、论文与内页模板
-public/                 # 只保留实际使用的照片、字体、图标、样式和脚本
+  content/              # Website content; most updates belong here
+    site.json           # Site settings, bilingual homepage copy, contact and lab links
+    profile.json        # Biography, appointment, education, honors, and service
+    publications.json   # Publication records and Chinese metadata; source for BibTeX
+    projects.json       # Project summaries and full bilingual descriptions
+    news.json           # Bilingual news items and dates
+    framework.json      # Four doctoral studies and their publication IDs
+    pages.json          # Inner-page titles, descriptions, teaching, and category labels
+  components/           # Shared navigation, footer, homepage, publications, and inner pages
+public/                 # Images, fonts, icons, styles, and browser scripts used by the site
 scripts/
-  build.mjs             # 内容 → HTML、BibTeX、RSS、站点地图和版本化资源
-  check.mjs             # 内容、链接、旧论文锚点、字体、资源版本与语法检查
-  serve.mjs             # 本地静态预览服务器
+  build.mjs             # Content → HTML, BibTeX, RSS, sitemap, and versioned assets
+  check.mjs             # Content, links, legacy anchors, fonts, hashes, and syntax checks
+  serve.mjs             # Local static preview server
 .github/workflows/
-  deploy.yml            # 校验并部署到现有 GitHub Pages
-docs/                  # 重构记录与回退说明
+  deploy.yml            # Build, validate, and deploy to GitHub Pages
+docs/                   # Migration and rollback notes (Chinese)
 ```
 
-## 更新内容
+## Updating content
 
-| 要修改的内容 | 对应文件 |
+| What to update | File |
 | --- | --- |
-| 姓名、邮箱、社交链接、实验室网址 | `src/content/site.json` |
-| 简介、职位、教育、荣誉、学术服务 | `src/content/profile.json` |
-| 论文、作者、年份、DOI、状态 | `src/content/publications.json` |
-| 研究项目及详情 | `src/content/projects.json` |
-| 最新动态 | `src/content/news.json` |
-| 博士研究框架 | `src/content/framework.json` |
-| 教学经历、内页标题 | `src/content/pages.json` |
-| 颜色与布局 | `public/assets/portfolio/portfolio.css` |
-| 英文与中文字体 | `public/assets/portfolio/english-typography.css`、`public/assets/css/chinese-typography.css` |
-| 照片 | `public/assets/portfolio/max-profile.jpg` |
+| Name, email, social links, and lab URLs | `src/content/site.json` |
+| Biography, appointment, education, honors, and service | `src/content/profile.json` |
+| Publications, authors, years, DOIs, and status | `src/content/publications.json` |
+| Research projects and their full descriptions | `src/content/projects.json` |
+| News | `src/content/news.json` |
+| Doctoral research framework | `src/content/framework.json` |
+| Teaching and inner-page titles | `src/content/pages.json` |
+| Colors and layout | `public/assets/portfolio/portfolio.css` |
+| English and Chinese typography | `public/assets/portfolio/english-typography.css`, `public/assets/css/chinese-typography.css` |
+| Profile photo | `public/assets/portfolio/max-profile.jpg` |
 
-双语内容使用 `en` 和 `zh` 字段，修改时请同步维护。`body`、`bio` 和动态正文等字段允许少量 HTML，例如 `<strong>`、`<em>`、`<a>`、`<p>` 和 `<ul>`；它们是经过信任的本站内容，不用于接收外部用户输入。
+Bilingual content uses `en` and `zh` fields. Keep both versions up to date. Fields such as `body`, `bio`, and news text support a small amount of HTML, including `<strong>`, `<em>`, `<a>`, `<p>`, and `<ul>`. These fields contain trusted website content and are not intended for external user input.
 
-### 论文
+### Publications
 
-每篇论文包含稳定的 `id`、BibTeX `type` 和 `fields`。作者字段保持 BibTeX 写法，例如 `Meng, Siyuan and Ai, Chengbo`。`note` 中的 `Under Review` / `Submitting` 会归入在研手稿；会议类型归入会议论文；arXiv / preprint 刊物归入预印本。其余归入期刊论文。
+Each publication has a stable `id`, a BibTeX `type`, and a `fields` object. The author field uses BibTeX notation, such as `Meng, Siyuan and Ai, Chengbo`. Records marked `Under Review` or `Submitting` in `note` appear under manuscripts; conference entry types appear under conferences; arXiv or preprint venues appear under preprints. Other records appear under journal articles.
 
-中文论文的 `zh` 字段保存原始中文题名、完整作者姓名和刊物名。年份、卷期、页码和 DOI 共用 `fields`。没有 DOI 的预印本可设置顶层 `url`。页面、筛选及下载文件均由这一份记录生成，不再另行维护 `.bib` 源文件。
+For papers published in Chinese, the optional `zh` object provides the original Chinese title, full author names, and venue. Year, volume, issue, pages, and DOI are shared through `fields`. A preprint without a DOI can use a top-level `url`. The publication pages, filters, and downloadable BibTeX all use these records; there is no separate `.bib` source to maintain.
 
-构建生成的下载地址沿用 `/assets/portfolio/publications.bib`。保留已有论文 `id`，以免旧链接和研究框架的关联失效。原 `/publications/#论文ID` 和首页 `/#paper-论文ID` 均可继续使用。
+The generated download remains available at `/assets/portfolio/publications.bib`. Preserve existing publication IDs so links and research-framework references continue to work. Both `/publications/#PUBLICATION_ID` and `/#paper-PUBLICATION_ID` anchors are supported.
 
-### 项目与动态
+### Projects and news
 
-项目 `id` 对应 `/projects/ID/` 与 `/zh/projects/ID/`，请保留已存在的 ID。动态日期使用 `YYYY-MM-DD`，表示事件的日历日期，不随开发电脑的时区偏移。
+A project ID determines its English and Chinese routes: `/projects/ID/` and `/zh/projects/ID/`. Preserve existing IDs when updating content. News dates use `YYYY-MM-DD` and represent calendar dates, independent of the development machine's time zone.
 
-`/cv/` 与 `/zh/cv/` 从当前个人信息生成履历，不再维护另一份容易过时的个人介绍，也不包含旧模板中的示例人物或示例 PDF。
+The `/cv/` and `/zh/cv/` pages are generated from the current profile data. They do not require a separate biography and do not include the old theme's sample person or PDF.
 
-## 发布
+## Deployment
 
-保持既有的 **推送 main 自动发布** 工作方式：
+**Pushing to `main` automatically publishes the website.**
 
 ```sh
 npm run build
 npm run check
 git status
 git diff
-git add <本次实际修改的文件>
+git add <files-you-reviewed>
 git commit -m "Update portfolio content"
 git push origin main
 ```
 
-GitHub Actions 使用 Node.js 24 构建、校验，然后将 `dist/` 发布至现有 `gh-pages` 分支。拉取请求只做构建与校验，不发布。无需更改 GitHub Pages 设置。`tpwm-lab` 保持独立仓库和独立部署。
+Replace `<files-you-reviewed>` with the paths you intend to commit. GitHub Actions uses Node.js 24 to build and validate the site, then publishes `dist/` to the existing `gh-pages` branch. Pull requests run the build and checks without deploying. No changes to the existing GitHub Pages settings are required. The `tpwm-lab` repository and its deployment remain independent.
 
-CSS / JavaScript 文件名带内容哈希，更新时自动使用新资源。首次查看新发布的 HTML 时，如浏览器仍显示缓存，可强制刷新，或在地址后加 `?v=提交短哈希`。
+CSS and JavaScript filenames include content hashes so browsers request updated assets after a release. If a browser still shows cached HTML, use a hard refresh or append `?v=SHORT_COMMIT_HASH` to the page URL.
 
-## 备份与验证
+## Backups and validation
 
-2026-10-11 重构前的版本为 `c371646`。远程备份标签为 `backup/pre-static-refactor-2026-10-11`；本地完整归档及原设计包位于项目外的 `../website-backups/portfolio-2026-10-11-c371646/`。
+The version before the October 11, 2026 refactor is commit `c371646`, preserved under the remote tag `backup/pre-static-refactor-2026-10-11`. On the maintainer's machine, the full archive and original design package are stored outside this repository at `../website-backups/portfolio-2026-10-11-c371646/`.
 
-- [备份内容与回退步骤](docs/ROLLBACK.md)
-- [迁移范围及验证记录](docs/MIGRATION.md)
+- [Backup contents and rollback instructions (Chinese)](docs/ROLLBACK.md)
+- [Migration scope and validation record (Chinese)](docs/MIGRATION.md)
 
-旧主题、示例博客与大体积演示素材已从当前工作目录移除。Git 历史完整保留，因此 `.git` 的历史体积不会随工作目录一同缩小。
+The old theme, sample blog posts, and large demonstration assets have been removed from the working tree. Git history remains intact, so the size of `.git` does not shrink along with the current source files.
 
-## 许可与版权
+## License and attribution
 
-网站源码继续采用 [MIT License](LICENSE)。版权声明包含 Siyuan (Max) Meng 的 2026 年声明，并保留原 al-folio 项目作者 Maruan Al-Shedivat 的声明。MIT 许可正文保持不变；构建时会将许可证复制到发布目录的 `LICENSE`。
+The website source is distributed under the [MIT License](LICENSE). The copyright notices include Siyuan (Max) Meng's 2026 notice and the original al-folio author Maruan Al-Shedivat's notice. The MIT license terms remain unchanged. The build copies `LICENSE` into the published site.
 
-Inter 字体独立采用 SIL Open Font License 1.1，原版权声明及完整许可保存在 [字体许可证](public/assets/fonts/inter/LICENSE.txt) 中。网站所链接的论文仍遵循各自的出版或开放获取许可。
+Inter fonts are separately licensed under the SIL Open Font License 1.1. Their original copyright notice and full terms are included in the [font license](public/assets/fonts/inter/LICENSE.txt). Linked papers remain subject to their respective publication or open-access licenses.
 
-[NOTICE.md](NOTICE.md) 汇总网站版权、al-folio 来源、TPWM Lab 架构参考及 Inter 字体署名，作为许可证的补充说明。构建时与 `LICENSE` 一并复制到发布目录。
+[NOTICE.md](NOTICE.md) records website attribution, al-folio origins, the TPWM Lab architecture reference, and Inter font credits. It supplements the licenses and is included in the published site alongside `LICENSE`.
