@@ -1,0 +1,330 @@
+{
+  "en": {
+    "nav": [
+      {
+        "href": "#research",
+        "label": "Research"
+      },
+      {
+        "href": "#framework",
+        "label": "Framework"
+      },
+      {
+        "href": "#publications",
+        "label": "Publications"
+      },
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#news",
+        "label": "News"
+      },
+      {
+        "href": "#contact",
+        "label": "Let’s connect ↗"
+      }
+    ],
+    "language_label": "中文",
+    "language_accessible": "切换至中文",
+    "hero": {
+      "eyebrow": "Transportation · Perception · Intelligence",
+      "title": "Understanding roads.<br><em>Enabling safer<br>mobility.</em>",
+      "intro": "Connecting reliable roadside perception, transportation safety, and infrastructure-centric world models.",
+      "primary": "Explore the framework",
+      "secondary": "Research collaboration ↗"
+    },
+    "scene": {
+      "title": "ROADSIDE OBSERVATORY",
+      "sensors": "01 / MULTI-LIDAR",
+      "caption": "● PERCEPTION IN MOTION",
+      "disclaimer": "Conceptual illustration · not measured data",
+      "alt": "Illustrative animated roadside LiDAR scene with point clouds, two sensors, and moving vehicle bounding boxes",
+      "pause": "Pause motion",
+      "play": "Play motion"
+    },
+    "research": {
+      "eyebrow": "01 / Research directions",
+      "title": "From sensing to understanding.",
+      "intro": "Connecting reliable perception, traffic safety, and decisions at the infrastructure level.",
+      "directions": [
+        {
+          "number": "01 — PERCEIVE",
+          "title": "Roadside intelligent<br>perception",
+          "description": "Multi-LiDAR and multi-sensor methods for background modeling, 3D object detection, and robust tracking in complex traffic environments.",
+          "tags": ["Multi-LiDAR fusion", "3D detection & tracking"]
+        },
+        {
+          "number": "02 — UNDERSTAND",
+          "title": "Quality-aware<br>transportation safety",
+          "description": "Understanding how sensing and tracking quality affect traffic conflict analysis, with an emphasis on uncertainty and spatial precision.",
+          "tags": ["Traffic conflicts", "Uncertainty"]
+        },
+        {
+          "number": "03 — ANTICIPATE",
+          "title": "Transportation<br>system optimization",
+          "description": "Developing multi-objective optimization methods for roadway asset management, EV charging infrastructure, and sustainable transportation systems.",
+          "tags": ["Asset management", "Multiobjective optimization"]
+        }
+      ],
+      "vision": {
+        "eyebrow": "Connecting the research",
+        "title": "Infrastructure-Centric World Models",
+        "description": "Fixed roadside sensors observe the same environment over time. I study how this temporal depth can support reliable, evolving representations of traffic scenes—connecting multi-LiDAR perception with V2X cooperation, spatial intelligence, and uncertainty-aware reasoning.",
+        "link": "Read the I-WM preprint ↗",
+        "breadth": "SPATIAL BREADTH",
+        "depth": "TEMPORAL DEPTH",
+        "motto": "Observe.<br>Remember.<br>Understand.",
+        "paper_key": "meng2026iwm"
+      }
+    },
+    "framework": {
+      "eyebrow": "02 / Doctoral research framework",
+      "title": "Four studies. A connected framework.",
+      "intro": "My doctoral work connects roadside point clouds to traffic safety analysis, with quality and reliability as recurring questions at every stage.",
+      "choose": "Choose a research stage",
+      "quality_label": "A shared research concern",
+      "quality": "Quality & reliability: background confidence · detection quality · trajectory continuity · interpretable safety measures",
+      "scene_label": "ILLUSTRATIVE SCENE",
+      "canvas_label": "Conceptual demonstration of background modeling, detection, tracking, and conflict analysis",
+      "question_label": "THE QUALITY QUESTION",
+      "disclaimer": "Synthetic scenes explain the research questions and module relationships. These are not algorithm outputs or performance comparisons.",
+      "note": "Select a stage to explore its role. This overview describes the research connections; it does not imply a single end-to-end training objective across all four studies.",
+      "pause": "Pause",
+      "play": "Play",
+      "study_label": "STUDY",
+      "canvas_caption": "CONCEPTUAL VIEW · SYNTHETIC POINTS"
+    },
+    "projects": {
+      "eyebrow": "03 / Research projects",
+      "title": "Methods with a purpose.",
+      "intro": "From roadside point clouds to network-wide decisions. Explore the problems behind the papers.",
+      "details": "Project details",
+      "archive": "All projects ↗"
+    },
+    "publications": {
+      "eyebrow": "04 / Publications & manuscripts",
+      "title": "A closer look at the work.",
+      "intro": "",
+      "filters": [
+        {
+          "id": "all",
+          "label": "All work"
+        },
+        {
+          "id": "journals",
+          "label": "Journals"
+        },
+        {
+          "id": "preprints",
+          "label": "Preprints"
+        },
+        {
+          "id": "conferences",
+          "label": "Conferences"
+        },
+        {
+          "id": "manuscripts",
+          "label": "Ongoing"
+        }
+      ],
+      "filter_label": "Filter publications",
+      "search_label": "Find a publication",
+      "placeholder": "Search title, author, or venue…",
+      "empty": "No publications match. Try another search or category.",
+      "download": "Download all BibTeX ↓",
+      "count_suffix": "works",
+      "read": "Read paper",
+      "archive": "Full publication list ↗"
+    },
+    "about": {
+      "eyebrow": "05 / Background",
+      "title": "Engineering with a wider view.",
+      "intro": "",
+      "next": "The next chapter",
+      "teaching_link": "Teaching experience ↗"
+    },
+    "news": {
+      "eyebrow": "06 / News & milestones",
+      "title": "Along the way.",
+      "intro": "",
+      "earlier": "Earlier news",
+      "archive": "News archive ↗"
+    },
+    "contact": {
+      "eyebrow": "07 / Research collaboration",
+      "title": "Let’s build reliable transportation intelligence.",
+      "description": "I welcome research conversations and collaborations in roadside multi-sensor perception, quality and uncertainty, transportation safety, and infrastructure-centric world models.",
+      "button": "Discuss a collaboration ↗"
+    },
+    "navigation_label": "Main navigation",
+    "skip": "Skip to content",
+    "email": "Email",
+    "no_js": "The animations and filters need JavaScript. All publications and research descriptions remain available below."
+  },
+  "zh-CN": {
+    "nav": [
+      {
+        "href": "#research",
+        "label": "研究方向"
+      },
+      {
+        "href": "#framework",
+        "label": "研究框架"
+      },
+      {
+        "href": "#publications",
+        "label": "论文成果"
+      },
+      {
+        "href": "#about",
+        "label": "个人简介"
+      },
+      {
+        "href": "#news",
+        "label": "动态"
+      },
+      {
+        "href": "#contact",
+        "label": "联系我 ↗"
+      }
+    ],
+    "language_label": "EN",
+    "language_accessible": "Switch to English",
+    "hero": {
+      "eyebrow": "交通 · 感知 · 智能",
+      "title": "感知道路。<br><em>让交通<br>更加安全。</em>",
+      "intro": "连接可靠的路侧感知、交通安全分析与基础设施中心世界模型。",
+      "primary": "探索研究框架",
+      "secondary": "研究合作 ↗"
+    },
+    "scene": {
+      "title": "路侧感知视窗",
+      "sensors": "01 / 多激光雷达",
+      "caption": "● 动态交通感知",
+      "disclaimer": "概念示意 · 非实测数据",
+      "alt": "路侧多激光雷达感知概念动画，展示点云、传感器和移动车辆边界框",
+      "pause": "暂停动画",
+      "play": "播放动画"
+    },
+    "research": {
+      "eyebrow": "01 / 研究方向",
+      "title": "从感知到理解。",
+      "intro": "连接可靠感知、交通安全与基础设施层面的交通决策。",
+      "directions": [
+        {
+          "number": "01 — 感知",
+          "title": "路侧智能<br>感知",
+          "description": "面向复杂交通环境，研究多激光雷达与多传感器背景建模、三维目标检测和稳健跟踪方法。",
+          "tags": ["多激光雷达融合", "三维检测与跟踪"]
+        },
+        {
+          "number": "02 — 理解",
+          "title": "质量感知的<br>交通安全分析",
+          "description": "研究感知与跟踪质量对交通冲突分析的影响，重点关注不确定性与空间精度。",
+          "tags": ["交通冲突", "不确定性"]
+        },
+        {
+          "number": "03 — 优化",
+          "title": "交通<br>系统优化",
+          "description": "面向道路资产管理、电动汽车充电基础设施与可持续交通系统，构建多目标优化方法。",
+          "tags": ["资产管理", "多目标优化"]
+        }
+      ],
+      "vision": {
+        "eyebrow": "研究主线",
+        "title": "基础设施中心世界模型",
+        "description": "固定路侧传感器能够持续观察同一环境。我关注如何利用这种“时间深度”构建可靠、持续演化的交通场景表征，将多激光雷达感知与 V2X 协同感知、空间智能和不确定性感知相连接。",
+        "link": "阅读 I-WM 预印本 ↗",
+        "breadth": "空间广度",
+        "depth": "时间深度",
+        "motto": "观察。<br>记忆。<br>理解。",
+        "paper_key": "meng2026iwm"
+      }
+    },
+    "framework": {
+      "eyebrow": "02 / 博士研究框架",
+      "title": "一个完整框架，四个相互关联的问题。",
+      "intro": "博士研究从路侧点云走向交通安全分析；质量与可靠性是贯穿各阶段的共同关注点。",
+      "choose": "选择研究阶段",
+      "quality_label": "贯穿全流程的研究关注",
+      "quality": "感知质量与可靠性：背景可信度 · 检测质量 · 轨迹连续性 · 安全指标可解释性",
+      "scene_label": "示意场景",
+      "canvas_label": "背景建模、检测、跟踪与冲突分析概念演示",
+      "question_label": "质量问题",
+      "disclaimer": "动画仅说明研究问题与模块关系，使用合成场景；不是论文算法的运行结果，也不用于比较性能。",
+      "note": "点选上方阶段查看对应示意。整体关系图用于概括研究脉络，并不表示四项工作已采用同一个端到端训练目标。",
+      "pause": "暂停",
+      "play": "播放",
+      "study_label": "研究阶段",
+      "canvas_caption": "概念示意 · 合成点云"
+    },
+    "projects": {
+      "eyebrow": "03 / 更多研究项目",
+      "title": "面向实际问题的方法。",
+      "intro": "从路侧点云到路网决策，了解论文背后的研究问题。",
+      "details": "项目详情",
+      "archive": "全部研究项目 ↗"
+    },
+    "publications": {
+      "eyebrow": "04 / 论文与手稿",
+      "title": "研究成果。",
+      "intro": "",
+      "filters": [
+        {
+          "id": "all",
+          "label": "全部"
+        },
+        {
+          "id": "journals",
+          "label": "期刊论文"
+        },
+        {
+          "id": "preprints",
+          "label": "预印本"
+        },
+        {
+          "id": "conferences",
+          "label": "会议论文"
+        },
+        {
+          "id": "manuscripts",
+          "label": "在研手稿"
+        }
+      ],
+      "filter_label": "论文分类",
+      "search_label": "检索论文",
+      "placeholder": "检索标题、作者或期刊…",
+      "empty": "未找到匹配的论文，请尝试其他关键词或分类。",
+      "download": "下载全部 BibTeX ↓",
+      "count_suffix": "项成果",
+      "read": "阅读论文",
+      "archive": "完整论文列表 ↗"
+    },
+    "about": {
+      "eyebrow": "05 / 个人简介",
+      "title": "立足工程，拓展视野。",
+      "intro": "",
+      "next": "下一站",
+      "teaching_link": "教学经历 ↗"
+    },
+    "news": {
+      "eyebrow": "06 / 新闻与动态",
+      "title": "研究与成长的足迹。",
+      "intro": "",
+      "earlier": "更早动态",
+      "archive": "全部动态 ↗"
+    },
+    "contact": {
+      "eyebrow": "07 / 研究合作",
+      "title": "一起研究更可靠的交通智能。",
+      "description": "欢迎围绕路侧多传感器感知、质量与不确定性、交通安全和基础设施中心世界模型开展研究交流与合作。",
+      "button": "交流合作想法 ↗"
+    },
+    "navigation_label": "主导航",
+    "skip": "跳转到正文",
+    "email": "邮件",
+    "no_js": "动画与筛选需要 JavaScript；论文及研究说明仍可直接阅读。"
+  }
+}

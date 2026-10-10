@@ -1,0 +1,9 @@
+<div class="section-head">
+  <div>
+    <div class="eyebrow">{{ include.section.eyebrow }}</div>
+    <h2 id="{{ include.id }}">{{ include.section.title }}</h2>
+  </div>
+  {% if include.section.intro != '' %}
+    <p>{{ include.section.intro }}</p>
+  {% endif %}
+</div>

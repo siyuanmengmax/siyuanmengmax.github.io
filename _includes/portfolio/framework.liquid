@@ -1,0 +1,76 @@
+<section class="section framework" id="framework" aria-labelledby="framework-title">
+  {% include portfolio/section-heading.liquid section=ui.framework id='framework-title' %}
+  <div class="framework-steps" role="group" aria-label="{{ ui.framework.choose }}">
+    {% for stage in stages -%}
+      <button
+        type="button"
+        class="stage-button{% if forloop.first %} active{% endif %}"
+        data-stage="{{ forloop.index0 }}"
+        aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
+        aria-controls="study-view"
+      >
+        <span class="step-number">0{{ forloop.index }}</span><strong>{{ stage.heading }}</strong><span class="step-method">{{ stage.method }}</span
+        ><span class="step-description">{{ stage.summary }}</span>
+      </button>
+    {%- endfor %}
+  </div>
+  <div class="quality-band">
+    <strong>{{ ui.framework.quality_label }}</strong><span>{{ ui.framework.quality }}</span>
+  </div>
+  <div class="study-view" id="study-view">
+    <div class="study-visual">
+      <div class="demo-top">
+        <span id="demo-stage-label">{{ stages.first.method }}</span><span>{{ ui.framework.scene_label }}</span>
+      </div>
+      <canvas id="study-canvas" role="img" aria-label="{{ ui.framework.canvas_label }}" data-caption="{{ ui.framework.canvas_caption }}"></canvas>
+      <div class="demo-controls">
+        <button id="study-pause" type="button" aria-pressed="false" data-pause="{{ ui.framework.pause }}" data-play="{{ ui.framework.play }}">
+          {{ ui.framework.pause }}</button
+        ><label
+          ><input id="study-overlay" type="checkbox" checked> <span id="overlay-label">{{ stages.first.overlay }}</span></label
+        >
+      </div>
+    </div>
+    <div class="study-copy" aria-live="polite">
+      {% for stage in stages %}
+        {% assign paper = site.data.portfolio_publications | where: 'id', stage.paper_key | first %}
+        <div
+          class="study-panel"
+          data-method="{{ stage.method }}"
+          data-overlay="{{ stage.overlay }}"
+          {% unless forloop.first %}
+            hidden
+          {% endunless %}
+        >
+          <div class="eyebrow">{{ ui.framework.study_label }} 0{{ forloop.index }}</div>
+          <h3>{{ stage.title }}</h3>
+          <p>{{ stage.description }}</p>
+          <div class="study-question">
+            <span>{{ ui.framework.question_label }}</span>
+            <p>{{ stage.quality }}</p>
+          </div>
+          {% if paper.url -%}
+            <a class="text-link" href="{{ paper.url | relative_url }}" target="_blank" rel="noopener">{{ stage.link }}</a>
+          {%- else -%}
+            <a class="text-link" href="#paper-{{ stage.paper_key }}">{{ stage.link }}</a>
+          {%- endif %}
+        </div>
+      {% endfor %}
+      <p class="demo-disclaimer">{{ ui.framework.disclaimer }}</p>
+    </div>
+  </div>
+  <p class="framework-note">{{ ui.framework.note }}</p>
+  <noscript>
+    <style>
+      .study-panel[hidden] {
+        display: block !important;
+        margin-top: 2rem;
+      }
+      .demo-controls,
+      .framework-steps {
+        display: none;
+      }
+    </style>
+    <p class="framework-note">{{ ui.no_js }}</p>
+  </noscript>
+</section>

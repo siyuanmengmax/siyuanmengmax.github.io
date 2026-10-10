@@ -6,6 +6,8 @@ on:
       - master
       - main
     paths:
+      - "_data/**"
+      - "_plugins/**"
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
@@ -35,6 +37,8 @@ on:
       - master
       - main
     paths:
+      - "_data/**"
+      - "_plugins/**"
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"

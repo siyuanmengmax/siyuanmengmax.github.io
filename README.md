@@ -10,10 +10,11 @@ Personal academic website built with [al-folio](https://github.com/alshedivat/al
 
 ```bash
 bundle install          # Install dependencies (first time only)
-bundle exec jekyll serve
+bundle exec jekyll serve --config _config.yml,_config.local.yml --host 127.0.0.1
 ```
 
-Then visit `http://localhost:4000`
+Then visit `http://127.0.0.1:4000` (English) or `http://127.0.0.1:4000/zh/` (中文).
+The local configuration skips external demo blog feeds, the Twitter sample post, and ImageMagick conversion; production settings are unchanged.
 
 ### Deploy Changes
 
@@ -30,13 +31,15 @@ GitHub Actions will automatically build and deploy.
 
 ### Update Personal Info
 
-| File                      | Content                                     |
-| ------------------------- | ------------------------------------------- |
-| `_pages/about.md`         | Homepage bio and research interests         |
-| `_config.yml`             | Name, site description, email               |
-| `_data/socials.yml`       | Email, GitHub, ResearchGate, Google Scholar |
-| `_data/cv.yml`            | CV page content                             |
-| `assets/img/prof_pic.jpg` | Profile photo                               |
+| File                               | Content                                                                    |
+| ---------------------------------- | -------------------------------------------------------------------------- |
+| `_data/profile.json`               | Bilingual homepage biography, education, photo, and appointment visibility |
+| `_data/portfolio.json`             | Bilingual homepage sections, research directions, and interface labels     |
+| `_data/research_framework.json`    | Four research stages and their publication keys                            |
+| `_config.yml`                      | Name, site description, email                                              |
+| `_data/socials.yml`                | Email, GitHub, ResearchGate, Google Scholar                                |
+| `_data/cv.yml`                     | CV page content                                                            |
+| `assets/portfolio/max-profile.jpg` | Profile photo                                                              |
 
 ### Add Publications
 
@@ -134,4 +137,17 @@ Check the Actions tab on GitHub for error details.
 - 论文继续共用 `_bibliography/` 数据，保留原始标题、作者与引用信息。GitHub 统计卡片等第三方内容保留原文。
 - 本次翻译覆盖个人介绍、论文、项目及其详情、代码仓库、教学和新闻；未启用的模板示例、博客与 CV 暂未翻译。新增内容后应同步更新两个版本。
 
-本地检查：`npx prettier . --check`；构建预览：`bundle exec jekyll serve`（Ruby / Bundler 版本参照现有部署工作流及 `Gemfile.lock`）。
+本地检查：`npx prettier . --check`；构建预览：`bundle exec jekyll serve --config _config.yml,_config.local.yml`（Ruby / Bundler 版本参照现有部署工作流及 `Gemfile.lock`）。
+
+## Portfolio homepage
+
+`/` 与 `/zh/` 共用 `_layouts/portfolio.liquid` 和 `_includes/portfolio/`。新版首页样式及动画位于 `assets/portfolio/`；原有论文、项目、教学、新闻等内页仍使用既有路由。
+
+- 个人介绍、教育经历与入职信息：`_data/profile.json`。`show_appointment` 控制两个语言版本是否显示即将入职信息；姓名与联系方式继续读取 `_config.yml` 和 `_data/socials.yml`。
+- 首页文案与研究方向：`_data/portfolio.json`；博士研究框架：`_data/research_framework.json`。`paper_key` 对应 `_bibliography/papers.bib` 中的条目键。
+- 论文列表、类别、状态、链接和 BibTeX 下载由 `_plugins/portfolio-publications.rb` 在构建时从现有 BibTeX 生成，不维护第二份论文清单。
+- 新闻直接读取 `_news/`，项目直接读取 `_projects/` 的双语标题、简介和既有详情路由。
+- 动画为合成概念演示，不运行论文算法，也不计算 TTC/PET。脚本只负责动画、阶段切换与论文筛选，研究说明由 Jekyll 直接生成。
+- `Max_Portfolio_UI_v2/` 仅为设计参考，已从 Jekyll 构建输出中排除。
+
+本地构建：`bundle exec jekyll build --config _config.yml,_config.local.yml`。
