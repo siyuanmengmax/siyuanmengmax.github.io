@@ -6,7 +6,7 @@ permalink_zh: /zh/publications/
 layout: page
 permalink: /zh/publications/
 title: 论文发表
-description: 按类别与年份展示研究成果。论文标题和引用信息保留原文。
+description: 按类别与年份展示研究成果，中文论文展示中文题名、作者与刊物信息。
 nav: false
 nav_order: 2
 ---

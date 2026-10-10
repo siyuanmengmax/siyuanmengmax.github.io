@@ -43,6 +43,7 @@ module Portfolio
                 'https://arxiv.org/abs/' + fields['arxiv']
               end
         { 'id' => entry.key, 'title' => fields['title'], 'year' => fields['year'],
+          'volume' => fields['volume'], 'number' => fields['number'], 'pages' => fields['pages'],
           'authors' => authors, 'venue' => venue, 'note' => note, 'category' => category,
           'url' => url, 'bibtex' => clean.to_s }
       end.sort_by { |entry| -entry['year'].to_i }

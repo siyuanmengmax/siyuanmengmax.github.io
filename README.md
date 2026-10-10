@@ -146,6 +146,7 @@ Check the Actions tab on GitHub for error details.
 - 个人介绍、教育经历与入职信息：`_data/profile.json`。`show_appointment` 控制两个语言版本是否显示即将入职信息；姓名与联系方式继续读取 `_config.yml` 和 `_data/socials.yml`。
 - 首页文案与研究方向：`_data/portfolio.json`；博士研究框架：`_data/research_framework.json`。`paper_key` 对应 `_bibliography/papers.bib` 中的条目键。
 - 论文列表、类别、状态、链接和 BibTeX 下载由 `_plugins/portfolio-publications.rb` 在构建时从现有 BibTeX 生成，不维护第二份论文清单。
+- 中文论文的题名、作者姓名和刊物名称在 `_data/publications_zh.json` 中按 BibTeX 条目键补充，由中文首页和论文内页共用；年份、卷期、页码和 DOI 继续读取 BibTeX。
 - 新闻直接读取 `_news/`，项目直接读取 `_projects/` 的双语标题、简介和既有详情路由。
 - 动画为合成概念演示，不运行论文算法，也不计算 TTC/PET。脚本只负责动画、阶段切换与论文筛选，研究说明由 Jekyll 直接生成。
 - `Max_Portfolio_UI_v2/` 仅为设计参考，已从 Jekyll 构建输出中排除。
