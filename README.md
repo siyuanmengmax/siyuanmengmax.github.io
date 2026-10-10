@@ -104,3 +104,5 @@ CSS / JavaScript 文件名带内容哈希，更新时自动使用新资源。首
 网站源码继续采用 [MIT License](LICENSE)。版权声明包含 Siyuan (Max) Meng 的 2026 年声明，并保留原 al-folio 项目作者 Maruan Al-Shedivat 的声明。MIT 许可正文保持不变；构建时会将许可证复制到发布目录的 `LICENSE`。
 
 Inter 字体独立采用 SIL Open Font License 1.1，原版权声明及完整许可保存在 [字体许可证](public/assets/fonts/inter/LICENSE.txt) 中。网站所链接的论文仍遵循各自的出版或开放获取许可。
+
+[NOTICE.md](NOTICE.md) 汇总网站版权、al-folio 来源、TPWM Lab 架构参考及 Inter 字体署名，作为许可证的补充说明。构建时与 `LICENSE` 一并复制到发布目录。
