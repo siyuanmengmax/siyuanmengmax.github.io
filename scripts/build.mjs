@@ -53,6 +53,7 @@ const write = async (name, text) => {
   await fs.writeFile(target, text);
 };
 await write(".nojekyll", "");
+await write("LICENSE", await fs.readFile(path.join(root, "LICENSE"), "utf8"));
 const assets = {};
 const fingerprinted = [
   "assets/portfolio/portfolio.css",

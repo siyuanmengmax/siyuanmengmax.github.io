@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Siyuan (Max) Meng's bilingual academic website",
+  "license": "MIT",
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",

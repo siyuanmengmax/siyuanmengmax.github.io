@@ -99,4 +99,8 @@ CSS / JavaScript 文件名带内容哈希，更新时自动使用新资源。首
 
 旧主题、示例博客与大体积演示素材已从当前工作目录移除。Git 历史完整保留，因此 `.git` 的历史体积不会随工作目录一同缩小。
 
-原项目的 MIT 许可声明保留在 `LICENSE`；Inter 字体许可位于 `public/assets/fonts/inter/LICENSE.txt`。
+## 许可与版权
+
+网站源码继续采用 [MIT License](LICENSE)。版权声明包含 Siyuan (Max) Meng 的 2026 年声明，并保留原 al-folio 项目作者 Maruan Al-Shedivat 的声明。MIT 许可正文保持不变；构建时会将许可证复制到发布目录的 `LICENSE`。
+
+Inter 字体独立采用 SIL Open Font License 1.1，原版权声明及完整许可保存在 [字体许可证](public/assets/fonts/inter/LICENSE.txt) 中。网站所链接的论文仍遵循各自的出版或开放获取许可。
