@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1_project",
+    "category": "LiDAR",
+    "order": 1,
+    "en": {
+      "title": "MulDet3D",
+      "description": "Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs",
+      "body": "<p><strong>Status:</strong> Accepted at <em>Journal of Transportation Engineering Part A: Systems</em></p>\n\n<p>Roadside LiDAR systems offer a promising infrastructure-based approach for traffic monitoring, but detecting objects across multiple sensors with varying fields of view remains challenging — especially without labeled training data.</p>\n\n<p><strong>MulDet3D</strong> proposes an unsupervised object detection framework that jointly optimizes detection accuracy and computational efficiency across multiple roadside LiDARs. Key contributions include:</p>\n\n<ul>\n  <li>A multi-objective optimization formulation that balances detection performance across overlapping and non-overlapping sensor zones</li>\n  <li>An unsupervised pipeline that eliminates the need for manually annotated 3D bounding boxes</li>\n  <li>Robust handling of sparse point clouds typical in roadside (infrastructure-side) deployments</li>\n</ul>\n\n<p>This work addresses a critical gap in infrastructure-based sensing for intelligent transportation systems, enabling scalable deployment without costly labeling efforts.</p>"
+    },
+    "zh": {
+      "title": "MulDet3D",
+      "description": "基于多目标优化的多路侧激光雷达无监督目标检测",
+      "body": "<p><strong>状态：</strong> 已被 <em>Journal of Transportation Engineering Part A: Systems</em> 接收</p>\n\n<p>路侧激光雷达为交通监测提供了基于基础设施的感知方式，但在多个视场不同的传感器之间进行目标检测仍面临挑战，尤其是在缺少标注训练数据时。</p>\n\n<p><strong>MulDet3D</strong> 提出无监督目标检测框架，联合优化多个路侧激光雷达的检测精度与计算效率：</p>\n\n<ul>\n  <li>通过多目标优化，平衡传感器重叠区域与非重叠区域的检测表现</li>\n  <li>无需人工标注三维边界框，减少部署中的数据标注成本</li>\n  <li>针对路侧场景中的稀疏点云进行稳健处理</li>\n</ul>\n\n<p>该研究支持智能交通系统中可扩展的基础设施感知部署。</p>"
+    }
+  },
+  {
+    "id": "2_project",
+    "category": "LiDAR",
+    "order": 2,
+    "en": {
+      "title": "FRGB3D",
+      "description": "Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring",
+      "body": "<p><strong>Status:</strong> Accepted at <em>Journal of Computing in Civil Engineering (ASCE JCCE)</em></p>\n\n<p>Background subtraction is a fundamental step in LiDAR-based traffic monitoring. However, existing methods struggle with environmental noise, sensor drift, and the sparse, non-uniform nature of roadside point clouds.</p>\n\n<p><strong>FRGB3D</strong> introduces a fast, reliability-weighted Gaussian mixture model tailored for roadside LiDAR point clouds. Key contributions include:</p>\n\n<ul>\n  <li>A reliability weighting scheme that accounts for varying point density and sensor noise across the field of view</li>\n  <li>A computationally efficient background modeling pipeline suitable for real-time traffic monitoring</li>\n  <li>Demonstrated robustness under adverse weather and varying traffic conditions</li>\n</ul>\n\n<p>The method provides a strong foundation for downstream tasks such as vehicle detection, tracking, and speed estimation in infrastructure-based sensing systems.</p>"
+    },
+    "zh": {
+      "title": "FRGB3D",
+      "description": "面向路侧激光雷达交通监测的快速可靠性加权高斯背景建模",
+      "body": "<p><strong>状态：</strong> 已被 <em>Journal of Computing in Civil Engineering（ASCE JCCE）</em> 接收</p>\n\n<p>背景消除是激光雷达交通监测的基础环节。环境噪声、传感器漂移以及路侧点云的稀疏性和不均匀性，都会影响背景建模效果。</p>\n\n<p><strong>FRGB3D</strong> 提出适用于路侧激光雷达点云的快速可靠性加权高斯混合模型：</p>\n\n<ul>\n  <li>通过可靠性权重考虑视场内点密度与传感器噪声的差异</li>\n  <li>以高效背景建模流程支持实时交通监测</li>\n  <li>在恶劣天气与不同交通条件下保持稳健性</li>\n</ul>\n\n<p>该方法为车辆检测、跟踪与速度估计等下游任务提供基础。</p>"
+    }
+  },
+  {
+    "id": "3_project",
+    "category": "LiDAR",
+    "order": 3,
+    "en": {
+      "title": "MulTrack3D",
+      "description": "Reliability-Enhanced Self-Correcting Multi-Point Tracking for Multiple Roadside LiDARs",
+      "body": "<p><strong>Status:</strong> Under Review at <em>Journal of Transportation Engineering Part A: Systems</em></p>\n\n<p>Accurate multi-object tracking across multiple roadside LiDAR sensors is essential for intersection management, traffic flow analysis, and safety assessment. Sensor handoff errors and occlusions make this particularly challenging in real-world deployments.</p>\n\n<p><strong>MulTrack3D</strong> proposes a reliability-enhanced tracking framework that self-corrects tracking errors across multiple LiDAR sensors. Key contributions include:</p>\n\n<ul>\n  <li>A reliability-aware data association mechanism that weights detections by sensor confidence</li>\n  <li>A self-correction module that leverages cross-sensor consistency to recover from tracking failures</li>\n  <li>Seamless multi-LiDAR handoff for continuous vehicle trajectory estimation</li>\n</ul>\n\n<p>This framework is designed for practical deployment on roadside infrastructure, supporting applications from traffic signal control to autonomous vehicle situational awareness.</p>"
+    },
+    "zh": {
+      "title": "MulTrack3D",
+      "description": "面向多路侧激光雷达的可靠性增强自校正多点跟踪",
+      "body": "<p><strong>状态：</strong> <em>Journal of Transportation Engineering Part A: Systems</em> 审稿中</p>\n\n<p>跨多个路侧激光雷达的准确多目标跟踪，是交叉口管理、交通流分析与安全评估的基础。实际部署中的传感器交接误差与遮挡增加了这一任务的难度。</p>\n\n<p><strong>MulTrack3D</strong> 提出可靠性增强跟踪框架，以自校正方式处理跨传感器跟踪误差：</p>\n\n<ul>\n  <li>依据传感器置信度对检测结果加权，实现可靠性感知的数据关联</li>\n  <li>利用跨传感器一致性，从跟踪失败中恢复</li>\n  <li>支持多激光雷达之间的连续交接与车辆轨迹估计</li>\n</ul>\n\n<p>框架面向实际路侧部署，可服务于交通信号控制和自动驾驶态势感知等应用。</p>"
+    }
+  },
+  {
+    "id": "4_project",
+    "category": "Optimization",
+    "order": 1,
+    "en": {
+      "title": "Roadway Asset Management Optimization",
+      "description": "Multi-objective optimization for integrated roadway asset maintenance and rehabilitation considering traffic dynamics and environmental impacts",
+      "body": "<p><strong>Status:</strong> Accepted at <em>Transportation Research Record (TRR)</em></p>\n\n<p>Roadway asset management involves complex trade-offs between agency costs, user costs, environmental impacts, and network-level performance. Traditional single-objective approaches fail to capture this complexity.</p>\n\n<p>This project develops a <strong>multi-objective optimization framework</strong> for integrated roadway asset maintenance and rehabilitation (M&amp;R) planning that explicitly accounts for:</p>\n\n<ul>\n  <li><strong>Traffic dynamics</strong>: M&amp;R activities cause lane closures and detours, generating user delay costs that vary by timing and location</li>\n  <li><strong>Environmental impacts</strong>: Construction activities and vehicle emissions during work zones are incorporated as optimization objectives</li>\n  <li><strong>Network-level coordination</strong>: Segment-level decisions are jointly optimized to maximize network performance</li>\n</ul>\n\n<p><strong>Related publications:</strong></p>\n\n<ul>\n  <li>Meng et al. (2023). Multiobjective optimization method for pavement segment grouping. <em>Journal of Infrastructure Systems</em>, 29(1), 04022047.</li>\n</ul>\n\n<p>The framework enables transportation agencies to make informed, data-driven investment decisions that balance budget constraints against service quality and sustainability goals.</p>"
+    },
+    "zh": {
+      "title": "道路资产管理优化",
+      "description": "考虑交通动态与环境影响的道路资产综合养护多目标优化",
+      "body": "<p><strong>状态：</strong> 已被 <em>Transportation Research Record（TRR）</em> 接收</p>\n\n<p>道路资产管理需要在管理部门成本、用户成本、环境影响和路网表现之间进行权衡，单目标方法难以充分表达这些需求。</p>\n\n<p>本项目构建用于道路资产综合养护规划的<strong>多目标优化框架</strong>，重点考虑：</p>\n\n<ul>\n  <li><strong>交通动态：</strong> 养护导致的车道封闭与绕行，以及随时间和位置变化的用户延误成本</li>\n  <li><strong>环境影响：</strong> 将施工活动及施工区域车辆排放纳入优化目标</li>\n  <li><strong>路网协调：</strong> 联合优化路段决策，提升路网整体表现</li>\n</ul>\n\n<p>框架为交通管理部门提供数据驱动的投资决策支持，平衡预算、服务质量与可持续发展目标。</p>\n\n<p><strong>相关论文与成果：</strong></p>\n\n<ul>\n  <li>Meng et al. (2023). Multiobjective optimization method for pavement segment grouping. <em>Journal of Infrastructure Systems</em>, 29(1), 04022047.</li>\n</ul>"
+    }
+  },
+  {
+    "id": "5_project",
+    "category": "Optimization",
+    "order": 2,
+    "en": {
+      "title": "Pavement Maintenance Planning under Uncertainty",
+      "description": "Network-level pavement maintenance and rehabilitation planning using chance-constrained programming",
+      "body": "<p><strong>Status:</strong> Published</p>\n\n<p>Real-world pavement management is subject to significant uncertainties — in pavement deterioration rates, material costs, traffic growth, and budget availability. Deterministic optimization models cannot adequately address these risks.</p>\n\n<p>This project introduces a <strong>chance-constrained programming</strong> approach to network-level pavement M&amp;R planning, ensuring that budget and performance constraints are satisfied with a specified probability even under uncertain conditions.</p>\n\n<p>Key contributions include:</p>\n\n<ul>\n  <li>Formulation of pavement M&amp;R planning as a stochastic optimization problem with probabilistic constraints</li>\n  <li>A tractable solution methodology that converts chance constraints into deterministic equivalents</li>\n  <li>Case studies demonstrating improved reliability of long-term maintenance plans compared to deterministic approaches</li>\n</ul>\n\n<p><strong>Related publications:</strong></p>\n\n<ul>\n  <li>Cao, R., <strong>Meng, S.</strong>, et al. (2024). Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming. <em>International Journal of Pavement Engineering</em>, 25(1), 2340001.</li>\n  <li>Hu, A., Bai, Q., Chen, L., <strong>Meng, S.</strong>, et al. (2022). A review on empirical methods of pavement performance modeling. <em>Construction and Building Materials</em>, 342, 127968.</li>\n</ul>"
+    },
+    "zh": {
+      "title": "不确定性下的路面养护规划",
+      "description": "基于机会约束规划的路网级路面养护决策",
+      "body": "<p><strong>状态：</strong> 已发表</p>\n\n<p>路面性能衰变、材料成本、交通增长和可用预算均存在不确定性，确定性模型难以充分处理这些风险。</p>\n\n<p>本项目采用<strong>机会约束规划</strong>方法，使路网级养护方案即使在不确定条件下，也能以给定概率满足预算与性能约束：</p>\n\n<ul>\n  <li>将养护规划表述为包含概率约束的随机优化问题</li>\n  <li>将机会约束转化为可求解的确定性等价形式</li>\n  <li>通过案例研究，展示相较于确定性方法的长期养护规划可靠性提升</li>\n</ul>\n\n<p><strong>相关论文与成果：</strong></p>\n\n<ul>\n  <li>Cao, R., <strong>Meng, S.</strong>, et al. (2024). Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming. <em>International Journal of Pavement Engineering</em>, 25(1), 2340001.</li>\n  <li>Hu, A., Bai, Q., Chen, L., <strong>Meng, S.</strong>, et al. (2022). A review on empirical methods of pavement performance modeling. <em>Construction and Building Materials</em>, 342, 127968.</li>\n</ul>"
+    }
+  },
+  {
+    "id": "6_project",
+    "category": "Vision",
+    "order": 1,
+    "en": {
+      "title": "Airport Curbside Vehicle Detection",
+      "description": "Deep learning-based detection of illegal pick-up vehicles at airport departure levels",
+      "body": "<p><strong>Status:</strong> Published + Granted Patent</p>\n\n<p>Illegal pick-up and drop-off activities at airport curbside zones create traffic congestion and safety hazards. Manual enforcement is costly and inconsistent, motivating an automated vision-based detection system.</p>\n\n<p>This project developed an end-to-end <strong>deep learning pipeline</strong> for detecting and classifying illegal curbside vehicles from surveillance cameras at airport departure levels.</p>\n\n<p>Key contributions include:</p>\n\n<ul>\n  <li>A video-based vehicle detection and behavior recognition system tailored for airport curbside environments</li>\n  <li>Handling of occlusion, varying lighting, and high vehicle density typical in airport settings</li>\n  <li>Deployment as a functional monitoring system (Software Copyright registered)</li>\n</ul>\n\n<p><strong>Related publications and IP:</strong></p>\n\n<ul>\n  <li>Bai, Q., Shao, Y., <strong>Meng, S.</strong>, et al. (2022). Video-based detection method for illegal pick-up vehicles at airport departure levels. <em>Journal of Chang’an University (Natural Science Edition)</em>, 42(04), 73–86.</li>\n  <li>Wu, S., <strong>Meng, S.</strong>, et al. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning. [Granted Patent 202111642183.3]</li>\n  <li><strong>Meng, S.</strong> (2023). Airport curbside illegal vehicle monitoring system. [Software Copyright]</li>\n</ul>"
+    },
+    "zh": {
+      "title": "机场路侧车辆检测",
+      "description": "基于深度学习的机场出发层违规接客车辆检测",
+      "body": "<p><strong>状态：</strong> 论文已发表，专利已授权</p>\n\n<p>机场路侧区域的违规接送客行为会带来拥堵与安全隐患，而人工执法成本较高、标准难以保持一致。</p>\n\n<p>本项目构建端到端的<strong>深度学习流程</strong>，利用机场出发层监控视频检测与识别违规车辆：</p>\n\n<ul>\n  <li>面向机场路侧场景开展车辆检测与行为识别</li>\n  <li>处理遮挡、光照变化和高车辆密度等复杂情况</li>\n  <li>开发可运行的监测系统，并登记软件著作权</li>\n</ul>\n\n<p><strong>相关论文与成果：</strong></p>\n\n<ul>\n  <li>Bai, Q., Shao, Y., <strong>Meng, S.</strong>, et al. (2022). Video-based detection method for illegal pick-up vehicles at airport departure levels. <em>Journal of Chang’an University (Natural Science Edition)</em>, 42(04), 73–86.</li>\n  <li>Wu, S., <strong>Meng, S.</strong>, et al. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning. [Granted Patent 202111642183.3]</li>\n  <li><strong>Meng, S.</strong> (2023). Airport curbside illegal vehicle monitoring system. [Software Copyright]</li>\n</ul>"
+    }
+  },
+  {
+    "id": "7_project",
+    "category": "Vision",
+    "order": 2,
+    "en": {
+      "title": "Personalized VISTA",
+      "description": "Vision-Language Safety Assistant for Trustworthy Autonomy",
+      "body": "<p><strong>Status:</strong> In Preparation — Target: <em>NeurIPS</em></p>\n\n<p>As autonomous vehicles become increasingly capable, ensuring trustworthy and explainable decision-making in safety-critical scenarios remains an open challenge. Vision-language models (VLMs) offer a promising path toward human-aligned autonomy.</p>\n\n<p><strong>Personalized VISTA</strong> develops a vision-language safety assistant framework that provides personalized, context-aware safety guidance for autonomous systems.</p>\n\n<p>Key aspects of this work include:</p>\n\n<ul>\n  <li>Integration of large vision-language models for scene understanding and risk assessment in driving contexts</li>\n  <li>A personalization mechanism that adapts safety recommendations to user preferences and driving styles</li>\n  <li>A trustworthiness framework that balances autonomy with human oversight in safety-critical situations</li>\n</ul>\n\n<p>This project represents an intersection of my work in intelligent transportation systems and emerging foundation model capabilities, targeting trustworthy deployment of autonomous vehicles in complex real-world environments.</p>"
+    },
+    "zh": {
+      "title": "Personalized VISTA",
+      "description": "面向可信自主系统的视觉语言安全助手",
+      "body": "<p><strong>状态：</strong> 研究准备中，目标投稿会议为 <em>NeurIPS</em></p>\n\n<p>随着自动驾驶能力提升，安全关键场景中的可信、可解释决策仍是重要挑战。视觉语言模型为与人类需求一致的自主系统提供了新的研究方向。</p>\n\n<p><strong>Personalized VISTA</strong> 致力于构建视觉语言安全助手，为自主系统提供个性化、结合情境的安全指导：</p>\n\n<ul>\n  <li>利用大型视觉语言模型理解驾驶场景并评估风险</li>\n  <li>根据用户偏好与驾驶风格调整安全建议</li>\n  <li>在安全关键场景中，平衡自主性与人工监督</li>\n</ul>\n\n<p>项目连接智能交通研究与基础模型能力，探索复杂真实环境中的可信自动驾驶部署。</p>"
+    }
+  }
+]

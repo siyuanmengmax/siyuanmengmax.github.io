@@ -1,0 +1,74 @@
+[
+  {
+    "id": "announcement_12",
+    "date": "2026-09-01",
+    "en": "<p>Officially received my <strong>Ph.D. in Civil Engineering (Transportation Engineering)</strong> from the University of Massachusetts Amherst. 🎓</p>",
+    "zh": "<p>正式获得麻省大学阿默斯特分校<strong>土木工程（交通运输工程方向）博士学位</strong>。🎓</p>"
+  },
+  {
+    "id": "announcement_11",
+    "date": "2026-08-25",
+    "en": "<p>Successfully defended my Ph.D. dissertation, <strong>“Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis,”</strong> in Civil &amp; Environmental Engineering at the University of Massachusetts Amherst.</p>",
+    "zh": "<p>顺利通过麻省大学阿默斯特分校土木与环境工程博士论文答辩，论文题目为 <strong>“Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis”</strong>。</p>"
+  },
+  {
+    "id": "announcement_10",
+    "date": "2026-05-18",
+    "en": "<p>Paper “MulDet3D: multi-objective optimization based unsupervised object detection for multiple roadside LiDARs” accepted at <strong>Journal of Transportation Engineering Part A: Systems (ASCE JTE Part A)</strong>.</p>",
+    "zh": "<p>MulDet3D: multi-objective optimization based unsupervised object detection for multiple roadside LiDARs被 <strong>Journal of Transportation Engineering Part A: Systems（ASCE JTE Part A）</strong>接收。</p>"
+  },
+  {
+    "id": "announcement_5",
+    "date": "2026-04-24",
+    "en": "<p>Paper “FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring” accepted at <strong>Journal of Computing in Civil Engineering (ASCE JCCE)</strong>.</p>",
+    "zh": "<p>FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring被 <strong>Journal of Computing in Civil Engineering（ASCE JCCE）</strong>接收。</p>"
+  },
+  {
+    "id": "announcement_7",
+    "date": "2026-04-20",
+    "en": "<p>Preprint “Infrastructure-centric world models: bridging temporal depth and spatial breadth for roadside perception” posted on arXiv. [<a href=\"https://arxiv.org/abs/2604.17651\">arXiv:2604.17651</a>]</p>",
+    "zh": "<p>Infrastructure-centric world models: bridging temporal depth and spatial breadth for roadside perception预印本发布至 arXiv：<a href=\"https://arxiv.org/abs/2604.17651\">arXiv:2604.17651</a>。</p>"
+  },
+  {
+    "id": "announcement_9",
+    "date": "2026-03-31",
+    "en": "<p>Presented a poster on “Quality-aware vehicle conflict detection with spatial precision enhancement for roadside multi-LiDAR systems” at <strong>Safe Mobility Conference 2026</strong> in Seattle WA.</p>",
+    "zh": "<p>在美国西雅图举行的 <strong>Safe Mobility Conference 2026</strong> 上，以墙报形式报告了Quality-aware vehicle conflict detection with spatial precision enhancement for roadside multi-LiDAR systems。</p>"
+  },
+  {
+    "id": "announcement_6",
+    "date": "2026-03-13",
+    "en": "<p>Paper “A multi-objective optimization method for integrated road asset management considering traffic dynamics and environmental impacts” accepted at <strong>Transportation Research Record (TRR)</strong>.</p>",
+    "zh": "<p>A multi-objective optimization method for integrated road asset management considering traffic dynamics and environmental impacts被 <strong>Transportation Research Record（TRR）</strong>接收。</p>"
+  },
+  {
+    "id": "announcement_8",
+    "date": "2026-01-12",
+    "en": "<p>Presented a poster on “FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring” at <strong>TRB 2026 Annual Meeting</strong> in Washington D.C.</p>",
+    "zh": "<p>在美国华盛顿特区举行的 <strong>TRB 2026 年会</strong>上，以墙报形式报告了FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring。</p>"
+  },
+  {
+    "id": "announcement_4",
+    "date": "2025-04-25",
+    "en": "<p>Two papers published in <strong>Proc. SPIE 13575 (STCE 2024)</strong>: “Estimating travel mode choices of residents in Stockholm region” and “Analysis of expressway maintenance decision based on complete information static game theory.”</p>",
+    "zh": "<p>Estimating travel mode choices of residents in Stockholm region与Analysis of expressway maintenance decision based on complete information static game theory两篇论文发表于 <strong>Proc. SPIE 13575（STCE 2024）</strong>。</p>"
+  },
+  {
+    "id": "announcement_1",
+    "date": "2025-01-06",
+    "en": "<p>Presented a poster on “Multi-objective optimization method for integrated roadway asset maintenance and rehabilitation considering traffic impacts” at <strong>TRB 2025 Annual Meeting</strong> in Washington D.C.</p>",
+    "zh": "<p>在美国华盛顿特区举行的 <strong>TRB 2025 年会</strong>上，以墙报形式报告了Multi-objective optimization method for integrated roadway asset maintenance and rehabilitation considering traffic impacts。</p>"
+  },
+  {
+    "id": "announcement_2",
+    "date": "2024-04-30",
+    "en": "<p>Paper on “Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming” published in <strong>International Journal of Pavement Engineering</strong>.</p>",
+    "zh": "<p>Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming发表于 <strong>International Journal of Pavement Engineering</strong>。</p>"
+  },
+  {
+    "id": "announcement_3",
+    "date": "2023-09-01",
+    "en": "<p>Started Ph.D. program in Transportation Engineering at <strong>University of Massachusetts Amherst</strong>.</p>",
+    "zh": "<p>开始在<strong>麻省大学阿默斯特分校</strong>攻读土木工程（交通运输工程方向）博士学位。</p>"
+  }
+]

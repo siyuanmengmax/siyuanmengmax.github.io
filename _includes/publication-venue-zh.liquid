@@ -1,9 +1,0 @@
-{{- include.venue | escape -}}
-，
-{{- include.paper.year -}}
-{%- if include.paper.volume -%}
-  ，
-  {{- include.paper.volume -}}
-  {%- if include.paper.number -%}({{ include.paper.number | plus: 0 }}){%- endif -%}
-{%- endif -%}
-{%- if include.paper.pages -%}：{{ include.paper.pages | replace: '--', '–' }}{%- endif -%}

@@ -1,154 +1,102 @@
-# Siyuan (Max) Meng - Academic Website
+# Siyuan (Max) Meng · 蒙思源
 
-Personal academic website built with [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme.
+个人学术网站：[English](https://siyuanmengmax.github.io/) · [中文](https://siyuanmengmax.github.io/zh/)
 
-**Live site:** [https://siyuanmengmax.github.io](https://siyuanmengmax.github.io)
+借鉴 [TPWM Lab](https://github.com/siyuanmengmax/tpwm-lab) 的轻量静态架构：结构化双语内容、共享页面组件、原生 CSS / JavaScript。保留原首页设计与页面地址，内页使用相同的绿色配色及中英文字体。
 
-## Quick Start
+## 本地运行
 
-### Local Preview
+需要 **Node.js 20 或更新版本**，推荐 Node.js 24。没有第三方依赖，**不需要 `npm install`**。
 
-```bash
-bundle install          # Install dependencies (first time only)
-bundle exec jekyll serve --config _config.yml,_config.local.yml --host 127.0.0.1
+```sh
+npm run build
+npm run check
+npm run dev
 ```
 
-Then visit `http://127.0.0.1:4000` (English) or `http://127.0.0.1:4000/zh/` (中文).
-The local configuration skips external demo blog feeds, the Twitter sample post, and ImageMagick conversion; production settings are unchanged.
+打开 `http://localhost:4173/` 或 `http://localhost:4173/zh/`。修改内容后，重新运行 `npm run build` 并刷新浏览器。端口被占用时可使用 `PORT=4174 npm run dev`。
 
-### Deploy Changes
+构建过程完全离线。`dist/` 为自动生成的网站，不提交到 Git，也不直接编辑。关闭浏览器 JavaScript 后，所有正文、论文与项目仍可阅读。
 
-```bash
-npx prettier . --write  # Fix formatting
-git add .
-git commit -m"update30"
-git push
+## 目录
+
+```text
+src/
+  content/              # 网站内容，日常更新主要在这里
+    site.json           # 站点信息、双语首页文案、联系方式、实验室链接
+    profile.json        # 个人简介、入职信息、教育、奖励与学术服务
+    publications.json   # 全部论文及中文论文信息，BibTeX 的唯一数据来源
+    projects.json       # 项目简介与完整中英文详情
+    news.json           # 双语动态及日期
+    framework.json      # 四项博士研究的说明与关联论文 ID
+    pages.json          # 内页标题、简介、教学正文及分类名称
+  components/           # 共享导航、页脚、首页、论文与内页模板
+public/                 # 只保留实际使用的照片、字体、图标、样式和脚本
+scripts/
+  build.mjs             # 内容 → HTML、BibTeX、RSS、站点地图和版本化资源
+  check.mjs             # 内容、链接、旧论文锚点、字体、资源版本与语法检查
+  serve.mjs             # 本地静态预览服务器
+.github/workflows/
+  deploy.yml            # 校验并部署到现有 GitHub Pages
+docs/                  # 重构记录与回退说明
 ```
 
-GitHub Actions will automatically build and deploy.
+## 更新内容
 
-## Content Guide
+| 要修改的内容 | 对应文件 |
+| --- | --- |
+| 姓名、邮箱、社交链接、实验室网址 | `src/content/site.json` |
+| 简介、职位、教育、荣誉、学术服务 | `src/content/profile.json` |
+| 论文、作者、年份、DOI、状态 | `src/content/publications.json` |
+| 研究项目及详情 | `src/content/projects.json` |
+| 最新动态 | `src/content/news.json` |
+| 博士研究框架 | `src/content/framework.json` |
+| 教学经历、内页标题 | `src/content/pages.json` |
+| 颜色与布局 | `public/assets/portfolio/portfolio.css` |
+| 英文与中文字体 | `public/assets/portfolio/english-typography.css`、`public/assets/css/chinese-typography.css` |
+| 照片 | `public/assets/portfolio/max-profile.jpg` |
 
-### Update Personal Info
+双语内容使用 `en` 和 `zh` 字段，修改时请同步维护。`body`、`bio` 和动态正文等字段允许少量 HTML，例如 `<strong>`、`<em>`、`<a>`、`<p>` 和 `<ul>`；它们是经过信任的本站内容，不用于接收外部用户输入。
 
-| File                               | Content                                                                    |
-| ---------------------------------- | -------------------------------------------------------------------------- |
-| `_data/profile.json`               | Bilingual homepage biography, education, photo, and appointment visibility |
-| `_data/portfolio.json`             | Bilingual homepage sections, research directions, and interface labels     |
-| `_data/research_framework.json`    | Four research stages and their publication keys                            |
-| `_config.yml`                      | Name, site description, email                                              |
-| `_data/socials.yml`                | Email, GitHub, ResearchGate, Google Scholar                                |
-| `_data/cv.yml`                     | CV page content                                                            |
-| `assets/portfolio/max-profile.jpg` | Profile photo                                                              |
+### 论文
 
-### Add Publications
+每篇论文包含稳定的 `id`、BibTeX `type` 和 `fields`。作者字段保持 BibTeX 写法，例如 `Meng, Siyuan and Ai, Chengbo`。`note` 中的 `Under Review` / `Submitting` 会归入在研手稿；会议类型归入会议论文；arXiv / preprint 刊物归入预印本。其余归入期刊论文。
 
-Edit `_bibliography/papers.bib` in BibTeX format:
+中文论文的 `zh` 字段保存原始中文题名、完整作者姓名和刊物名。年份、卷期、页码和 DOI 共用 `fields`。没有 DOI 的预印本可设置顶层 `url`。页面、筛选及下载文件均由这一份记录生成，不再另行维护 `.bib` 源文件。
 
-```bibtex
-@article{meng2023example,
-  abbr={Journal},
-  bibtex_show={true},
-  title={Your Paper Title},
-  author={Meng, Siyuan and Coauthor, Name},
-  journal={Journal Name},
-  year={2023},
-  doi={10.xxxx/xxxxx},
-  selected={true}  # Shows on homepage
-}
+构建生成的下载地址沿用 `/assets/portfolio/publications.bib`。保留已有论文 `id`，以免旧链接和研究框架的关联失效。原 `/publications/#论文ID` 和首页 `/#paper-论文ID` 均可继续使用。
+
+### 项目与动态
+
+项目 `id` 对应 `/projects/ID/` 与 `/zh/projects/ID/`，请保留已存在的 ID。动态日期使用 `YYYY-MM-DD`，表示事件的日历日期，不随开发电脑的时区偏移。
+
+`/cv/` 与 `/zh/cv/` 从当前个人信息生成履历，不再维护另一份容易过时的个人介绍，也不包含旧模板中的示例人物或示例 PDF。
+
+## 发布
+
+保持既有的 **推送 main 自动发布** 工作方式：
+
+```sh
+npm run build
+npm run check
+git status
+git diff
+git add <本次实际修改的文件>
+git commit -m "Update portfolio content"
+git push origin main
 ```
 
-### Add News
+GitHub Actions 使用 Node.js 24 构建、校验，然后将 `dist/` 发布至现有 `gh-pages` 分支。拉取请求只做构建与校验，不发布。无需更改 GitHub Pages 设置。`tpwm-lab` 保持独立仓库和独立部署。
 
-Create `_news/announcement_X.md`:
+CSS / JavaScript 文件名带内容哈希，更新时自动使用新资源。首次查看新发布的 HTML 时，如浏览器仍显示缓存，可强制刷新，或在地址后加 `?v=提交短哈希`。
 
-```markdown
----
-layout: post
-date: 2025-01-15 09:00:00-0500
-inline: true
-related_posts: false
----
+## 备份与验证
 
-Your news content here with **markdown** support.
-```
+2026-10-11 重构前的版本为 `c371646`。远程备份标签为 `backup/pre-static-refactor-2026-10-11`；本地完整归档及原设计包位于项目外的 `../website-backups/portfolio-2026-10-11-c371646/`。
 
-### Add Projects
+- [备份内容与回退步骤](docs/ROLLBACK.md)
+- [迁移范围及验证记录](docs/MIGRATION.md)
 
-Create `_projects/X_project.md`:
+旧主题、示例博客与大体积演示素材已从当前工作目录移除。Git 历史完整保留，因此 `.git` 的历史体积不会随工作目录一同缩小。
 
-```markdown
----
-layout: page
-title: Project Name
-description: Brief description
-img: assets/img/project_thumb.jpg
-importance: 1
-category: research
----
-
-Project details...
-```
-
-## File Structure
-
-```
-├── _bibliography/papers.bib    # Publications
-├── _config.yml                 # Site settings
-├── _data/
-│   ├── cv.yml                  # CV content
-│   └── socials.yml             # Social links
-├── _news/                      # News items
-├── _pages/
-│   ├── about.md                # Homepage
-│   ├── cv.md                   # CV page
-│   └── publications.md         # Publications page
-├── _projects/                  # Project pages
-└── assets/img/                 # Images
-```
-
-## Troubleshooting
-
-### Prettier Check Failed
-
-```bash
-npm install                     # Install prettier plugin
-npx prettier . --write          # Auto-fix formatting
-```
-
-### Build Failed
-
-Check the Actions tab on GitHub for error details.
-
-## Resources
-
-- [al-folio Documentation](https://github.com/alshedivat/al-folio)
-- [Jekyll Documentation](https://jekyllrb.com/docs/)
-- [BibTeX Guide](https://www.bibtex.org/Format/)
-
-## 中英文内容维护
-
-英文页面沿用原有地址，中文页面位于 `/zh/`。导航栏的 `EN / 中文` 链接切换到对应页面；选择会保存在浏览器中，再次访问首页时优先进入所选语言。直接访问内页链接时保留链接指定的语言。禁用 JavaScript 或浏览器存储时，普通语言切换链接仍可使用。
-
-- 核心英文页面位于 `_pages/`，中文页面位于 `_pages/zh/`。成对页面共用 `translation_key`，并设置 `lang`、`permalink_en` 和 `permalink_zh`。
-- 公共界面文案位于 `_data/i18n.yml`；新增主导航页面时，请同时添加对应中文页。
-- 新闻共用 `_news/` 中的日期与排序，中文正文写在 `content_zh` 字段中；未填写时回退到英文。
-- 项目卡片的中文标题和简介位于 `_projects/` 的 `title_zh`、`description_zh` 字段；中文详情位于 `_pages/zh/project_*.md`。
-- 论文继续共用 `_bibliography/` 数据，保留原始标题、作者与引用信息。GitHub 统计卡片等第三方内容保留原文。
-- 本次翻译覆盖个人介绍、论文、项目及其详情、代码仓库、教学和新闻；未启用的模板示例、博客与 CV 暂未翻译。新增内容后应同步更新两个版本。
-
-本地检查：`npx prettier . --check`；构建预览：`bundle exec jekyll serve --config _config.yml,_config.local.yml`（Ruby / Bundler 版本参照现有部署工作流及 `Gemfile.lock`）。
-
-## Portfolio homepage
-
-`/` 与 `/zh/` 共用 `_layouts/portfolio.liquid` 和 `_includes/portfolio/`。新版首页样式及动画位于 `assets/portfolio/`；原有论文、项目、教学、新闻等内页仍使用既有路由。
-
-- 个人介绍、教育经历与入职信息：`_data/profile.json`。`show_appointment` 控制两个语言版本是否显示即将入职信息；姓名与联系方式继续读取 `_config.yml` 和 `_data/socials.yml`。
-- 首页文案与研究方向：`_data/portfolio.json`；博士研究框架：`_data/research_framework.json`。`paper_key` 对应 `_bibliography/papers.bib` 中的条目键。
-- 论文列表、类别、状态、链接和 BibTeX 下载由 `_plugins/portfolio-publications.rb` 在构建时从现有 BibTeX 生成，不维护第二份论文清单。
-- 中文论文的题名、作者姓名和刊物名称在 `_data/publications_zh.json` 中按 BibTeX 条目键补充，由中文首页和论文内页共用；年份、卷期、页码和 DOI 继续读取 BibTeX。
-- 新闻直接读取 `_news/`，项目直接读取 `_projects/` 的双语标题、简介和既有详情路由。
-- 动画为合成概念演示，不运行论文算法，也不计算 TTC/PET。脚本只负责动画、阶段切换与论文筛选，研究说明由 Jekyll 直接生成。
-- `Max_Portfolio_UI_v2/` 仅为设计参考，已从 Jekyll 构建输出中排除。
-
-本地构建：`bundle exec jekyll build --config _config.yml,_config.local.yml`。
+原项目的 MIT 许可声明保留在 `LICENSE`；Inter 字体许可位于 `public/assets/fonts/inter/LICENSE.txt`。
