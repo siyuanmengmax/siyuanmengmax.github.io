@@ -24,7 +24,10 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ site.data.profile.image | absolute_url }}">
     <meta name="theme-color" content="#f5f5ee">
-    <link rel="stylesheet" href="{{ '/assets/portfolio/portfolio.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/portfolio/portfolio.css' | relative_url | bust_file_cache }}">
+    {% if current_lang == 'zh-CN' %}
+      <link rel="stylesheet" href="{{ '/assets/css/chinese-typography.css' | relative_url | bust_file_cache }}">
+    {% endif %}
     <script defer src="{{ '/assets/js/language.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/portfolio/portfolio.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/portfolio/research-demo.js' | relative_url }}"></script>
@@ -80,10 +83,10 @@
                 {{- full_name }}
                 <span lang="zh-CN">{{ site.name_zh }}</span></strong
               >
-              <p>
-                {{ person.role -}}
-                {%- if site.data.profile.show_appointment %} · {{ person.appointment_short }}{% endif %}
-              </p>
+              <p>{{ person.role }}</p>
+              {% if site.data.profile.show_appointment %}
+                <p>{{ person.appointment_short }}</p>
+              {% endif %}
             </div>
           </div>
           <div class="actions">

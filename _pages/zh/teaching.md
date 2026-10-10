@@ -14,7 +14,7 @@ nav_order: 6
 ## 助教经历
 
 **CE-ENGIN 214：土木工程编程（Programming for Civil Engineers）**  
-麻省大学阿默斯特分校 · 2024年秋季
+麻省大学阿默斯特分校（UMass Amherst） · 2024年秋季
 
 - 协助教授面向土木工程本科生的 Python 编程基础课程
 - 指导涵盖数据分析、数值方法与工程工作流自动化的实验课程

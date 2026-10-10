@@ -803,18 +803,30 @@ details li {
   white-space: nowrap;
 }
 .zh h1 {
-  font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
   font-size: clamp(40px, 4.3vw, 59px);
+  font-weight: 600;
   line-height: 1.3;
   letter-spacing: 0;
 }
 .zh h2,
 .zh h3 {
-  font-family: Georgia, "Songti SC", serif;
+  font-weight: 500;
   letter-spacing: 0;
 }
-.zh {
-  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+.zh h1 em {
+  font-style: normal;
+  font-weight: inherit;
+}
+.zh .vision-note strong {
+  font-family: var(--font-zh);
+  font-style: normal;
+  font-weight: 500;
+}
+.zh .visual-top,
+.zh .visual-bottom p,
+.zh .vision-note span,
+.zh .demo-top {
+  font-family: var(--font-zh);
 }
 .zh .intro {
   line-height: 1.9;
@@ -1038,9 +1050,6 @@ details li {
 }
 .contact h2 {
   max-width: 700px;
-}
-.zh .study-copy h3 {
-  font-family: Georgia, "Songti SC", serif;
 }
 @media (max-width: 850px) {
   .framework-steps {

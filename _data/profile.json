@@ -4,8 +4,8 @@
   "locales": {
     "en": {
       "role": "Ph.D., UMass Amherst",
-      "appointment": "Incoming faculty, Wuhan University of Science and Technology",
-      "appointment_short": "Incoming faculty, WUST",
+      "appointment": "Incoming Assistant Professor, Wuhan University of Science and Technology",
+      "appointment_short": "Incoming Assistant Professor, WUST",
       "affiliation": "University of Massachusetts Amherst",
       "degree": "Ph.D. 2026",
       "bio": [
@@ -52,20 +52,20 @@
       ]
     },
     "zh-CN": {
-      "role": "麻省大学阿默斯特分校博士",
-      "appointment": "即将入职武汉科技大学",
-      "appointment_short": "即将入职武汉科技大学",
-      "affiliation": "麻省大学阿默斯特分校",
+      "role": "麻省大学阿默斯特分校（UMass Amherst）博士",
+      "appointment": "即将入职武汉科技大学，任特聘副教授",
+      "appointment_short": "即将入职武汉科技大学 · 特聘副教授",
+      "affiliation": "麻省大学阿默斯特分校（UMass Amherst）",
       "degree": "博士 · 2026",
       "bio": [
-        "我于 2026 年 9 月获得麻省大学阿默斯特分校土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 教授</a>。",
+        "我于 2026 年 9 月获得麻省大学阿默斯特分校（UMass Amherst）土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 教授</a>。",
         "博士论文 <em>面向交通感知与安全分析的质量感知多激光雷达框架</em>围绕路侧多激光雷达感知，构建了涵盖背景建模、目标检测、跟踪与交通安全分析的可靠性感知流程。",
         "在赴美攻读博士之前，我在长安大学获得工学硕士和工学学士学位，硕士导师为柏强教授。此前的研究聚焦于路面养护优化及基于深度学习的机场路侧车辆检测。"
       ],
       "education": [
         {
           "years": "2023–2026",
-          "institution": "麻省大学阿默斯特分校",
+          "institution": "麻省大学阿默斯特分校（UMass Amherst）",
           "description": "博士 · 土木工程（交通运输工程方向）<br>导师：Chengbo Ai 教授 · GPA：3.97/4.0"
         },
         {
@@ -80,7 +80,7 @@
         }
       ],
       "teaching_title": "教学与指导",
-      "teaching": "麻省大学阿默斯特分校 CE-ENGIN 214：土木工程编程课程助教（2024 年秋季）。协助教授 Python 编程基础，指导数据分析、数值方法与工程自动化实验，并提供答疑与一对一项目指导。",
+      "teaching": "麻省大学阿默斯特分校（UMass Amherst）CE-ENGIN 214：土木工程编程课程助教（2024 年秋季）。协助教授 Python 编程基础，指导数据分析、数值方法与工程自动化实验，并提供答疑与一对一项目指导。",
       "background": [
         {
           "title": "荣誉与奖励",
