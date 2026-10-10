@@ -24,9 +24,13 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ site.data.profile.image | absolute_url }}">
     <meta name="theme-color" content="#f5f5ee">
+    {% include favicon.liquid %}
     <link rel="stylesheet" href="{{ '/assets/portfolio/portfolio.css' | relative_url | bust_file_cache }}">
     {% if current_lang == 'zh-CN' %}
       <link rel="stylesheet" href="{{ '/assets/css/chinese-typography.css' | relative_url | bust_file_cache }}">
+    {% else %}
+      <link rel="preload" href="{{ '/assets/fonts/inter/InterVariable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+      <link rel="stylesheet" href="{{ '/assets/portfolio/english-typography.css' | relative_url | bust_file_cache }}">
     {% endif %}
     <script defer src="{{ '/assets/js/language.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/portfolio/portfolio.js' | relative_url }}"></script>
