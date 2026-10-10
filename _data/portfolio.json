@@ -26,6 +26,12 @@
         "label": "Let’s connect ↗"
       }
     ],
+    "lab": {
+      "url": "https://siyuanmengmax.github.io/tpwm-lab/en/",
+      "label": "TPWM Lab ↗",
+      "title": "Transportation Perception & World Modeling",
+      "call_to_action": "Visit TPWM Lab ↗"
+    },
     "language_label": "中文",
     "language_accessible": "切换至中文",
     "hero": {
@@ -190,6 +196,12 @@
         "label": "联系我 ↗"
       }
     ],
+    "lab": {
+      "url": "https://siyuanmengmax.github.io/tpwm-lab/zh/",
+      "label": "实验室 ↗",
+      "title": "TPWM Lab · 交通感知与世界建模研究组",
+      "call_to_action": "访问 TPWM Lab 研究组网站 ↗"
+    },
     "language_label": "EN",
     "language_accessible": "Switch to English",
     "hero": {
