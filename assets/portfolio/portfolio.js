@@ -1,1 +1,211 @@
-(()=>{"use strict";function e(){let e=0;const t=h.value.trim().toLowerCase();document.querySelectorAll(".pub").forEach((n=>{const o=("all"===u||n.dataset.category===u)&&n.querySelector(".pub-copy").textContent.toLowerCase().includes(t);n.hidden=!o,o&&e++}));const n=document.getElementById("paper-count");n.textContent=e+" "+n.dataset.suffix,document.getElementById("no-papers").hidden=e>0}function t(){I.textContent=v?I.dataset.play:I.dataset.pause,I.setAttribute("aria-pressed",String(v))}function n(){const e=f.getBoundingClientRect();g=e.width,p=e.height;const t=Math.min(devicePixelRatio||1,2);f.width=g*t,f.height=p*t,m.setTransform(t,0,0,t,0,0),i()}function o(e,t,n=0){return[.5*g+(e-t)*g*.032,.53*p+(e+t)*p*.019-n*p*.037]}function c(e,t,n,o=1){m.beginPath(),m.moveTo(...e),m.lineTo(...t),m.strokeStyle=n,m.lineWidth=o,m.stroke()}function a(e,t,n,a){let i=[[e-n,t-a,0],[e+n,t-a,0],[e+n,t+a,0],[e-n,t+a,0]],l=i.map((e=>[e[0],e[1],1.3]));for(let e=0;e<4;e++)c(o(...i[e]),o(...i[(e+1)%4]),"#64b193"),c(o(...l[e]),o(...l[(e+1)%4]),"#cce59c"),c(o(...i[e]),o(...l[e]),"#88b99a");for(let c=0;c<30;c++){let i=o(e-n+2*n*(17*c%31/31),t-a+2*a*(13*c%29/29),.9);m.fillStyle="#acd4aa",m.fillRect(i[0],i[1],1.6,1.6)}}function i(){m.clearRect(0,0,g,p);for(let e=-14;e<=14;e++)c(o(e,-14),o(e,14),"#28413b",.5),c(o(-14,e),o(14,e),"#28413b",.5);for(let e of[-5,5])c(o(e,-14),o(e,14),"#567368");for(let e=-14;e<14;e+=3)c(o(0,e),o(0,e+1.3),"#74836a");for(let e=0;e<430;e++){let t=37*e%103/103*28-14,n=61*e%107/107*28-14;if(Math.abs(t)<6)continue;let c=o(t,n,7*e%9/10);m.fillStyle=e%4==0?"#7f9d6f":"#355c50",m.fillRect(c[0],c[1],1.7,1.7)}for(let[e,t]of[[-7,-7],[7,7]]){const n=o(e,t,1.7);c(o(e,t),n,"#d8e7ad",2),m.fillStyle="#d6e7a6",m.beginPath(),m.arc(...n,3.5,0,2*Math.PI),m.fill();for(let e=0;e<3;e++)m.beginPath(),m.ellipse(n[0],n[1],18+(15*y+30*e)%90,.48*(18+(15*y+30*e)%90),0,0,2*Math.PI),m.strokeStyle="#91b97930",m.stroke()}a(-2.5,(1.5*y+5)%25-12,.9,1.8),a(2.5,12-(1.2*y+10)%25,.9,1.65),a(-2.5,(1.5*y+17)%25-12,.9,1.65)}function l(e){b&&(y+=Math.min((e-b)/1e3,.06)),b=e,i(),S=requestAnimationFrame(l)}function r(){cancelAnimationFrame(S),b=0,i(),v||!E||document.hidden||(S=requestAnimationFrame(l))}function s(e){if(!e.startsWith("#paper-"))return;const t=document.getElementById(e.slice(1));t&&(h.value="",document.querySelector('[data-filter="all"]').click(),t.scrollIntoView({block:"start"}))}const d=matchMedia("(prefers-reduced-motion: reduce)");let u="all";const h=document.getElementById("paper-search");document.querySelectorAll(".filter").forEach((t=>t.addEventListener("click",(()=>{u=t.dataset.filter,document.querySelectorAll(".filter").forEach((e=>{e.classList.toggle("active",e===t),e.setAttribute("aria-pressed",String(e===t))})),e()})))),h.addEventListener("input",e),e();const f=document.getElementById("scene"),m=f.getContext("2d");let g=0,p=0,y=0,b=0,v=d.matches,E=!0,S=0;const I=document.getElementById("pause");t(),I.addEventListener("click",(()=>{v=!v,t(),r()})),new ResizeObserver(n).observe(f),new IntersectionObserver((([e])=>{E=e.isIntersecting,r()})).observe(f),document.addEventListener("visibilitychange",r),d.addEventListener("change",(e=>{v=e.matches,t(),r()})),n(),r(),document.querySelectorAll('a[href^="#paper-"]').forEach((e=>{e.addEventListener("click",(()=>s(e.hash)))})),window.addEventListener("hashchange",(()=>s(location.hash))),s(location.hash);const L=document.querySelector(".language-switch");L.addEventListener("click",(()=>{L.href=L.pathname+location.search+location.hash}))})();
+(() => {
+  "use strict";
+  const search = document.getElementById("paper-search");
+  if (search) {
+    let category = "all";
+    const papers = [...document.querySelectorAll(".pub")];
+    const filters = [...document.querySelectorAll("[data-filter]")];
+    const filter = () => {
+      const query = search.value.trim().toLowerCase();
+      let count = 0;
+      for (const paper of papers) {
+        paper.hidden =
+          !(category === "all" || category === paper.dataset.category) ||
+          !paper.querySelector(".pub-copy").textContent.toLowerCase().includes(query);
+        if (!paper.hidden) count++;
+      }
+      const status = document.getElementById("paper-count");
+      status.textContent = `${count} ${status.dataset.suffix}`;
+      document.getElementById("no-papers").hidden = count > 0;
+    };
+    filters.forEach((button) =>
+      button.addEventListener("click", () => {
+        category = button.dataset.filter;
+        filters.forEach((b) => {
+          b.classList.toggle("active", b === button);
+          b.setAttribute("aria-pressed", String(b === button));
+        });
+        filter();
+      }),
+    );
+    search.addEventListener("input", filter);
+    filter();
+    const reveal = () => {
+      let id;
+      try {
+        id = decodeURIComponent(location.hash.slice(1));
+      } catch {
+        return;
+      }
+      // Preserve both homepage paper-* anchors and the old bibliography entry anchors.
+      const paper = papers.find((p) => p.id === id || p.id === `paper-${id}`);
+      if (!paper) return;
+      search.value = "";
+      filters.find((b) => b.dataset.filter === "all").click();
+      paper.scrollIntoView({ block: "start" });
+    };
+    addEventListener("hashchange", reveal);
+    document.querySelectorAll('a[href^="#paper-"]').forEach((a) =>
+      a.addEventListener("click", () => {
+        search.value = "";
+        filters.find((b) => b.dataset.filter === "all").click();
+      }),
+    );
+    reveal();
+  }
+  document.querySelectorAll("[data-language]").forEach((link) =>
+    link.addEventListener("click", () => {
+      link.href = link.pathname + location.search + location.hash;
+      try {
+        localStorage.setItem("preferred-language", link.dataset.language);
+      } catch {
+        /* Links still work without storage. */
+      }
+    }),
+  );
+  if (location.pathname === "/") {
+    try {
+      if (localStorage.getItem("preferred-language") === "zh-CN")
+        location.replace("/zh/" + location.search + location.hash);
+    } catch {
+      /* A private browser may disable storage. */
+    }
+  }
+})();
+
+(() => {
+  "use strict";
+  const motionPreference = matchMedia("(prefers-reduced-motion: reduce)");
+  const canvas = document.getElementById("scene"),
+    ctx = canvas.getContext("2d");
+  let width = 0,
+    height = 0,
+    time = 0,
+    last = 0;
+  let paused = motionPreference.matches;
+  let visible = true,
+    frameId = 0;
+  const pause = document.getElementById("pause");
+  function sync() {
+    pause.textContent = paused ? pause.dataset.play : pause.dataset.pause;
+    pause.setAttribute("aria-pressed", String(paused));
+  }
+  sync();
+  pause.addEventListener("click", () => {
+    paused = !paused;
+    sync();
+    syncAnimation();
+  });
+  function resize() {
+    const r = canvas.getBoundingClientRect();
+    width = r.width;
+    height = r.height;
+    const ratio = Math.min(devicePixelRatio || 1, 2);
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    draw();
+  }
+  new ResizeObserver(resize).observe(canvas);
+  function point(x, y, z = 0) {
+    return [width * 0.5 + (x - y) * width * 0.032, height * 0.53 + (x + y) * height * 0.019 - z * height * 0.037];
+  }
+  function line(a, b, color, w = 1) {
+    ctx.beginPath();
+    ctx.moveTo(...a);
+    ctx.lineTo(...b);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = w;
+    ctx.stroke();
+  }
+  function box(x, y, w, l) {
+    let p = [
+        [x - w, y - l, 0],
+        [x + w, y - l, 0],
+        [x + w, y + l, 0],
+        [x - w, y + l, 0],
+      ],
+      q = p.map((a) => [a[0], a[1], 1.3]);
+    for (let i = 0; i < 4; i++) {
+      line(point(...p[i]), point(...p[(i + 1) % 4]), "#64b193");
+      line(point(...q[i]), point(...q[(i + 1) % 4]), "#cce59c");
+      line(point(...p[i]), point(...q[i]), "#88b99a");
+    }
+    for (let k = 0; k < 30; k++) {
+      let a = x - w + 2 * w * (((k * 17) % 31) / 31),
+        b = y - l + 2 * l * (((k * 13) % 29) / 29);
+      let c = point(a, b, 0.9);
+      ctx.fillStyle = "#acd4aa";
+      ctx.fillRect(c[0], c[1], 1.6, 1.6);
+    }
+  }
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    for (let i = -14; i <= 14; i++) {
+      line(point(i, -14), point(i, 14), "#28413b", 0.5);
+      line(point(-14, i), point(14, i), "#28413b", 0.5);
+    }
+    for (let x of [-5, 5]) line(point(x, -14), point(x, 14), "#567368");
+    for (let y = -14; y < 14; y += 3) line(point(0, y), point(0, y + 1.3), "#74836a");
+    for (let i = 0; i < 430; i++) {
+      let x = (((i * 37) % 103) / 103) * 28 - 14,
+        y = (((i * 61) % 107) / 107) * 28 - 14;
+      if (Math.abs(x) < 6) continue;
+      let p = point(x, y, ((i * 7) % 9) / 10);
+      ctx.fillStyle = i % 4 === 0 ? "#7f9d6f" : "#355c50";
+      ctx.fillRect(p[0], p[1], 1.7, 1.7);
+    }
+    for (let [x, y] of [
+      [-7, -7],
+      [7, 7],
+    ]) {
+      const p = point(x, y, 1.7);
+      line(point(x, y), p, "#d8e7ad", 2);
+      ctx.fillStyle = "#d6e7a6";
+      ctx.beginPath();
+      ctx.arc(...p, 3.5, 0, Math.PI * 2);
+      ctx.fill();
+      for (let k = 0; k < 3; k++) {
+        ctx.beginPath();
+        ctx.ellipse(
+          p[0],
+          p[1],
+          18 + ((time * 15 + k * 30) % 90),
+          (18 + ((time * 15 + k * 30) % 90)) * 0.48,
+          0,
+          0,
+          Math.PI * 2,
+        );
+        ctx.strokeStyle = "#91b97930";
+        ctx.stroke();
+      }
+    }
+    box(-2.5, ((time * 1.5 + 5) % 25) - 12, 0.9, 1.8);
+    box(2.5, 12 - ((time * 1.2 + 10) % 25), 0.9, 1.65);
+    box(-2.5, ((time * 1.5 + 17) % 25) - 12, 0.9, 1.65);
+  }
+  function render(stamp) {
+    if (last) time += Math.min((stamp - last) / 1000, 0.06);
+    last = stamp;
+    draw();
+    frameId = requestAnimationFrame(render);
+  }
+  function syncAnimation() {
+    cancelAnimationFrame(frameId);
+    last = 0;
+    draw();
+    if (!paused && visible && !document.hidden) frameId = requestAnimationFrame(render);
+  }
+  new IntersectionObserver(([entry]) => {
+    visible = entry.isIntersecting;
+    syncAnimation();
+  }).observe(canvas);
+  document.addEventListener("visibilitychange", syncAnimation);
+  motionPreference.addEventListener("change", (event) => {
+    paused = event.matches;
+    sync();
+    syncAnimation();
+  });
+  resize();
+  syncAnimation();
+})();
