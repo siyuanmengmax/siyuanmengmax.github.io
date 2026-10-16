@@ -14,6 +14,7 @@
     "/projects/5_project/",
     "/projects/6_project/",
     "/projects/7_project/",
+    "/news/announcement_13/",
     "/news/announcement_12/",
     "/news/announcement_11/",
     "/news/announcement_10/",
@@ -40,6 +41,7 @@
     "/zh/projects/5_project/",
     "/zh/projects/6_project/",
     "/zh/projects/7_project/",
+    "/zh/news/announcement_13/",
     "/zh/news/announcement_12/",
     "/zh/news/announcement_11/",
     "/zh/news/announcement_10/",
@@ -64,6 +66,6 @@
   "counts": {
     "publications": 16,
     "projects": 7,
-    "news": 12
+    "news": 13
   }
 }
