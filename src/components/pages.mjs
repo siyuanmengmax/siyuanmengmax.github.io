@@ -1,6 +1,7 @@
 import { esc, external, route } from "./shared.mjs";
 import { about, newsRow, projectCard } from "./home.mjs";
 import { publications } from "./publications.mjs";
+import { projectReferences, projectStatus } from "./projects.mjs";
 
 export function innerPage(data, lang, page) {
   const ui = data.site[lang],
@@ -36,7 +37,7 @@ export function innerPage(data, lang, page) {
   if (page.startsWith("projects/")) {
     const project = data.projects.find((p) => `projects/${p.id}` === page);
     meta = project[lang];
-    content = `<article class="prose">${meta.body}</article><div class="actions"><a class="text-link" href="${route(
+    content = `<article class="prose">${projectStatus(project, data, lang)}${meta.body}${projectReferences(project, data, lang)}</article><div class="actions"><a class="text-link" href="${route(
       lang,
       "projects",
     )}">${ui.projects.archive}</a></div>`;

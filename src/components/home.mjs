@@ -1,12 +1,13 @@
 import { esc, external, heading, route } from "./shared.mjs";
 import { publications, sortedPapers } from "./publications.mjs";
+import { projectStatus } from "./projects.mjs";
 
 export const newsRow = (item, lang) =>
   `<div class="news-row"><time datetime="${item.date}">${item.date}</time><div>${item[lang]}</div></div>`;
 export const projectCard = (p, data, lang) =>
   `<article class="project-item"><span class="eyebrow">${
     data.pages[lang].categories[p.category] || esc(p.category)
-  }</span><h3>${esc(p[lang].title)}</h3><p>${esc(p[lang].description)}</p><a class="text-link" href="${route(
+  }</span><h3>${esc(p[lang].title)}</h3><p>${esc(p[lang].description)}</p>${projectStatus(p, data, lang, { compact: true })}<a class="text-link" href="${route(
     lang,
     `projects/${p.id}`,
   )}">${data.site[lang].projects.details} ↗</a></article>`;

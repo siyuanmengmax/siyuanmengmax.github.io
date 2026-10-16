@@ -72,6 +72,8 @@ The generated download remains available at `/assets/portfolio/publications.bib`
 
 A project ID determines its English and Chinese routes: `/projects/ID/` and `/zh/projects/ID/`. Preserve existing IDs when updating content. News dates use `YYYY-MM-DD` and represent calendar dates, independent of the development machine's time zone.
 
+For projects with papers, `publication_ids` lists the matching IDs from `publications.json`, with the main paper first. Cards and detail pages derive the paper status from that first record; related citations, venues, and links use the same publication data. Update publication metadata there instead of copying it into project `body` text. Keep research descriptions and non-publication outcomes, such as patents, in the bilingual project content.
+
 The `/cv/` and `/zh/cv/` pages are generated from the current profile data. They do not require a separate biography and do not include the old theme's sample person or PDF.
 
 ## Deployment
