@@ -18,13 +18,17 @@
     "id": "meng2026frgb3d",
     "type": "article",
     "fields": {
-      "title": "FRGB3D: fast reliability-weighted Gaussian background modeling for roadside LiDAR traffic monitoring",
-      "author": "Meng, Siyuan and Parasha, Pravar and Yang, Yu-Min and Ai, Chengbo",
+      "title": "FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring",
+      "author": "Meng, Siyuan and Parashar, Pravar and Yang, Yu-Min and Ai, Chengbo",
       "journal": "Journal of Computing in Civil Engineering",
-      "year": "2026",
+      "volume": "41",
+      "number": "1",
+      "pages": "04026129",
+      "year": "2027",
       "publisher": "ASCE",
-      "note": "Accepted",
-      "doi": "10.1061/JCCEE5/CPENG-7710"
+      "doi": "10.1061/JCCEE5.CPENG-7710",
+      "url": "https://ascelibrary.org/doi/abs/10.1061/JCCEE5.CPENG-7710",
+      "eprint": "https://ascelibrary.org/doi/pdf/10.1061/JCCEE5.CPENG-7710"
     }
   },
   {
