@@ -31,7 +31,7 @@
     "teaching": {
       "title": "教学经历",
       "description": "教学与学生指导经历。",
-      "body": "<h2 id=\"助教经历\">助教经历</h2>\n\n<p><strong>CE-ENGIN 214：土木工程编程（Programming for Civil Engineers，Python）</strong><br>麻省大学阿默斯特分校（UMass Amherst）· 2024 年 9 月—2025 年 1 月</p>\n\n<ul><li>设计面向本科生的 Python 编程作业与考试题目。</li><li>讲授并指导编程实验课，带领学生完成代码实现与调试。</li><li>批改作业并提供反馈，定期开展课后答疑，帮助学生掌握编程概念与工程应用。</li></ul>"
+      "body": "<h2 id=\"助教经历\">助教经历</h2>\n\n<p><strong>CE-ENGIN 214：土木工程编程（Programming for Civil Engineers，Python）</strong><br>麻省大学阿默斯特分校 (UMass Amherst) · 2024 年 9 月—2025 年 1 月</p>\n\n<ul><li>设计面向本科生的 Python 编程作业与考试题目。</li><li>讲授并指导编程实验课，带领学生完成代码实现与调试。</li><li>批改作业并提供反馈，定期开展课后答疑，帮助学生掌握编程概念与工程应用。</li></ul>"
     },
     "publications": {
       "title": "论文发表",

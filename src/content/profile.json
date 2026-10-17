@@ -4,7 +4,7 @@
   "locales": {
     "en": {
       "role": "Ph.D., UMass Amherst",
-      "appointment": "Expected to join the School of Automotive and Transportation Engineering, Wuhan University of Science and Technology, in November 2026 as an Assistant Professor (Young Hundred Talents Program).",
+      "appointment": "Expected to join the School of Automotive and Transportation Engineering, Wuhan University of Science and Technology, in November 2026 as an Assistant Professor.",
       "appointment_short": "Incoming Assistant Professor, WUST · Nov. 2026",
       "affiliation": "University of Massachusetts Amherst",
       "degree": "Ph.D. 2026",
@@ -61,13 +61,13 @@
       ]
     },
     "zh": {
-      "role": "麻省大学阿默斯特分校（UMass Amherst）博士",
+      "role": "麻省大学阿默斯特分校 (UMass Amherst) 博士",
       "appointment": "预计于 2026 年 11 月入职武汉科技大学汽车与交通工程学院，任特聘副教授（青年百人）。",
       "appointment_short": "武汉科技大学 · 特聘副教授（青年百人）· 预计 2026 年 11 月入职",
-      "affiliation": "麻省大学阿默斯特分校（UMass Amherst）",
+      "affiliation": "麻省大学阿默斯特分校 (UMass Amherst)",
       "degree": "博士 · 2026",
       "bio": [
-        "我于 2026 年 9 月获得麻省大学阿默斯特分校（UMass Amherst）土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 副教授</a>。",
+        "我于 2026 年 9 月获得麻省大学阿默斯特分校 (UMass Amherst) 土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 副教授</a>。",
         "博士论文 <em>面向交通感知与安全分析的质量感知多激光雷达框架</em>围绕路侧多激光雷达感知，连接背景建模、无监督三维目标检测、多目标跟踪与质量感知交通冲突分析，并进一步拓展至基础设施中心世界模型（I-WM）、多传感器标定可靠性与空间智能。",
         "另一条研究主线聚焦不确定性条件下的交通系统优化，包括电动汽车路径与充电调度、充电排队和道路资产养护决策。",
         "在赴美攻读博士之前，我在长安大学获得工学硕士和工学学士学位，硕士导师为<a class=\"inline-link\" href=\"https://js.chd.edu.cn/ysgcxy/bq/list.htm\">柏强教授</a>。此前的研究聚焦于路面养护优化及基于深度学习的机场路侧车辆检测。"
@@ -75,7 +75,7 @@
       "education": [
         {
           "years": "2023.09–2026.09",
-          "institution": "麻省大学阿默斯特分校（UMass Amherst）",
+          "institution": "麻省大学阿默斯特分校 (UMass Amherst)",
           "description": "博士 · 土木工程（交通运输工程方向）· 全额奖学金<br>导师：Chengbo Ai 副教授 · GPA：3.97/4.0"
         },
         {
@@ -90,11 +90,11 @@
         }
       ],
       "teaching_title": "教学与指导",
-      "teaching": "麻省大学阿默斯特分校（UMass Amherst）CE-ENGIN 214：土木工程编程课程助教（2024 年 9 月—2025 年 1 月）。设计 Python 编程作业与考试题目，讲授和指导编程实验课，协助代码实现与调试，批改作业并反馈，定期开展课后答疑。",
+      "teaching": "麻省大学阿默斯特分校 (UMass Amherst) CE-ENGIN 214：土木工程编程课程助教（2024 年 9 月—2025 年 1 月）。设计 Python 编程作业与考试题目，讲授和指导编程实验课，协助代码实现与调试，批改作业并反馈，定期开展课后答疑。",
       "background": [
         {
           "title": "科研经历",
-          "html": "<ul><li><strong>麻省大学阿默斯特分校 · 研究助理 · 2023.09–2026.09</strong><br>开展质量感知多激光雷达感知与安全分析，以及不确定性条件下的鲁棒 MPC、路径与充电协同调度研究。导师：Chengbo Ai 副教授。</li><li><strong>长安大学 · 研究助理 · 2020.09–2023.07</strong><br>研究路面与综合资产养护多目标优化，参与机场路侧交通监控系统研发。导师：柏强教授。</li></ul>"
+          "html": "<ul><li><strong>麻省大学阿默斯特分校 (UMass Amherst) · 研究助理 · 2023.09–2026.09</strong><br>开展质量感知多激光雷达感知与安全分析，以及不确定性条件下的鲁棒 MPC、路径与充电协同调度研究。导师：Chengbo Ai 副教授。</li><li><strong>长安大学 · 研究助理 · 2020.09–2023.07</strong><br>研究路面与综合资产养护多目标优化，参与机场路侧交通监控系统研发。导师：柏强教授。</li></ul>"
         },
         {
           "title": "专利与软件",

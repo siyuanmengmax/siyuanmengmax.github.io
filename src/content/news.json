@@ -9,13 +9,13 @@
     "id": "announcement_12",
     "date": "2026-09-01",
     "en": "<p>Officially received my <strong>Ph.D. in Civil Engineering (Transportation Engineering)</strong> from the University of Massachusetts Amherst. 🎓</p>",
-    "zh": "<p>正式获得麻省大学阿默斯特分校<strong>土木工程（交通运输工程方向）博士学位</strong>。🎓</p>"
+    "zh": "<p>正式获得麻省大学阿默斯特分校 (UMass Amherst)<strong>土木工程（交通运输工程方向）博士学位</strong>。🎓</p>"
   },
   {
     "id": "announcement_11",
     "date": "2026-08-25",
     "en": "<p>Successfully defended my Ph.D. dissertation, <strong>“Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis,”</strong> in Civil &amp; Environmental Engineering at the University of Massachusetts Amherst.</p>",
-    "zh": "<p>顺利通过麻省大学阿默斯特分校土木与环境工程博士论文答辩，论文题目为 <strong>“Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis”</strong>。</p>"
+    "zh": "<p>顺利通过麻省大学阿默斯特分校 (UMass Amherst) 土木与环境工程博士论文答辩，论文题目为 <strong>“Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis”</strong>。</p>"
   },
   {
     "id": "announcement_14",
@@ -81,6 +81,6 @@
     "id": "announcement_3",
     "date": "2023-09-01",
     "en": "<p>Started Ph.D. program in Transportation Engineering at <strong>University of Massachusetts Amherst</strong>.</p>",
-    "zh": "<p>开始在<strong>麻省大学阿默斯特分校</strong>攻读土木工程（交通运输工程方向）博士学位。</p>"
+    "zh": "<p>开始在<strong>麻省大学阿默斯特分校 (UMass Amherst)</strong>攻读土木工程（交通运输工程方向）博士学位。</p>"
   }
 ]
