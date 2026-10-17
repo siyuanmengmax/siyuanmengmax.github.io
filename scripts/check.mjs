@@ -7,6 +7,7 @@ import { createHash } from "node:crypto";
 import { innerPage } from "../src/components/pages.mjs";
 import { projectCard } from "../src/components/home.mjs";
 import { esc } from "../src/components/shared.mjs";
+import { titleCase } from "../src/components/publications.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -71,7 +72,7 @@ for (const project of projects) {
     assert(paper, `${project.id}: missing publication ${id}`);
     for (const lang of ["en", "zh"]) {
       const html = htmlByRoute.get(`${lang === "zh" ? "/zh" : ""}/projects/${project.id}/`);
-      const title = lang === "zh" && paper.zh ? paper.zh.title : paper.fields.title;
+      const title = lang === "zh" && paper.zh ? paper.zh.title : titleCase(paper.fields.title);
       assert(html.includes(esc(title)), `${project.id}/${lang}: missing current paper title`);
       if (paper.fields.doi)
         assert(html.includes(`href="https://doi.org/${esc(paper.fields.doi)}"`), `${project.id}: missing DOI`);
@@ -98,7 +99,7 @@ for (const [note, year, labels] of [["Under Review", "2030", ["Under review", "å
     const detail = innerPage(fixture, lang, `projects/${linkedProject.id}`).body;
     const card = projectCard(linkedProject, fixture, lang);
     for (const html of [detail, card]) assert(html.includes(`${labels[index]} Â· `) && html.includes(year));
-    assert(detail.includes("Updated research title") && detail.includes("Updated journal"));
+    assert(detail.includes("Updated Research Title") && detail.includes("Updated journal"));
     assert(!detail.includes("0(0)"), "Unassigned volume/issue must not appear as 0(0)");
     assert(detail.includes(note ? `#paper-${changedPaper.id}` : "https://doi.org/10.1000/project-sync"));
   }

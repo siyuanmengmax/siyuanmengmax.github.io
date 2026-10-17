@@ -1,5 +1,22 @@
 import { esc, external, route } from "./shared.mjs";
 
+const minorTitleWords = new Set(
+  "a an and as at but by for from in into nor of on onto or per so than the to via with yet".split(" "),
+);
+
+export function titleCase(title) {
+  const pattern = /[A-Za-z0-9]+(?:['’][A-Za-z]+)*/g;
+  const words = [...title.matchAll(pattern)];
+  const last = words.at(-1)?.index;
+  return title.replace(pattern, (word, offset) => {
+    // Preserve acronyms and mixed-case research names such as LiDAR and MulDet3D.
+    if (/[A-Z]/.test(word.slice(1))) return word;
+    const lower = word.toLowerCase();
+    const boundary = offset === words[0].index || offset === last || /[:.!?—–]\s*$/.test(title.slice(0, offset));
+    return !boundary && minorTitleWords.has(lower) ? lower : lower[0].toUpperCase() + lower.slice(1);
+  });
+}
+
 export function publication(record) {
   const f = record.fields,
     venue = f.journal || f.booktitle || "";
@@ -19,6 +36,7 @@ export function publication(record) {
   return {
     ...record,
     ...f,
+    title: titleCase(f.title),
     venue,
     category,
     authors,
