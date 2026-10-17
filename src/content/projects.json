@@ -109,20 +109,5 @@
     "publication_ids": [
       "bai2022video"
     ]
-  },
-  {
-    "id": "7_project",
-    "category": "Vision",
-    "order": 2,
-    "en": {
-      "title": "Personalized VISTA",
-      "description": "Vision-Language Safety Assistant for Trustworthy Autonomy",
-      "body": "<p><strong>Status:</strong> In Preparation — Target: <em>NeurIPS</em></p>\n\n<p>As autonomous vehicles become increasingly capable, ensuring trustworthy and explainable decision-making in safety-critical scenarios remains an open challenge. Vision-language models (VLMs) offer a promising path toward human-aligned autonomy.</p>\n\n<p><strong>Personalized VISTA</strong> develops a vision-language safety assistant framework that provides personalized, context-aware safety guidance for autonomous systems.</p>\n\n<p>Key aspects of this work include:</p>\n\n<ul>\n  <li>Integration of large vision-language models for scene understanding and risk assessment in driving contexts</li>\n  <li>A personalization mechanism that adapts safety recommendations to user preferences and driving styles</li>\n  <li>A trustworthiness framework that balances autonomy with human oversight in safety-critical situations</li>\n</ul>\n\n<p>This project represents an intersection of my work in intelligent transportation systems and emerging foundation model capabilities, targeting trustworthy deployment of autonomous vehicles in complex real-world environments.</p>"
-    },
-    "zh": {
-      "title": "Personalized VISTA",
-      "description": "面向可信自主系统的视觉语言安全助手",
-      "body": "<p><strong>状态：</strong> 研究准备中，目标投稿会议为 <em>NeurIPS</em></p>\n\n<p>随着自动驾驶能力提升，安全关键场景中的可信、可解释决策仍是重要挑战。视觉语言模型为与人类需求一致的自主系统提供了新的研究方向。</p>\n\n<p><strong>Personalized VISTA</strong> 致力于构建视觉语言安全助手，为自主系统提供个性化、结合情境的安全指导：</p>\n\n<ul>\n  <li>利用大型视觉语言模型理解驾驶场景并评估风险</li>\n  <li>根据用户偏好与驾驶风格调整安全建议</li>\n  <li>在安全关键场景中，平衡自主性与人工监督</li>\n</ul>\n\n<p>项目连接智能交通研究与基础模型能力，探索复杂真实环境中的可信自动驾驶部署。</p>"
-    }
   }
 ]
