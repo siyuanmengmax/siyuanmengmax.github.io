@@ -22,7 +22,7 @@ export function navigation(data, lang, page = "") {
   const paths = ["#about", "publications/", "projects/", "repositories/", "teaching/", "news/"];
   const links = home ? ui.nav : paths.map((path, i) => ({ href: `${route(lang)}${path}`, label: labels[i] }));
   return `<header><nav class="wrap" aria-label="${esc(ui.navigation_label)}">
-  <a class="logo" href="${route(lang)}">MAX MENG<span>${esc(data.site.name_zh)}</span></a>
+  <a class="logo" href="${route(lang)}">${esc(data.site.name)}<span>${esc(data.site.name_zh)}</span></a>
   <div class="links">${links
     .map(
       (link) =>
