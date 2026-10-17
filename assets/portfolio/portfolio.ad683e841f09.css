@@ -488,6 +488,9 @@ footer {
   }
   nav {
     min-height: 76px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
   nav.wrap {
     padding-top: 12px;
@@ -863,7 +866,8 @@ details li {
     font-size: 11px;
   }
   .links {
-    max-width: 75%;
+    max-width: 100%;
+    justify-content: flex-start;
   }
 }
 
