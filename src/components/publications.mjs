@@ -17,6 +17,20 @@ export function titleCase(title) {
   });
 }
 
+export function bibtex(record, lang = "en") {
+  const fields = { ...record.fields };
+  if (lang === "zh" && record.zh) {
+    fields.title = record.zh.title;
+    fields.author = record.zh.authors.join(" and ");
+    if (fields.journal) fields.journal = record.zh.venue;
+    if (fields.booktitle) fields.booktitle = record.zh.venue;
+    if (fields.note === "In Chinese") fields.note = "中文";
+  }
+  return `@${record.type}{${record.id},\n${Object.entries(fields)
+    .map(([key, value]) => `  ${key} = {${value}}`)
+    .join(",\n")}\n}\n`;
+}
+
 export function publication(record) {
   const f = record.fields,
     venue = f.journal || f.booktitle || "";
@@ -43,9 +57,6 @@ export function publication(record) {
     url: f.doi
       ? `https://doi.org/${f.doi}`
       : record.url || f.html || (f.arxiv ? `https://arxiv.org/abs/${f.arxiv}` : null),
-    bibtex: `@${record.type}{${record.id},\n${Object.entries(f)
-      .map(([key, value]) => `  ${key} = {${value}}`)
-      .join(",\n")}\n}\n`,
   };
 }
 
@@ -65,7 +76,7 @@ export function paperCard(paper, ui, lang) {
   <div class="year">${paper.year}</div><div class="pub-copy" id="${paper.id}"><h3>${esc(title)}</h3>
   <p>${authors.map((a) => (a.self ? `<strong>${esc(a.name)}</strong>` : esc(a.name))).join(zh ? "，" : ", ")}</p>
   <p class="venue">${esc(venue)}</p><details class="citation"><summary>BibTeX</summary><pre>${esc(
-    paper.bibtex,
+    bibtex(paper, lang),
   )}</pre></details></div>
   ${
     paper.url ? external(paper.url, "↗", `class="paper-link" aria-label="${esc(`${ui.read}: ${title}`)}"`) : ""
@@ -97,7 +108,7 @@ export function publications(data, lang, { archive = false } = {}) {
     ui.count_suffix
   }</span></div>
   <div id="papers">${papers.map((p) => paperCard(p, ui, lang)).join("")}</div><p id="no-papers" hidden>${ui.empty}</p>
-  <div class="actions"><a class="text-link" href="/assets/portfolio/publications.bib" download>${
+  <div class="actions"><a class="text-link" href="/assets/portfolio/publications${lang === "zh" ? "-zh" : ""}.bib" download>${
     ui.download
   }</a>${external(data.site.scholar, "Google Scholar ↗", 'class="text-link"')}
   ${archive ? "" : `<a class="text-link" href="${route(lang, "publications")}">${ui.archive}</a>`}</div></section>`;

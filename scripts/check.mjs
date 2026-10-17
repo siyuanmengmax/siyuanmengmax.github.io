@@ -104,9 +104,37 @@ for (const [note, year, labels] of [["Under Review", "2030", ["Under review", "�
     assert(detail.includes(note ? `#paper-${changedPaper.id}` : "https://doi.org/10.1000/project-sync"));
   }
 }
-const bib = await read("assets/portfolio/publications.bib");
-assert.equal((bib.match(/^@\w+\{/gm) || []).length, publications.length, "BibTeX count");
-assert(!bib.includes("<html"), "BibTeX must remain plain text");
+for (const lang of ["en", "zh"]) {
+  const download = `/assets/portfolio/publications${lang === "zh" ? "-zh" : ""}.bib`;
+  const bib = await read(download.slice(1));
+  const entries = [...bib.matchAll(/^@(\w+)\{([^,]+),\n([\s\S]*?)^\}\n/gm)];
+  assert.equal(entries.length, publications.length, `${lang}: BibTeX count`);
+  assert(!bib.includes("<html"), "BibTeX must remain plain text");
+  assert.equal(new Set(entries.map((entry) => entry[2])).size, publications.length, `${lang}: BibTeX IDs`);
+  const prefix = lang === "zh" ? "/zh" : "";
+  for (const url of [`${prefix}/`, `${prefix}/publications/`]) {
+    const html = htmlByRoute.get(url);
+    assert(html.includes(`href="${download}" download`), `${url}: wrong BibTeX download`);
+    for (const [entry, type, id, body] of entries) {
+      const paper = publications.find((p) => p.id === id);
+      assert(paper, `${lang}: unknown BibTeX ID ${id}`);
+      assert.equal(type, paper.type, `${id}: BibTeX type`);
+      const fields = Object.fromEntries([...body.matchAll(/^  (\w+) = \{(.*)\},?$/gm)].map((m) => [m[1], m[2]]));
+      if (lang === "zh" && paper.zh) {
+        assert.equal(fields.title, paper.zh.title, `${id}: Chinese BibTeX title`);
+        assert.deepEqual(fields.author.split(" and "), paper.zh.authors, `${id}: Chinese BibTeX authors`);
+        assert.equal(fields.journal || fields.booktitle, paper.zh.venue, `${id}: Chinese BibTeX venue`);
+        assert.equal(fields.note, "中文", `${id}: Chinese language note`);
+        for (const key of ["doi", "year", "volume", "number", "pages"])
+          assert.equal(fields[key], paper.fields[key], `${id}: changed ${key}`);
+      } else {
+        assert.deepEqual(fields, paper.fields, `${id}: original BibTeX metadata changed`);
+      }
+      const card = html.split(`id="paper-${id}"`)[1]?.split("</article>")[0];
+      assert(card?.includes(`<pre>${esc(entry)}</pre>`), `${url}/${id}: inline and downloaded BibTeX differ`);
+    }
+  }
+}
 for (const [original, versioned] of Object.entries(manifest.assets)) {
   const bytes = await fs.readFile(path.join(dist, original));
   const hash = createHash("sha256").update(bytes).digest("hex").slice(0, 12);
@@ -140,5 +168,5 @@ await fs.access(path.join(dist, "sitemap.xml"));
 assert.equal(manifest.counts.projects, projects.length);
 assert.equal(manifest.counts.news, news.length);
 console.log(
-  `PASS: ${manifest.routes.length} bilingual pages; ${references} references; ${publications.length} publications, ${projects.length} projects, ${news.length} news items; project/publication synchronization, metadata, legacy anchors, asset hashes, fonts, and JavaScript syntax.`,
+  `PASS: ${manifest.routes.length} bilingual pages; ${references} references; ${publications.length} publications, ${projects.length} projects, ${news.length} news items; localized BibTeX, project/publication synchronization, metadata, legacy anchors, asset hashes, fonts, and JavaScript syntax.`,
 );

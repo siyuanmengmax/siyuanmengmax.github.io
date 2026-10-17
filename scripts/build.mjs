@@ -5,7 +5,7 @@ import { createHash } from "node:crypto";
 import { document, esc, route } from "../src/components/shared.mjs";
 import { home } from "../src/components/home.mjs";
 import { innerPage, notFound } from "../src/components/pages.mjs";
-import { sortedPapers } from "../src/components/publications.mjs";
+import { bibtex, sortedPapers } from "../src/components/publications.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const names = ["site", "profile", "framework", "publications", "projects", "news", "pages"];
@@ -80,7 +80,12 @@ await write(
     (await fs.readFile(path.join(stage, "assets/portfolio/scene.js"), "utf8")),
 );
 await write("assets/js/language.js", "/* Language handling is included in the portfolio script. */\n");
-await write("assets/portfolio/publications.bib", papers.map((p) => p.bibtex).join("\n"));
+for (const lang of ["en", "zh"]) {
+  await write(
+    `assets/portfolio/publications${lang === "zh" ? "-zh" : ""}.bib`,
+    papers.map((p) => bibtex(p, lang)).join("\n"),
+  );
+}
 const routes = [];
 const pages = [
   "publications",

@@ -66,7 +66,7 @@ Each publication has a stable `id`, a BibTeX `type`, and a `fields` object. The 
 
 For papers published in Chinese, the optional `zh` object provides the original Chinese title, full author names, and venue. Year, volume, issue, pages, and DOI are shared through `fields`. A preprint without a DOI can use a top-level `url`. The publication pages, filters, and downloadable BibTeX all use these records; there is no separate `.bib` source to maintain.
 
-The generated download remains available at `/assets/portfolio/publications.bib`. Preserve existing publication IDs so links and research-framework references continue to work. Both `/publications/#PUBLICATION_ID` and `/#paper-PUBLICATION_ID` anchors are supported.
+Chinese pages use the original Chinese metadata for these papers in both inline BibTeX and the download at `/assets/portfolio/publications-zh.bib`; other papers retain their original metadata. English pages continue to use `/assets/portfolio/publications.bib`. Both files are generated from the same publication records. Preserve existing publication IDs so links and research-framework references continue to work. Both `/publications/#PUBLICATION_ID` and `/#paper-PUBLICATION_ID` anchors are supported.
 
 ### Projects and news
 

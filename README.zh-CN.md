@@ -66,7 +66,7 @@ docs/                  # 重构记录与回退说明
 
 中文论文的 `zh` 字段保存原始中文题名、完整作者姓名和刊物名。年份、卷期、页码和 DOI 共用 `fields`。没有 DOI 的预印本可设置顶层 `url`。页面、筛选及下载文件均由这一份记录生成，不再另行维护 `.bib` 源文件。
 
-构建生成的下载地址沿用 `/assets/portfolio/publications.bib`。保留已有论文 `id`，以免旧链接和研究框架的关联失效。原 `/publications/#论文ID` 和首页 `/#paper-论文ID` 均可继续使用。
+中文页面的展开 BibTeX 与“下载全部 BibTeX”均使用中文论文的原始中文信息，其他论文保留原始信息。中文下载地址为 `/assets/portfolio/publications-zh.bib`，英文页面沿用 `/assets/portfolio/publications.bib`；两个文件均由同一份论文记录生成。保留已有论文 `id`，以免旧链接和研究框架的关联失效。原 `/publications/#论文ID` 和首页 `/#paper-论文ID` 均可继续使用。
 
 ### 项目与动态
 
