@@ -13,9 +13,13 @@
     "/projects/4_project/",
     "/projects/5_project/",
     "/projects/6_project/",
+    "/projects/traffic_conflict_analysis/",
+    "/projects/ev_charging/",
+    "/projects/camera_lidar_calibration/",
     "/news/announcement_13/",
     "/news/announcement_12/",
     "/news/announcement_11/",
+    "/news/announcement_14/",
     "/news/announcement_10/",
     "/news/announcement_5/",
     "/news/announcement_7/",
@@ -39,9 +43,13 @@
     "/zh/projects/4_project/",
     "/zh/projects/5_project/",
     "/zh/projects/6_project/",
+    "/zh/projects/traffic_conflict_analysis/",
+    "/zh/projects/ev_charging/",
+    "/zh/projects/camera_lidar_calibration/",
     "/zh/news/announcement_13/",
     "/zh/news/announcement_12/",
     "/zh/news/announcement_11/",
+    "/zh/news/announcement_14/",
     "/zh/news/announcement_10/",
     "/zh/news/announcement_5/",
     "/zh/news/announcement_7/",
@@ -62,8 +70,8 @@
     "/assets/portfolio/research-demo.js": "/assets/portfolio/research-demo.fd456943e9f5.js"
   },
   "counts": {
-    "publications": 16,
-    "projects": 6,
-    "news": 13
+    "publications": 18,
+    "projects": 9,
+    "news": 14
   }
 }
