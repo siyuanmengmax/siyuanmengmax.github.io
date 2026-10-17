@@ -69,18 +69,7 @@
       "author": "Meng, Siyuan and Cheng, Runan and Ai, Chengbo",
       "journal": "Automation in Construction",
       "year": "2026",
-      "note": "Under Review"
-    }
-  },
-  {
-    "id": "meng_ev_mpc",
-    "type": "article",
-    "fields": {
-      "title": "A robust MPC framework for system-optimal EV charging scheduling under demand uncertainty",
-      "author": "Meng, Siyuan and Ai, Chengbo",
-      "journal": "IEEE Transactions on Intelligent Transportation Systems",
-      "year": "2026",
-      "note": "Under Review"
+      "note": "Under Review after Major Revision"
     }
   },
   {
@@ -88,21 +77,54 @@
     "type": "article",
     "fields": {
       "title": "Quality-aware vehicle conflict detection with spatial precision enhancement for roadside multi-LiDAR systems",
-      "author": "Meng, Siyuan and Yang, Yu-Min and Ai, Chengbo",
-      "journal": "Accident Analysis and Prevention",
+      "author": "Meng, Siyuan and Yang, Yu-Min and Christofa, Eleni and Knodler, Michael and Ai, Chengbo",
+      "journal": "Transportation Research Part C: Emerging Technologies",
       "year": "2026",
-      "note": "Under Review"
+      "note": "Submitted"
+    }
+  },
+  {
+    "id": "meng_highway_charging",
+    "type": "article",
+    "fields": {
+      "title": "Station information and request timing for reducing fast-charging queues on intercity highway corridors",
+      "author": "Meng, Siyuan and Ai, Chengbo",
+      "journal": "Transportation Research Part D: Transport and Environment",
+      "year": "2026",
+      "note": "Submitted"
+    }
+  },
+  {
+    "id": "meng_queue_aware_charging",
+    "type": "article",
+    "fields": {
+      "title": "When does queue-aware charging-station choice pay off in mixed autonomous and human-driven electric ride-hailing fleets?",
+      "author": "Meng, Siyuan and Ai, Chengbo",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems",
+      "year": "2026",
+      "note": "Submitted"
+    }
+  },
+  {
+    "id": "meng_calibration_drift",
+    "type": "article",
+    "fields": {
+      "title": "Calibration drift and colorization error in roadside camera–LiDAR systems: a saturating law and site-specific recalibration budgets",
+      "author": "Meng, Siyuan and Ai, Chengbo",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems",
+      "year": "2026",
+      "note": "Submitted"
     }
   },
   {
     "id": "meng_clustertrack3d",
     "type": "article",
     "fields": {
-      "title": "ClusterTrack3D: Lightweight Multi-Object Tracking for Roadside LiDAR via Cluster-Level Implicit Association",
+      "title": "Tracking quality determines traffic conflict detectability in roadside LiDAR systems: evidence from ClusterTrack3D",
       "author": "Meng, Siyuan and Ai, Chengbo",
-      "journal": "Accident Analysis and Prevention",
+      "journal": "Journal of Computing in Civil Engineering",
       "year": "2026",
-      "note": "Submitting"
+      "note": "Submitted"
     }
   },
   {

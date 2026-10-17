@@ -6,12 +6,12 @@
     "en": {
       "title": "MulDet3D",
       "description": "Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs",
-      "body": "<p>Roadside LiDAR systems offer a promising infrastructure-based approach for traffic monitoring, but detecting objects across multiple sensors with varying fields of view remains challenging — especially without labeled training data.</p>\n\n<p><strong>MulDet3D</strong> proposes an unsupervised object detection framework that jointly optimizes detection accuracy and computational efficiency across multiple roadside LiDARs. Key contributions include:</p>\n\n<ul>\n  <li>A multi-objective optimization formulation that balances detection performance across overlapping and non-overlapping sensor zones</li>\n  <li>An unsupervised pipeline that eliminates the need for manually annotated 3D bounding boxes</li>\n  <li>Robust handling of sparse point clouds typical in roadside (infrastructure-side) deployments</li>\n</ul>\n\n<p>This work addresses a critical gap in infrastructure-based sensing for intelligent transportation systems, enabling scalable deployment without costly labeling efforts.</p>"
+      "body": "<p>Roadside LiDAR systems offer a promising infrastructure-based approach for traffic monitoring, but detecting objects across multiple sensors with varying fields of view remains challenging — especially without labeled training data.</p>\n\n<p><strong>MulDet3D</strong> proposes an unsupervised object detection framework that jointly optimizes detection accuracy and computational efficiency across multiple roadside LiDARs. Key contributions include:</p>\n\n<ul>\n  <li>A multi-objective optimization formulation that balances detection performance across overlapping and non-overlapping sensor zones</li>\n  <li>An unsupervised pipeline that eliminates the need for manually annotated 3D bounding boxes</li>\n  <li>Robust handling of sparse point clouds typical in roadside (infrastructure-side) deployments</li>\n</ul>\n\n<p>This work addresses a critical gap in infrastructure-based sensing for intelligent transportation systems, enabling scalable deployment without costly labeling efforts.</p>\n\n<h2>Patent application</h2>\n\n<p><strong>Meng, S.</strong>, Ai, C., &amp; Xie, Y. (2026). System and method for unsupervised object detection using multiple LiDAR sensors. U.S. provisional patent application No. 64/085,047, filed June 8, 2026.</p>"
     },
     "zh": {
       "title": "MulDet3D",
       "description": "基于多目标优化的多路侧激光雷达无监督目标检测",
-      "body": "<p>路侧激光雷达为交通监测提供了基于基础设施的感知方式，但在多个视场不同的传感器之间进行目标检测仍面临挑战，尤其是在缺少标注训练数据时。</p>\n\n<p><strong>MulDet3D</strong> 提出无监督目标检测框架，联合优化多个路侧激光雷达的检测精度与计算效率：</p>\n\n<ul>\n  <li>通过多目标优化，平衡传感器重叠区域与非重叠区域的检测表现</li>\n  <li>无需人工标注三维边界框，减少部署中的数据标注成本</li>\n  <li>针对路侧场景中的稀疏点云进行稳健处理</li>\n</ul>\n\n<p>该研究支持智能交通系统中可扩展的基础设施感知部署。</p>"
+      "body": "<p>路侧激光雷达为交通监测提供了基于基础设施的感知方式，但在多个视场不同的传感器之间进行目标检测仍面临挑战，尤其是在缺少标注训练数据时。</p>\n\n<p><strong>MulDet3D</strong> 提出无监督目标检测框架，联合优化多个路侧激光雷达的检测精度与计算效率：</p>\n\n<ul>\n  <li>通过多目标优化，平衡传感器重叠区域与非重叠区域的检测表现</li>\n  <li>无需人工标注三维边界框，减少部署中的数据标注成本</li>\n  <li>针对路侧场景中的稀疏点云进行稳健处理</li>\n</ul>\n\n<p>该研究支持智能交通系统中可扩展的基础设施感知部署。</p>\n\n<h2>专利申请</h2>\n\n<p><strong>Meng, S.</strong>, Ai, C., &amp; Xie, Y. (2026). System and method for unsupervised object detection using multiple LiDAR sensors. 美国临时专利申请，申请号 64/085,047，申请日为 2026 年 6 月 8 日。</p>"
     },
     "publication_ids": [
       "meng_muldet3d"
@@ -99,15 +99,71 @@
     "en": {
       "title": "Airport Curbside Vehicle Detection",
       "description": "Deep learning-based detection of illegal pick-up vehicles at airport departure levels",
-      "body": "<p>Illegal pick-up and drop-off activities at airport curbside zones create traffic congestion and safety hazards. Manual enforcement is costly and inconsistent, motivating an automated vision-based detection system.</p>\n\n<p>This project developed an end-to-end <strong>deep learning pipeline</strong> for detecting and classifying illegal curbside vehicles from surveillance cameras at airport departure levels.</p>\n\n<p>Key contributions include:</p>\n\n<ul>\n  <li>A video-based vehicle detection and behavior recognition system tailored for airport curbside environments</li>\n  <li>Handling of occlusion, varying lighting, and high vehicle density typical in airport settings</li>\n  <li>Deployment as a functional monitoring system (Software Copyright registered)</li>\n</ul>\n\n<h2>Patent and software</h2>\n\n<ul>\n  <li>Wu, S., <strong>Meng, S.</strong>, et al. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning. [Granted Patent 202111642183.3]</li>\n  <li><strong>Meng, S.</strong> (2023). Airport curbside illegal vehicle monitoring system. [Software Copyright]</li>\n</ul>"
+      "body": "<p>Illegal pick-up and drop-off activities at airport curbside zones create traffic congestion and safety hazards. Manual enforcement is costly and inconsistent, motivating an automated vision-based detection system.</p>\n\n<p>This project developed an end-to-end <strong>deep learning pipeline</strong> for detecting and classifying illegal curbside vehicles from surveillance cameras at airport departure levels.</p>\n\n<p>Key contributions include:</p>\n\n<ul>\n  <li>A video-based vehicle detection and behavior recognition system tailored for airport curbside environments</li>\n  <li>Handling of occlusion, varying lighting, and high vehicle density typical in airport settings</li>\n  <li>Deployment as a functional monitoring system (Software Copyright registered)</li>\n</ul>\n\n<h2>Patent and software</h2>\n\n<ul>\n  <li>Deep learning-based automatic detection of illegal vehicles at airport departure levels. Granted Chinese invention patent CN114821490B (2025).</li>\n  <li>Airport curbside illegal vehicle monitoring system. Software copyright (2023); first author: Siyuan Meng.</li>\n</ul>"
     },
     "zh": {
       "title": "机场路侧车辆检测",
       "description": "基于深度学习的机场出发层违规接客车辆检测",
-      "body": "<p>机场路侧区域的违规接送客行为会带来拥堵与安全隐患，而人工执法成本较高、标准难以保持一致。</p>\n\n<p>本项目构建端到端的<strong>深度学习流程</strong>，利用机场出发层监控视频检测与识别违规车辆：</p>\n\n<ul>\n  <li>面向机场路侧场景开展车辆检测与行为识别</li>\n  <li>处理遮挡、光照变化和高车辆密度等复杂情况</li>\n  <li>开发可运行的监测系统，并登记软件著作权</li>\n</ul>\n\n<h2>专利与软件成果</h2>\n\n<ul>\n  <li>Wu, S., <strong>Meng, S.</strong>, et al. (2025). Automatic detection method for illegal vehicles at airport departure levels based on deep learning. [Granted Patent 202111642183.3]</li>\n  <li><strong>Meng, S.</strong> (2023). Airport curbside illegal vehicle monitoring system. [Software Copyright]</li>\n</ul>"
+      "body": "<p>机场路侧区域的违规接送客行为会带来拥堵与安全隐患，而人工执法成本较高、标准难以保持一致。</p>\n\n<p>本项目构建端到端的<strong>深度学习流程</strong>，利用机场出发层监控视频检测与识别违规车辆：</p>\n\n<ul>\n  <li>面向机场路侧场景开展车辆检测与行为识别</li>\n  <li>处理遮挡、光照变化和高车辆密度等复杂情况</li>\n  <li>开发可运行的监测系统，并登记软件著作权</li>\n</ul>\n\n<h2>专利与软件成果</h2>\n\n<ul>\n  <li>一种基于深度学习的机场出发层违章车辆自动识别方法。中国授权发明专利 CN114821490B（2025）。</li>\n  <li>机场路侧违法车辆监控系统。软件著作权（2023），第一作者：蒙思源。</li>\n</ul>"
     },
     "publication_ids": [
       "bai2022video"
+    ]
+  },
+  {
+    "id": "traffic_conflict_analysis",
+    "category": "LiDAR",
+    "order": 4,
+    "en": {
+      "title": "Quality-Aware Traffic Conflict Analysis",
+      "description": "Spatial precision, tracking quality, and traffic conflict detectability in roadside LiDAR systems",
+      "body": "<p>Traffic conflict analysis relies on the positions and trajectories recovered by roadside sensors. This research examines how sensing and tracking quality affect the interactions that can be detected and interpreted.</p>\n\n<p>Two related studies address <strong>spatial precision enhancement</strong> for multi-LiDAR conflict detection and the relationship between <strong>tracking quality and conflict detectability</strong>, using ClusterTrack3D as the tracking method under study. Together, they connect roadside perception quality with traffic safety analysis.</p>"
+    },
+    "zh": {
+      "title": "质量感知交通冲突分析",
+      "description": "路侧激光雷达系统中的空间精度、跟踪质量与交通冲突可检测性",
+      "body": "<p>交通冲突分析依赖路侧传感器恢复的目标位置与运动轨迹。本研究关注感知与跟踪质量如何影响交通交互的检测和解释。</p>\n\n<p>两项相关工作分别研究多激光雷达冲突检测中的<strong>空间精度增强</strong>，以及<strong>跟踪质量与冲突可检测性</strong>的关系，后者以 ClusterTrack3D 为研究对象，将路侧感知质量与交通安全分析相连接。</p>"
+    },
+    "publication_ids": [
+      "meng_conflict",
+      "meng_clustertrack3d"
+    ]
+  },
+  {
+    "id": "ev_charging",
+    "category": "Optimization",
+    "order": 3,
+    "en": {
+      "title": "EV Charging and Queue Management",
+      "description": "Station information, request timing, and queue-aware station choice for highway corridors and mixed fleets",
+      "body": "<p>This research studies how information and charging decisions affect queues in electric transportation systems.</p>\n\n<ul>\n  <li><strong>Intercity highway corridors:</strong> investigate station information and request timing for reducing fast-charging queues.</li>\n  <li><strong>Electric ride-hailing fleets:</strong> examine when queue-aware charging-station choice is beneficial in fleets with both autonomous and human-driven vehicles.</li>\n</ul>\n\n<p>These studies form part of a broader research direction on routing and charging coordination under demand and behavioral uncertainty.</p>"
+    },
+    "zh": {
+      "title": "电动汽车充电与排队管理",
+      "description": "面向高速公路走廊与混合车队的充电站信息、请求时机和排队感知选站",
+      "body": "<p>本研究关注信息与充电决策对电动交通系统排队状况的影响。</p>\n\n<ul>\n  <li><strong>城际高速公路走廊：</strong>研究充电站信息与请求时机对快充排队的影响。</li>\n  <li><strong>电动网约车车队：</strong>研究自动驾驶与人工驾驶车辆共存时，排队感知充电站选择的适用条件。</li>\n</ul>\n\n<p>两项工作共同服务于需求与行为不确定性条件下的路径与充电协同研究。</p>"
+    },
+    "publication_ids": [
+      "meng_highway_charging",
+      "meng_queue_aware_charging"
+    ]
+  },
+  {
+    "id": "camera_lidar_calibration",
+    "category": "Vision",
+    "order": 2,
+    "en": {
+      "title": "Roadside Camera–LiDAR Calibration Reliability",
+      "description": "Calibration drift, point-cloud colorization error, and site-specific recalibration budgets",
+      "body": "<p>Roadside camera–LiDAR systems combine image and point-cloud information. This research examines the relationship between <strong>calibration drift and colorization error</strong>, with attention to a saturating error relationship and site-specific recalibration budgets.</p>\n\n<p>The work extends roadside perception research toward the reliability and maintenance of multi-sensor calibration.</p>"
+    },
+    "zh": {
+      "title": "路侧相机—激光雷达标定可靠性",
+      "description": "标定漂移、点云着色误差与场地特定的重标定预算",
+      "body": "<p>路侧相机—激光雷达系统需要联合利用图像与点云信息。本研究关注<strong>标定漂移与着色误差</strong>的关系，研究误差的饱和规律以及场地特定的重标定预算。</p>\n\n<p>该工作将路侧感知研究拓展至多传感器标定的可靠性与维护。</p>"
+    },
+    "publication_ids": [
+      "meng_calibration_drift"
     ]
   }
 ]

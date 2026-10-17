@@ -18,7 +18,7 @@ npm run dev
 
 打开 `http://localhost:4173/` 或 `http://localhost:4173/zh/`。修改内容后，重新运行 `npm run build` 并刷新浏览器。端口被占用时可使用 `PORT=4174 npm run dev`。
 
-构建过程完全离线。`dist/` 为自动生成的网站，不提交到 Git，也不直接编辑。关闭浏览器 JavaScript 后，所有正文、论文与项目仍可阅读。
+构建过程完全离线。`dist/` 为自动生成的网站，不提交到 Git，也不直接编辑；每次构建都会替换该目录。手动维护的简历源文件请保存在 `dist/` 之外，例如已被 Git 忽略的 `preview/cv-sources/`。关闭浏览器 JavaScript 后，所有正文、论文与项目仍可阅读。
 
 ## 目录
 
@@ -62,7 +62,7 @@ docs/                  # 重构记录与回退说明
 
 ### 论文
 
-每篇论文包含稳定的 `id`、BibTeX `type` 和 `fields`。作者字段保持 BibTeX 写法，例如 `Meng, Siyuan and Ai, Chengbo`。`note` 中的 `Under Review` / `Submitting` 会归入在研手稿；会议类型归入会议论文；arXiv / preprint 刊物归入预印本。其余归入期刊论文。
+每篇论文包含稳定的 `id`、BibTeX `type` 和 `fields`。作者字段保持 BibTeX 写法，例如 `Meng, Siyuan and Ai, Chengbo`。`note` 中的 `Under Review`、`Under Review after Major Revision`、`Submitted` 或 `Submitting` 会归入在研手稿；会议类型归入会议论文；arXiv / preprint 刊物归入预印本。其余归入期刊论文。论文页与项目页使用一致的双语状态标签，区分审稿中、大修后在审、已投稿与准备投稿。
 
 中文论文的 `zh` 字段保存原始中文题名、完整作者姓名和刊物名。年份、卷期、页码和 DOI 共用 `fields`。没有 DOI 的预印本可设置顶层 `url`。页面、筛选及下载文件均由这一份记录生成，不再另行维护 `.bib` 源文件。
 

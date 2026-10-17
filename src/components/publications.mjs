@@ -35,7 +35,7 @@ export function publication(record) {
   const f = record.fields,
     venue = f.journal || f.booktitle || "";
   const category =
-    /under review|submitting|in preparation|ongoing/i.test(f.note || "") || record.type === "unpublished"
+    /under review|submitted|submitting|in preparation|ongoing/i.test(f.note || "") || record.type === "unpublished"
       ? "manuscripts"
       : /arxiv|preprint/i.test(venue) || f.arxiv
         ? "preprints"
@@ -63,15 +63,32 @@ export function publication(record) {
 export const sortedPapers = (data) =>
   data.publications.map(publication).sort((a, b) => Number(b.year) - Number(a.year));
 
+export function publicationStatus(paper, lang) {
+  const note = paper.note || "";
+  let labels;
+  if (/under review.*major revision/i.test(note)) labels = ["Under review after major revision", "大修后在审"];
+  else if (/under review/i.test(note)) labels = ["Under review", "审稿中"];
+  else if (/submitted/i.test(note)) labels = ["Submitted", "已投稿"];
+  else if (/submitting/i.test(note)) labels = ["Preparing for submission", "准备投稿"];
+  else if (/accepted/i.test(note)) labels = ["Accepted", "已接收"];
+  else if (paper.category === "manuscripts") labels = ["In preparation", "研究准备中"];
+  else if (paper.category === "preprints") labels = ["Preprint", "预印本"];
+  else labels = ["Published", "已发表"];
+  return labels[lang === "zh" ? 1 : 0];
+}
+
 export function paperCard(paper, ui, lang) {
   const zh = lang === "zh" && paper.zh;
   const title = zh ? zh.title : paper.title;
   const authors = zh ? zh.authors.map((name) => ({ name, self: name === "蒙思源" })) : paper.authors;
+  const note = paper.category === "manuscripts" || /accepted/i.test(paper.note || "")
+    ? publicationStatus(paper, lang)
+    : paper.note;
   const venue = zh
     ? `${zh.venue}，${paper.year}${
         paper.volume ? `，${paper.volume}${paper.number ? `(${Number(paper.number)})` : ""}` : ""
       }${paper.pages ? `：${paper.pages.replaceAll("--", "–")}` : ""}`
-    : `${paper.venue}${paper.note ? ` · ${paper.note}` : ""}`;
+    : `${paper.venue}${note ? ` · ${note}` : ""}`;
   return `<article class="pub" id="paper-${paper.id}" data-category="${paper.category}">
   <div class="year">${paper.year}</div><div class="pub-copy" id="${paper.id}"><h3>${esc(title)}</h3>
   <p>${authors.map((a) => (a.self ? `<strong>${esc(a.name)}</strong>` : esc(a.name))).join(zh ? "，" : ", ")}</p>

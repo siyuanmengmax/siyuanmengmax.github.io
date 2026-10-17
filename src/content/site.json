@@ -2,8 +2,8 @@
   "name": "Siyuan (Max) Meng",
   "name_zh": "蒙思源",
   "url": "https://siyuanmengmax.github.io",
-  "description": "Ph.D. in Civil Engineering at UMass Amherst. Research on Infrastructure-Centric World Models, roadside LiDAR perception, and transportation optimization.",
-  "email": "siyuanmeng@umass.edu",
+  "description": "Siyuan (Max) Meng, Ph.D., UMass Amherst. Incoming Specially Appointed Associate Professor at Wuhan University of Science and Technology, November 2026. Research on roadside perception, transportation safety, infrastructure-centric world models, and transportation optimization.",
+  "email": "siyuan_meng_max@163.com",
   "github": "siyuanmengmax",
   "scholar": "https://scholar.google.com/citations?user=9L4TQh0AAAAJ",
   "socials": [
@@ -83,19 +83,19 @@
         {
           "number": "01 — PERCEIVE",
           "title": "Roadside intelligent<br>perception",
-          "description": "Multi-LiDAR and multi-sensor methods for background modeling, 3D object detection, and robust tracking in complex traffic environments.",
+          "description": "Multi-LiDAR and multi-sensor methods for background modeling, unsupervised 3D detection, robust tracking, and camera–LiDAR calibration reliability in complex traffic environments.",
           "tags": ["Multi-LiDAR fusion", "3D detection & tracking"]
         },
         {
           "number": "02 — UNDERSTAND",
           "title": "Quality-aware<br>transportation safety",
-          "description": "Understanding how sensing and tracking quality affect traffic conflict analysis, with an emphasis on uncertainty and spatial precision.",
+          "description": "Understanding how sensing quality, spatial precision, and trajectory continuity affect traffic conflict analysis and conflict detectability.",
           "tags": ["Traffic conflicts", "Uncertainty"]
         },
         {
           "number": "03 — ANTICIPATE",
           "title": "Transportation<br>system optimization",
-          "description": "Developing multi-objective optimization methods for roadway asset management, EV charging infrastructure, and sustainable transportation systems.",
+          "description": "Optimizing roadway asset maintenance, EV routing, and charging under uncertainty, with current work on highway fast-charging queues and mixed autonomous and human-driven fleets.",
           "tags": ["Asset management", "Multiobjective optimization"]
         }
       ],
@@ -253,19 +253,19 @@
         {
           "number": "01 — 感知",
           "title": "路侧智能<br>感知",
-          "description": "面向复杂交通环境，研究多激光雷达与多传感器背景建模、三维目标检测和稳健跟踪方法。",
+          "description": "面向复杂交通环境，研究多激光雷达与多传感器背景建模、无监督三维目标检测、稳健跟踪及相机—激光雷达标定可靠性。",
           "tags": ["多激光雷达融合", "三维检测与跟踪"]
         },
         {
           "number": "02 — 理解",
           "title": "质量感知的<br>交通安全分析",
-          "description": "研究感知与跟踪质量对交通冲突分析的影响，重点关注不确定性与空间精度。",
+          "description": "研究感知质量、空间精度和轨迹连续性对交通冲突分析与冲突可检测性的影响。",
           "tags": ["交通冲突", "不确定性"]
         },
         {
           "number": "03 — 优化",
           "title": "交通<br>系统优化",
-          "description": "面向道路资产管理、电动汽车充电基础设施与可持续交通系统，构建多目标优化方法。",
+          "description": "研究不确定性条件下的道路资产养护、电动汽车路径与充电优化，关注高速公路快充排队以及自动驾驶与人工驾驶混合车队。",
           "tags": ["资产管理", "多目标优化"]
         }
       ],

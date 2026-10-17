@@ -1,5 +1,5 @@
 import { esc, external, route } from "./shared.mjs";
-import { publication } from "./publications.mjs";
+import { publication, publicationStatus } from "./publications.mjs";
 
 export function projectPapers(project, data) {
   return (project.publication_ids || []).map((id) => {
@@ -7,22 +7,6 @@ export function projectPapers(project, data) {
     if (!record) throw new Error(`Project ${project.id}: missing publication ${id}`);
     return publication(record);
   });
-}
-
-function status(paper, lang) {
-  const note = paper.note || "";
-  const labels = /under review/i.test(note)
-    ? ["Under review", "审稿中"]
-    : /submitting/i.test(note)
-      ? ["Preparing for submission", "准备投稿"]
-      : /accepted/i.test(note)
-        ? ["Accepted", "已接收"]
-        : paper.category === "manuscripts"
-          ? ["In preparation", "研究准备中"]
-          : paper.category === "preprints"
-            ? ["Preprint", "预印本"]
-            : ["Published", "已发表"];
-  return labels[lang === "zh" ? 1 : 0];
 }
 
 function citation(paper, lang) {
@@ -39,7 +23,7 @@ export function projectStatus(project, data, lang, { compact = false } = {}) {
   const paper = projectPapers(project, data)[0];
   if (!paper) return "";
   return `<p class="project-status"><strong>${lang === "zh" ? "论文状态：" : "Paper status:"}</strong> ${
-    status(paper, lang)
+    publicationStatus(paper, lang)
   } · ${compact ? esc(paper.year) : citation(paper, lang)}</p>`;
 }
 
@@ -59,7 +43,7 @@ export function projectReferences(project, data, lang) {
       const link = paper.url
         ? external(paper.url, esc(title))
         : `<a href="${route(lang, "publications")}#paper-${paper.id}">${esc(title)}</a>`;
-      return `<li>${authorText}. ${link}. <em>${citation(paper, lang)}</em>. ${status(paper, lang)}.</li>`;
+      return `<li>${authorText}. ${link}. <em>${citation(paper, lang)}</em>. ${publicationStatus(paper, lang)}.</li>`;
     })
     .join("")}</ul>`;
 }

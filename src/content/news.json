@@ -18,6 +18,12 @@
     "zh": "<p>顺利通过麻省大学阿默斯特分校土木与环境工程博士论文答辩，论文题目为 <strong>“Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis”</strong>。</p>"
   },
   {
+    "id": "announcement_14",
+    "date": "2026-06-08",
+    "en": "<p>Filed U.S. provisional patent application No. <strong>64/085,047</strong>, “System and method for unsupervised object detection using multiple LiDAR sensors.”</p>",
+    "zh": "<p>提交美国临时专利申请“System and method for unsupervised object detection using multiple LiDAR sensors”，申请号为 <strong>64/085,047</strong>。</p>"
+  },
+  {
     "id": "announcement_10",
     "date": "2026-05-18",
     "en": "<p>Paper “MulDet3D: multi-objective optimization based unsupervised object detection for multiple roadside LiDARs” accepted at <strong>Journal of Transportation Engineering Part A: Systems (ASCE JTE Part A)</strong>.</p>",

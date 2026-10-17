@@ -18,7 +18,7 @@ npm run dev
 
 Open `http://localhost:4173/` for English or `http://localhost:4173/zh/` for Chinese. After editing source files, run `npm run build` again and refresh the browser. To use another port, run `PORT=4174 npm run dev`.
 
-The build works offline. The generated `dist/` directory is excluded from Git and should not be edited directly. All page content, publications, and project descriptions remain readable with JavaScript disabled.
+The build works offline. The generated `dist/` directory is excluded from Git and should not be edited directly. Each build replaces it, so keep manually edited CV source files outside `dist/`, for example in the ignored `preview/cv-sources/` directory. All page content, publications, and project descriptions remain readable with JavaScript disabled.
 
 ## Project structure
 
@@ -62,7 +62,7 @@ Bilingual content uses `en` and `zh` fields. Keep both versions up to date. Fiel
 
 ### Publications
 
-Each publication has a stable `id`, a BibTeX `type`, and a `fields` object. The author field uses BibTeX notation, such as `Meng, Siyuan and Ai, Chengbo`. Records marked `Under Review` or `Submitting` in `note` appear under manuscripts; conference entry types appear under conferences; arXiv or preprint venues appear under preprints. Other records appear under journal articles.
+Each publication has a stable `id`, a BibTeX `type`, and a `fields` object. The author field uses BibTeX notation, such as `Meng, Siyuan and Ai, Chengbo`. Records marked `Under Review`, `Under Review after Major Revision`, `Submitted`, or `Submitting` in `note` appear under manuscripts; conference entry types appear under conferences; arXiv or preprint venues appear under preprints. Other records appear under journal articles. Manuscript status labels are localized consistently across publication and project pages.
 
 For papers published in Chinese, the optional `zh` object provides the original Chinese title, full author names, and venue. Year, volume, issue, pages, and DOI are shared through `fields`. A preprint without a DOI can use a top-level `url`. The publication pages, filters, and downloadable BibTeX all use these records; there is no separate `.bib` source to maintain.
 

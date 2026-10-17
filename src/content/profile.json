@@ -4,99 +4,117 @@
   "locales": {
     "en": {
       "role": "Ph.D., UMass Amherst",
-      "appointment": "Incoming Assistant Professor, Wuhan University of Science and Technology",
-      "appointment_short": "Incoming Assistant Professor, WUST",
+      "appointment": "Expected to join the School of Automotive and Transportation Engineering, Wuhan University of Science and Technology, in November 2026 as a Specially Appointed Associate Professor (Young Hundred Talents Program).",
+      "appointment_short": "Incoming Specially Appointed Associate Professor, WUST · Nov. 2026",
       "affiliation": "University of Massachusetts Amherst",
       "degree": "Ph.D. 2026",
       "bio": [
         "I received my Ph.D. in Civil Engineering (Transportation Engineering) from the University of Massachusetts Amherst in September 2026, advised by <a class=\"inline-link\" href=\"https://aichengbo.com/\">Dr. Chengbo Ai</a>.",
-        "My dissertation, <em>Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis</em>, developed a reliability-aware pipeline spanning background modeling, object detection, tracking, and traffic safety analysis.",
+        "My dissertation, <em>Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis</em>, connects background modeling, unsupervised 3D detection, multi-object tracking, and quality-aware traffic conflict analysis. I am extending this work toward infrastructure-centric world models (I-WM), multi-sensor calibration reliability, and spatial intelligence.",
+        "A complementary research direction studies transportation system optimization under uncertainty, including EV routing and charging, charging queues, and roadway asset management.",
         "Before UMass Amherst, I earned my M.S. and B.S. degrees at Chang’an University, where my master’s research was advised by <a class=\"inline-link\" href=\"https://js.chd.edu.cn/ysgcxy/bq/list.htm\">Dr. Qiang Bai</a>. My earlier work focused on pavement maintenance optimization and deep learning-based airport curbside vehicle detection."
       ],
       "education": [
         {
-          "years": "2023–2026",
+          "years": "Sep. 2023–Sep. 2026",
           "institution": "University of Massachusetts Amherst",
-          "description": "Ph.D. · Civil Engineering (Transportation Engineering)<br>Advisor: Dr. Chengbo Ai · GPA: 3.97/4.0"
+          "description": "Ph.D. · Civil Engineering (Transportation Engineering) · Fully funded<br>Advisor: Dr. Chengbo Ai · GPA: 3.97/4.0"
         },
         {
-          "years": "2020–2023",
+          "years": "Sep. 2020–Jul. 2023",
           "institution": "Chang’an University",
-          "description": "M.S. · Transportation Engineering<br>Advisor: Dr. Qiang Bai · GPA: 3.76/4.0"
+          "description": "M.S. · Transportation Engineering<br>Advisor: Dr. Qiang Bai · GPA: 3.76/4.0<br>Thesis: Research on Methodology for Highway Maintenance and Rehabilitation Decision-making Based on Integrated Asset Management"
         },
         {
-          "years": "2016–2020",
+          "years": "Sep. 2016–Jul. 2020",
           "institution": "Chang’an University",
-          "description": "B.S. · Roadway, Bridge, and River-Crossing Engineering · GPA: 3.74/4.0"
+          "description": "B.S. · Roadway, Bridge, and River-Crossing Engineering · GPA: 3.74/4.0<br>Thesis: Comprehensive Design of a Newly Constructed Expressway in Jiangsu Province"
         }
       ],
       "teaching_title": "Teaching & mentorship",
-      "teaching": "Teaching assistant, CE-ENGIN 214: Programming for Civil Engineers, UMass Amherst (Fall 2024). Python fundamentals, data analysis, numerical methods, lab sessions, and individual student support.",
+      "teaching": "Teaching assistant, CE-ENGIN 214: Programming for Civil Engineers, UMass Amherst (September 2024–January 2025). Designed Python assignments and exam problems, led programming labs and debugging exercises, graded coursework with feedback, and held regular office hours.",
       "background": [
         {
-          "title": "Honors & awards",
-          "html": "<ul><li>Outstanding Graduate Student, Chang’an University · 2023</li><li>First Prize Scholarship, Chang’an University · 2021</li><li>Second Prize, English Speech Contest, Northwest China · 2021</li><li>Excellent Undergraduate Thesis, Chang’an University · 2020</li></ul>"
+          "title": "Research experience",
+          "html": "<ul><li><strong>UMass Amherst · Graduate Research Assistant · Sep. 2023–Sep. 2026</strong><br>Quality-aware multi-LiDAR perception and safety analysis; robust MPC and coordinated routing and charging under uncertainty. Advisor: Dr. Chengbo Ai.</li><li><strong>Chang’an University · Graduate Research Assistant · Sep. 2020–Jul. 2023</strong><br>Multi-objective pavement and integrated asset maintenance planning; airport curbside traffic monitoring. Advisor: Dr. Qiang Bai.</li></ul>"
         },
         {
           "title": "Patents & software",
-          "html": "<ul><li>Deep learning-based automatic detection of illegal vehicles at airport departure levels · Chinese patent, 2025</li><li>Airport curbside illegal vehicle monitoring system · Software copyright, 2023</li></ul>"
+          "html": "<ul><li><strong>Meng, S.</strong>, Ai, C., &amp; Xie, Y. System and method for unsupervised object detection using multiple LiDAR sensors. U.S. provisional patent application No. 64/085,047 · Filed June 8, 2026.</li><li>Deep learning-based automatic detection of illegal vehicles at airport departure levels · Granted Chinese invention patent CN114821490B · 2025.</li><li>Airport curbside illegal vehicle monitoring system · Software copyright · First author · 2023.</li></ul>"
         },
         {
-          "title": "Selected presentations",
-          "html": "<ul><li>TRB 2026 · FRGB3D · Washington, D.C.</li><li>Safe Mobility Conference 2026 · Quality-aware vehicle conflict detection · Seattle</li><li>TRB 2025 · Integrated roadway asset maintenance · Washington, D.C.</li><li>WTC 2022 · Network-level pavement maintenance · Wuhan</li></ul>"
+          "title": "Honors & awards",
+          "html": "<ul><li>Outstanding Graduate, Chang’an University · 2023</li><li>Excellent Paper Award, World Transport Convention (WTC) · 2022</li><li>First Prize Scholarship, Chang’an University · 2021</li><li>Second Prize, Postgraduate English Speech Contest, Northwest China · 2021</li><li>Third Prize, College English Competition · 2021</li><li>Excellent Undergraduate Thesis, Chang’an University · 2020</li></ul>"
         },
         {
-          "title": "Service & technical skills",
-          "html": "<p>Reviewer for journals in transportation and pavement engineering.</p><p>Python · C++ · MATLAB · PyTorch · TensorFlow · OpenCV · Open3D · CARLA · SUMO · RoadRunner · ROS2 · GIS · LaTeX</p>"
+          "title": "Presentations",
+          "html": "<ul><li>Safe Mobility Conference 2026 · Quality-aware vehicle conflict detection · Seattle</li><li>TRB 2026 · FRGB3D · Washington, D.C.</li><li>INFORMS Annual Meeting 2025 · MulDet3D · Atlanta</li><li>TRB 2025 · Integrated roadway asset maintenance · Washington, D.C.</li><li>INFORMS Analytics Conference 2024 · Pavement segment grouping · Orlando</li><li>WTC 2022 · Network-level pavement maintenance · Wuhan</li></ul>"
+        },
+        {
+          "title": "Academic service",
+          "html": "<p>Journal reviewer:</p><ul><li>IEEE Transactions on Multimedia</li><li>International Journal of Pavement Engineering</li><li>Journal of Transportation Engineering Part A: Systems</li><li>Journal of King Saud University Computer and Information Sciences</li><li>International Journal of Pavement Research and Technology</li><li>Transportation Research Record</li><li>Cluster Computing</li></ul>"
+        },
+        {
+          "title": "Technical skills",
+          "html": "<p><strong>Programming:</strong> Python · C++ · MATLAB · LaTeX</p><p><strong>Machine learning &amp; perception:</strong> PyTorch · TensorFlow · OpenCV · Open3D · LiDAR point cloud processing</p><p><strong>Simulation &amp; robotics:</strong> ROS2 · CARLA · SUMO · RoadRunner · Blender · SLAM</p><p><strong>Analysis:</strong> GIS · Optimization modeling</p>"
         }
       ]
     },
     "zh": {
       "role": "麻省大学阿默斯特分校（UMass Amherst）博士",
-      "appointment": "即将入职武汉科技大学，任特聘副教授",
-      "appointment_short": "即将入职武汉科技大学 · 特聘副教授",
+      "appointment": "预计于 2026 年 11 月入职武汉科技大学汽车与交通工程学院，任特聘副教授（青年百人）。",
+      "appointment_short": "武汉科技大学 · 特聘副教授（青年百人）· 预计 2026 年 11 月入职",
       "affiliation": "麻省大学阿默斯特分校（UMass Amherst）",
       "degree": "博士 · 2026",
       "bio": [
-        "我于 2026 年 9 月获得麻省大学阿默斯特分校（UMass Amherst）土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 教授</a>。",
-        "博士论文 <em>面向交通感知与安全分析的质量感知多激光雷达框架</em>围绕路侧多激光雷达感知，构建了涵盖背景建模、目标检测、跟踪与交通安全分析的可靠性感知流程。",
+        "我于 2026 年 9 月获得麻省大学阿默斯特分校（UMass Amherst）土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 副教授</a>。",
+        "博士论文 <em>面向交通感知与安全分析的质量感知多激光雷达框架</em>围绕路侧多激光雷达感知，连接背景建模、无监督三维目标检测、多目标跟踪与质量感知交通冲突分析，并进一步拓展至基础设施中心世界模型（I-WM）、多传感器标定可靠性与空间智能。",
+        "另一条研究主线聚焦不确定性条件下的交通系统优化，包括电动汽车路径与充电调度、充电排队和道路资产养护决策。",
         "在赴美攻读博士之前，我在长安大学获得工学硕士和工学学士学位，硕士导师为<a class=\"inline-link\" href=\"https://js.chd.edu.cn/ysgcxy/bq/list.htm\">柏强教授</a>。此前的研究聚焦于路面养护优化及基于深度学习的机场路侧车辆检测。"
       ],
       "education": [
         {
-          "years": "2023–2026",
+          "years": "2023.09–2026.09",
           "institution": "麻省大学阿默斯特分校（UMass Amherst）",
-          "description": "博士 · 土木工程（交通运输工程方向）<br>导师：Chengbo Ai 教授 · GPA：3.97/4.0"
+          "description": "博士 · 土木工程（交通运输工程方向）· 全额奖学金<br>导师：Chengbo Ai 副教授 · GPA：3.97/4.0"
         },
         {
-          "years": "2020–2023",
+          "years": "2020.09–2023.07",
           "institution": "长安大学",
-          "description": "硕士 · 交通运输工程<br>导师：柏强教授 · GPA: 3.76/4.0"
+          "description": "硕士 · 交通运输工程<br>导师：柏强教授 · GPA：3.76/4.0<br>硕士论文：公路网全资产养护规划决策方法研究"
         },
         {
-          "years": "2016–2020",
+          "years": "2016.09–2020.07",
           "institution": "长安大学",
-          "description": "学士 · 道路桥梁与渡河工程 · GPA: 3.74/4.0"
+          "description": "学士 · 道路桥梁与渡河工程 · GPA：3.74/4.0<br>毕业设计：江苏省某新建高速公路综合设计"
         }
       ],
       "teaching_title": "教学与指导",
-      "teaching": "麻省大学阿默斯特分校（UMass Amherst）CE-ENGIN 214：土木工程编程课程助教（2024 年秋季）。协助教授 Python 编程基础，指导数据分析、数值方法与工程自动化实验，并提供答疑与一对一项目指导。",
+      "teaching": "麻省大学阿默斯特分校（UMass Amherst）CE-ENGIN 214：土木工程编程课程助教（2024 年 9 月—2025 年 1 月）。设计 Python 编程作业与考试题目，讲授和指导编程实验课，协助代码实现与调试，批改作业并反馈，定期开展课后答疑。",
       "background": [
         {
-          "title": "荣誉与奖励",
-          "html": "<ul><li>长安大学优秀研究生 · 2023</li><li>长安大学一等奖学金 · 2021</li><li>西北地区英语演讲比赛二等奖 · 2021</li><li>长安大学优秀本科毕业论文 · 2020</li></ul>"
+          "title": "科研经历",
+          "html": "<ul><li><strong>麻省大学阿默斯特分校 · 研究助理 · 2023.09–2026.09</strong><br>开展质量感知多激光雷达感知与安全分析，以及不确定性条件下的鲁棒 MPC、路径与充电协同调度研究。导师：Chengbo Ai 副教授。</li><li><strong>长安大学 · 研究助理 · 2020.09–2023.07</strong><br>研究路面与综合资产养护多目标优化，参与机场路侧交通监控系统研发。导师：柏强教授。</li></ul>"
         },
         {
           "title": "专利与软件",
-          "html": "<ul><li>基于深度学习的机场出发层违规车辆自动检测 · 中国授权专利，2025</li><li>机场路侧违规车辆监测系统 · 软件著作权，2023</li></ul>"
+          "html": "<ul><li><strong>Meng, S.</strong>, Ai, C., &amp; Xie, Y. System and method for unsupervised object detection using multiple LiDAR sensors. 美国临时专利申请，申请号 64/085,047，申请日 2026 年 6 月 8 日。</li><li>一种基于深度学习的机场出发层违章车辆自动识别方法 · 中国授权发明专利 CN114821490B · 2025。</li><li>机场路侧违法车辆监控系统 · 软件著作权 · 第一作者 · 2023。</li></ul>"
+        },
+        {
+          "title": "荣誉与奖励",
+          "html": "<ul><li>长安大学优秀毕业研究生 · 2023</li><li>世界交通运输大会（WTC）优秀论文奖 · 2022</li><li>长安大学一等奖学金 · 2021</li><li>西北地区研究生英语演讲比赛二等奖 · 2021</li><li>大学生英语竞赛三等奖 · 2021</li><li>长安大学优秀本科毕业论文 · 2020</li></ul>"
         },
         {
           "title": "学术报告",
-          "html": "<ul><li>TRB 2026 · FRGB3D · 华盛顿</li><li>Safe Mobility Conference 2026 · 质量感知交通冲突检测 · 西雅图</li><li>TRB 2025 · 道路资产综合养护 · 华盛顿</li><li>WTC 2022 · 路网级路面养护 · 武汉</li></ul>"
+          "html": "<ul><li>Safe Mobility Conference 2026 · 质量感知交通冲突检测 · 西雅图</li><li>TRB 2026 · FRGB3D · 华盛顿</li><li>INFORMS Annual Meeting 2025 · MulDet3D · 亚特兰大</li><li>TRB 2025 · 道路资产综合养护 · 华盛顿</li><li>INFORMS Analytics Conference 2024 · 路面养护路段分组 · 奥兰多</li><li>WTC 2022 · 路网级路面养护 · 武汉</li></ul>"
         },
         {
-          "title": "学术服务与技术能力",
-          "html": "<p>担任交通运输与路面工程领域学术期刊审稿人。</p><p>Python · C++ · MATLAB · PyTorch · TensorFlow · OpenCV · Open3D · CARLA · SUMO · RoadRunner · ROS2 · GIS · LaTeX</p>"
+          "title": "学术服务",
+          "html": "<p>担任以下学术期刊审稿人：</p><ul><li>IEEE Transactions on Multimedia</li><li>International Journal of Pavement Engineering</li><li>Journal of Transportation Engineering Part A: Systems</li><li>Journal of King Saud University Computer and Information Sciences</li><li>International Journal of Pavement Research and Technology</li><li>Transportation Research Record</li><li>Cluster Computing</li></ul>"
+        },
+        {
+          "title": "专业技能",
+          "html": "<p><strong>编程：</strong>Python · C++ · MATLAB · LaTeX</p><p><strong>机器学习与感知：</strong>PyTorch · TensorFlow · OpenCV · Open3D · LiDAR 点云处理</p><p><strong>仿真与机器人：</strong>ROS2 · CARLA · SUMO · RoadRunner · Blender · SLAM</p><p><strong>分析方法：</strong>GIS · 优化建模</p>"
         }
       ]
     }

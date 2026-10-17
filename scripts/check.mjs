@@ -7,7 +7,7 @@ import { createHash } from "node:crypto";
 import { innerPage } from "../src/components/pages.mjs";
 import { projectCard } from "../src/components/home.mjs";
 import { esc } from "../src/components/shared.mjs";
-import { titleCase } from "../src/components/publications.mjs";
+import { paperCard, publication, titleCase } from "../src/components/publications.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -92,10 +92,21 @@ changedPaper.fields = {
   title: "Updated research title", author: "Meng, Siyuan", journal: "Updated journal",
   year: "2030", note: "Under Review",
 };
-for (const [note, year, labels] of [["Under Review", "2030", ["Under review", "审稿中"]], ["", "2031", ["Published", "已发表"]]]) {
+for (const [note, year, labels] of [
+  ["Under Review", "2030", ["Under review", "审稿中"]],
+  ["Under Review after Major Revision", "2030", ["Under review after major revision", "大修后在审"]],
+  ["Submitted", "2030", ["Submitted", "已投稿"]],
+  ["", "2031", ["Published", "已发表"]],
+]) {
   Object.assign(changedPaper.fields, { note, year });
   if (!note) Object.assign(changedPaper.fields, { doi: "10.1000/project-sync", volume: "0", number: "0" });
   for (const [index, lang] of ["en", "zh"].entries()) {
+    const paper = publication(changedPaper);
+    const category = note ? "manuscripts" : "journals";
+    assert.equal(paper.category, category, `${note || "Published"}: wrong publication category`);
+    const paperHtml = paperCard(paper, site[lang].publications, lang);
+    assert(paperHtml.includes(`data-category="${category}"`));
+    if (note) assert(paperHtml.includes(labels[index]), `${lang}: missing localized manuscript status`);
     const detail = innerPage(fixture, lang, `projects/${linkedProject.id}`).body;
     const card = projectCard(linkedProject, fixture, lang);
     for (const html of [detail, card]) assert(html.includes(`${labels[index]} · `) && html.includes(year));
