@@ -2,7 +2,7 @@
   "name": "Siyuan (Max) Meng",
   "name_zh": "蒙思源",
   "url": "https://siyuanmengmax.github.io",
-  "description": "Siyuan (Max) Meng, Ph.D., UMass Amherst. Incoming Assistant Professor at Wuhan University of Science and Technology, November 2026. Research on roadside perception, transportation safety, infrastructure-centric world models, and transportation optimization.",
+  "description": "Siyuan (Max) Meng, Assistant Professor at Wuhan University of Science and Technology. Ph.D., UMass Amherst. Research on roadside perception, transportation safety, infrastructure-centric world models, and transportation optimization.",
   "email": "siyuan_meng_max@163.com",
   "github": "siyuanmengmax",
   "scholar": "https://scholar.google.com/citations?user=9L4TQh0AAAAJ",
@@ -41,6 +41,10 @@
       {
         "href": "#about",
         "label": "About"
+      },
+      {
+        "href": "#cv",
+        "label": "CV"
       },
       {
         "href": "#news",
@@ -173,18 +177,18 @@
       "eyebrow": "05 / Background",
       "title": "Engineering with a wider view.",
       "intro": "",
-      "next": "The next chapter",
-      "teaching_link": "Teaching experience ↗"
+      "teaching_link": "Teaching experience ↗",
+      "employment": "Academic appointment"
     },
     "news": {
-      "eyebrow": "06 / News & milestones",
+      "eyebrow": "07 / News & milestones",
       "title": "Along the way.",
       "intro": "",
       "earlier": "Earlier news",
       "archive": "News archive ↗"
     },
     "contact": {
-      "eyebrow": "07 / Research collaboration",
+      "eyebrow": "08 / Research collaboration",
       "title": "Let’s build reliable transportation intelligence.",
       "description": "I welcome research conversations and collaborations in roadside multi-sensor perception, quality and uncertainty, transportation safety, and infrastructure-centric world models.",
       "button": "Discuss a collaboration ↗"
@@ -192,7 +196,16 @@
     "navigation_label": "Main navigation",
     "skip": "Skip to content",
     "email": "Email",
-    "no_js": "The animations and filters need JavaScript. All publications and research descriptions remain available below."
+    "no_js": "The animations and filters need JavaScript. All publications and research descriptions remain available below.",
+    "cv": {
+      "eyebrow": "06 / Curriculum vitae",
+      "title": "Curriculum vitae.",
+      "intro": "Browse my appointments, education, teaching, and academic service, or download the full CV.",
+      "online": "Browse online CV ↗",
+      "downloads_label": "Download CV as PDF",
+      "download_en": "Download English PDF ↓",
+      "download_zh": "Download Chinese PDF ↓"
+    }
   },
   "zh": {
     "nav": [
@@ -211,6 +224,10 @@
       {
         "href": "#about",
         "label": "个人简介"
+      },
+      {
+        "href": "#cv",
+        "label": "简历"
       },
       {
         "href": "#news",
@@ -343,18 +360,18 @@
       "eyebrow": "05 / 个人简介",
       "title": "立足工程，拓展视野。",
       "intro": "",
-      "next": "下一站",
-      "teaching_link": "教学经历 ↗"
+      "teaching_link": "教学经历 ↗",
+      "employment": "工作经历"
     },
     "news": {
-      "eyebrow": "06 / 新闻与动态",
+      "eyebrow": "07 / 新闻与动态",
       "title": "研究与成长的足迹。",
       "intro": "",
       "earlier": "更早动态",
       "archive": "全部动态 ↗"
     },
     "contact": {
-      "eyebrow": "07 / 研究合作",
+      "eyebrow": "08 / 研究合作",
       "title": "一起研究更可靠的交通智能。",
       "description": "欢迎围绕路侧多传感器感知、质量与不确定性、交通安全和基础设施中心世界模型开展研究交流与合作。",
       "button": "交流合作想法 ↗"
@@ -362,6 +379,15 @@
     "navigation_label": "主导航",
     "skip": "跳转到正文",
     "email": "邮件",
-    "no_js": "动画与筛选需要 JavaScript；论文及研究说明仍可直接阅读。"
+    "no_js": "动画与筛选需要 JavaScript；论文及研究说明仍可直接阅读。",
+    "cv": {
+      "eyebrow": "06 / 简历",
+      "title": "个人履历。",
+      "intro": "在线浏览工作与教育经历、教学和学术服务，或下载完整的中英文简历。",
+      "online": "在线浏览履历 ↗",
+      "downloads_label": "下载简历 PDF",
+      "download_en": "下载英文 PDF ↓",
+      "download_zh": "下载中文 PDF ↓"
+    }
   }
 }

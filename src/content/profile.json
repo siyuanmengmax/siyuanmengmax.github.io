@@ -3,9 +3,10 @@
   "show_appointment": true,
   "locales": {
     "en": {
-      "role": "Ph.D., UMass Amherst",
-      "appointment": "Expected to join the School of Automotive and Transportation Engineering, Wuhan University of Science and Technology, in November 2026 as an Assistant Professor.",
-      "appointment_short": "Incoming Assistant Professor, WUST · Nov. 2026",
+      "role": "Assistant Professor",
+      "appointment": "Assistant Professor, School of Automotive and Transportation Engineering, Wuhan University of Science and Technology.",
+      "appointment_short": "Wuhan University of Science and Technology",
+      "appointment_years": "2026–present",
       "affiliation": "University of Massachusetts Amherst",
       "degree": "Ph.D. 2026",
       "bio": [
@@ -61,9 +62,10 @@
       ]
     },
     "zh": {
-      "role": "麻省大学阿默斯特分校 (UMass Amherst) 博士",
-      "appointment": "预计于 2026 年 11 月入职武汉科技大学汽车与交通工程学院，任特聘副教授（青年百人）。",
-      "appointment_short": "武汉科技大学 · 特聘副教授（青年百人）· 预计 2026 年 11 月入职",
+      "role": "特聘副教授（青年百人）",
+      "appointment": "武汉科技大学汽车与交通工程学院特聘副教授（青年百人）。",
+      "appointment_short": "武汉科技大学汽车与交通工程学院",
+      "appointment_years": "2026—至今",
       "affiliation": "麻省大学阿默斯特分校 (UMass Amherst)",
       "degree": "博士 · 2026",
       "bio": [

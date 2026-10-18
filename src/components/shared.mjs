@@ -17,9 +17,9 @@ export function navigation(data, lang, page = "") {
     home = !page;
   const labels =
     lang === "zh"
-      ? ["关于我", "论文成果", "研究项目", "代码仓库", "教学经历", "动态"]
-      : ["About", "Publications", "Projects", "Code", "Teaching", "News"];
-  const paths = ["#about", "publications/", "projects/", "repositories/", "teaching/", "news/"];
+      ? ["关于我", "论文成果", "研究项目", "代码仓库", "教学经历", "简历", "动态"]
+      : ["About", "Publications", "Projects", "Code", "Teaching", "CV", "News"];
+  const paths = ["#about", "publications/", "projects/", "repositories/", "teaching/", "cv/", "news/"];
   const links = home ? ui.nav : paths.map((path, i) => ({ href: `${route(lang)}${path}`, label: labels[i] }));
   return `<header><nav class="wrap" aria-label="${esc(ui.navigation_label)}">
   <a class="logo" href="${route(lang)}">${esc(data.site.name)}<span>${esc(data.site.name_zh)}</span></a>

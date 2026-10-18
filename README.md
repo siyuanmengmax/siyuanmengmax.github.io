@@ -57,6 +57,7 @@ docs/                   # Migration and rollback notes (Chinese)
 | Colors and layout | `public/assets/portfolio/portfolio.css` |
 | English and Chinese typography | `public/assets/portfolio/english-typography.css`, `public/assets/css/chinese-typography.css` |
 | Profile photo | `public/assets/portfolio/max-profile.jpg` |
+| Downloadable CVs | `public/cv/cv_en.pdf`, `public/cv/cv_zh.pdf` |
 
 Bilingual content uses `en` and `zh` fields. Keep both versions up to date. Fields such as `body`, `bio`, and news text support a small amount of HTML, including `<strong>`, `<em>`, `<a>`, `<p>`, and `<ul>`. These fields contain trusted website content and are not intended for external user input.
 
@@ -74,7 +75,7 @@ A project ID determines its English and Chinese routes: `/projects/ID/` and `/zh
 
 For projects with papers, `publication_ids` lists the matching IDs from `publications.json`, with the main paper first. Cards and detail pages derive the paper status from that first record; related citations, venues, and links use the same publication data. Update publication metadata there instead of copying it into project `body` text. Keep research descriptions and non-publication outcomes, such as patents, in the bilingual project content.
 
-The `/cv/` and `/zh/cv/` pages are generated from the current profile data. They do not require a separate biography and do not include the old theme's sample person or PDF.
+The `/cv/` and `/zh/cv/` pages show an online CV generated from the current profile data, alongside both PDF downloads. The homepage and navigation also link to the CV. Each language shows its own PDF first. To replace a PDF, update `public/cv/cv_en.pdf` or `public/cv/cv_zh.pdf`; the build copies them unchanged to `/cv/`. Keep editable TeX sources outside `dist/`, and update `profile.json` when the online CV content changes.
 
 ## Deployment
 

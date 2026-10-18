@@ -422,13 +422,33 @@ h3 {
   color: var(--muted);
   margin: 4px 0;
 }
-.next {
-  margin-top: 36px;
+.employment {
+  margin: 28px 0;
   border-left: 3px solid var(--green);
   padding-left: 18px;
 }
-.next p {
+.employment p {
   font-size: 14px;
+}
+.cv-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: #eef1e8;
+  font-size: 13px;
+}
+.cv-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 28px;
+}
+.cv-downloads a {
+  display: inline-block;
 }
 .contact {
   padding: 70px 0;

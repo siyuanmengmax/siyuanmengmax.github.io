@@ -57,6 +57,7 @@ docs/                  # 重构记录与回退说明
 | 颜色与布局 | `public/assets/portfolio/portfolio.css` |
 | 英文与中文字体 | `public/assets/portfolio/english-typography.css`、`public/assets/css/chinese-typography.css` |
 | 照片 | `public/assets/portfolio/max-profile.jpg` |
+| 可下载简历 | `public/cv/cv_en.pdf`、`public/cv/cv_zh.pdf` |
 
 双语内容使用 `en` 和 `zh` 字段，修改时请同步维护。`body`、`bio` 和动态正文等字段允许少量 HTML，例如 `<strong>`、`<em>`、`<a>`、`<p>` 和 `<ul>`；它们是经过信任的本站内容，不用于接收外部用户输入。
 
@@ -74,7 +75,7 @@ docs/                  # 重构记录与回退说明
 
 有对应论文的项目通过 `publication_ids` 关联 `publications.json` 中的记录，主要论文放在第一位。项目卡片与详情页从首篇论文读取论文状态；相关论文的引用、期刊及链接也从同一份论文数据生成。更新时请修改论文记录，避免在项目 `body` 中重复保存这些信息。研究介绍及专利等非论文成果仍在项目的双语内容中维护。
 
-`/cv/` 与 `/zh/cv/` 从当前个人信息生成履历，不再维护另一份容易过时的个人介绍，也不包含旧模板中的示例人物或示例 PDF。
+`/cv/` 与 `/zh/cv/` 从当前个人信息生成在线履历，并提供两种语言的 PDF 下载；首页和导航也设有简历入口，各语言页面优先显示对应语言的 PDF。更新 PDF 时，请替换 `public/cv/cv_en.pdf` 或 `public/cv/cv_zh.pdf`，构建会将其原样复制到 `/cv/`。可编辑的 TeX 源文件应放在 `dist/` 之外；在线履历内容变更时，同步更新 `profile.json`。
 
 ## 发布
 

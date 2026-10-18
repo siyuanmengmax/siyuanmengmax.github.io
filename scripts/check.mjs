@@ -64,6 +64,23 @@ for (const p of publications) {
   assert(p.fields.title && p.fields.author && /^\d{4}$/.test(p.fields.year), `Incomplete publication: ${p.id}`);
   assert(["article", "inproceedings", "incollection", "conference", "unpublished"].includes(p.type));
 }
+for (const lang of ["en", "zh"]) {
+  const prefix = lang === "zh" ? "/zh" : "";
+  const homepage = htmlByRoute.get(`${prefix}/`);
+  const cv = htmlByRoute.get(`${prefix}/cv/`);
+  assert(homepage.includes('id="cv"'), `${lang}: missing homepage CV section`);
+  assert(homepage.includes(`href="${prefix}/cv/"`), `${lang}: missing online CV link`);
+  assert(cv.includes(`href="${prefix}/cv/" aria-current="page"`), `${lang}: missing active CV navigation`);
+  for (const html of [homepage, cv]) {
+    const downloads = [...html.matchAll(/href="(\/cv\/cv_(en|zh)\.pdf)" download="([^"]+)"/g)];
+    assert.deepEqual(downloads.map((match) => match[2]), lang === "zh" ? ["zh", "en"] : ["en", "zh"],
+      `${lang}: CV downloads must list the page language first, with both PDFs available`);
+  }
+  const pdf = await fs.readFile(path.join(dist, "cv", `cv_${lang}.pdf`));
+  assert.equal(pdf.subarray(0, 5).toString(), "%PDF-", `${lang}: invalid CV PDF`);
+  assert.deepEqual(pdf, await fs.readFile(path.join(root, "public/cv", `cv_${lang}.pdf`)),
+    `${lang}: published CV differs from the supplied PDF`);
+}
 for (const project of projects) {
   const ids = project.publication_ids || [];
   assert.equal(ids.length, new Set(ids).size, `${project.id}: duplicate publication links`);

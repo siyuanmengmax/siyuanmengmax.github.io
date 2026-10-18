@@ -20,6 +20,7 @@ const mime = {
   ".xml": "application/xml; charset=utf-8",
   ".ico": "image/x-icon",
   ".bib": "text/plain; charset=utf-8",
+  ".pdf": "application/pdf",
 };
 const server = http.createServer(async (req, res) => {
   if (!["GET", "HEAD"].includes(req.method)) {

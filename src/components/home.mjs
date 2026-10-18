@@ -1,6 +1,7 @@
 import { esc, external, heading, route } from "./shared.mjs";
 import { publications, sortedPapers } from "./publications.mjs";
 import { projectStatus } from "./projects.mjs";
+import { cvSection } from "./cv.mjs";
 
 export const newsRow = (item, lang) =>
   `<div class="news-row"><time datetime="${item.date}">${item.date}</time><div>${item[lang]}</div></div>`;
@@ -72,11 +73,11 @@ export function about(data, lang) {
   }" alt="${esc(data.site.name)}" width="150" height="200" loading="lazy"><div><h3>${esc(
     data.site.name,
   )}</h3><p lang="zh-CN">${data.site.name_zh}</p><p>${p.role}</p></div></div>
-  ${p.bio.map((text) => `<p>${text}</p>`).join("")}${
+  ${
     data.profile.show_appointment
-      ? `<div class="next"><div class="eyebrow">${ui.about.next}</div><p>${p.appointment}</p></div>`
+      ? `<div class="employment"><div class="eyebrow">${ui.about.employment} · ${p.appointment_years}</div><p>${p.appointment}</p></div>`
       : ""
-  }</div>
+  }${p.bio.map((text) => `<p>${text}</p>`).join("")}</div>
   <div class="education">${p.education
     .map(
       (d) => `<div class="edu"><span>${d.years}</span><strong>${d.institution}</strong><p>${d.description}</p></div>`,
@@ -145,7 +146,7 @@ export function home(data, lang) {
     .join("")}</div><div class="actions"><a class="text-link" href="${route(lang, "projects")}">${
     ui.projects.archive
   }</a></div></section>
-  ${publications(data, lang)}${about(data, lang)}
+  ${publications(data, lang)}${about(data, lang)}${cvSection(data, lang)}
   <section class="section" id="news" aria-labelledby="news-title">${heading(ui.news, "news-title")}${data.news
     .slice(0, 4)
     .map((n) => newsRow(n, lang))
