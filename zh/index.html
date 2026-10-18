@@ -9,7 +9,7 @@
 <meta property="og:title" content="Siyuan (Max) Meng · 从感知到理解。"><meta property="og:description" content="连接可靠的路侧感知、交通安全分析与基础设施中心世界模型。"><meta property="og:type" content="website">
 <meta property="og:url" content="https://siyuanmengmax.github.io/zh/"><meta property="og:image" content="https://siyuanmengmax.github.io/assets/portfolio/max-profile.jpg"><meta name="theme-color" content="#f5f4ef">
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/portfolio/portfolio.2a1e6b47efa5.css">
+<link rel="stylesheet" href="/assets/portfolio/portfolio.9a2d9c5ac3d8.css">
 <link rel="stylesheet" href="/assets/css/chinese-typography.e3131b0cf102.css">
 <script defer src="/assets/site.476feb050043.js"></script>
 <script defer src="/assets/portfolio/scene.aa3ffd64ef07.js"></script><script defer src="/assets/portfolio/research-demo.fd456943e9f5.js"></script>
@@ -34,9 +34,9 @@
   <div class="study-view" id="study-view"><div class="study-visual"><div class="demo-top"><span id="demo-stage-label">FRGB3D</span><span>示意场景</span></div>
   <canvas id="study-canvas" role="img" aria-label="背景建模、检测、跟踪与冲突分析概念演示" data-caption="概念示意 · 合成点云"></canvas>
   <div class="demo-controls"><button id="study-pause" type="button" aria-pressed="false" data-pause="暂停" data-play="播放">暂停</button><label><input id="study-overlay" type="checkbox" checked><span id="overlay-label">显示前景分离</span></label></div></div>
-  <div class="study-copy" aria-live="polite"><div class="study-panel" data-method="FRGB3D" data-overlay="显示前景分离"><div class="eyebrow">研究阶段 01</div><h3>从场景中分离运动目标。</h3><p>背景建模为下游感知提供前景观测。切换显示选项，比较合成点云与前景分离示意。</p><div class="study-question"><span>质量问题</span><p>背景与运动目标的区分有多可靠？</p></div><a href="https://doi.org/10.1061/JCCEE5.CPENG-7710" target="_blank" rel="noopener" class="text-link">阅读 FRGB3D ↗</a></div><div class="study-panel" data-method="MulDet3D" data-overlay="显示目标分组与边界框" hidden><div class="eyebrow">研究阶段 02</div><h3>从点云到交通参与者。</h3><p>目标检测将前景点组织为目标假设。这里在同一合成道路场景中展示彩色点组与目标边界框。</p><div class="study-question"><span>质量问题</span><p>点云覆盖不均匀会如何影响目标表征？</p></div><a href="https://doi.org/10.1061/JTEPBS.TEENG-9741" target="_blank" rel="noopener" class="text-link">阅读 MulDet3D ↗</a></div><div class="study-panel" data-method="MulTrack3D" data-overlay="显示历史轨迹与身份" hidden><div class="eyebrow">研究阶段 03</div><h3>在时间中保持目标身份。</h3><p>跟踪连接不同帧中的观测。轨迹线与身份标签用于说明连续车辆轨迹的概念，并非跟踪算法的实际输出。</p><div class="study-question"><span>质量问题</span><p>观测稀疏或遮挡时，目标身份和轨迹能否保持连续？</p></div><a class="text-link" href="#paper-meng_multrack3d">查看相关手稿 ↓</a></div><div class="study-panel" data-method="Safety analysis" data-overlay="显示位置不确定性" hidden><div class="eyebrow">研究阶段 04</div><h3>审慎理解交通交互。</h3><p>基于轨迹的安全分析依赖其背后的观测质量。色带表示两条交叉路径周围的位置不确定性；这里不计算 TTC、PET 或风险分数。</p><div class="study-question"><span>质量问题</span><p>轨迹不确定性可能如何改变对近距离交互的判断？</p></div><a class="text-link" href="#paper-meng_conflict">查看相关研究 ↓</a></div><p class="demo-disclaimer">动画仅说明研究问题与模块关系，使用合成场景；不是论文算法的运行结果，也不用于比较性能。</p></div></div><p class="framework-note">点选上方阶段查看对应示意。整体关系图用于概括研究脉络，并不表示四项工作已采用同一个端到端训练目标。</p>
+  <div class="study-copy" aria-live="polite"><div class="study-panel" data-method="FRGB3D" data-overlay="显示前景分离"><div class="eyebrow">研究阶段 01</div><h3>从场景中分离运动目标。</h3><p>背景建模为下游感知提供前景观测。切换显示选项，比较合成点云与前景分离示意。</p><div class="study-question"><span>质量问题</span><p>背景与运动目标的区分有多可靠？</p></div><div class="project-actions"><a href="https://doi.org/10.1061/JCCEE5.CPENG-7710" target="_blank" rel="noopener" class="text-link">阅读 FRGB3D ↗</a><a href="https://github.com/siyuanmengmax/FRGB3D" target="_blank" rel="noopener" class="text-link code-link">GitHub 代码 ↗</a></div></div><div class="study-panel" data-method="MulDet3D" data-overlay="显示目标分组与边界框" hidden><div class="eyebrow">研究阶段 02</div><h3>从点云到交通参与者。</h3><p>目标检测将前景点组织为目标假设。这里在同一合成道路场景中展示彩色点组与目标边界框。</p><div class="study-question"><span>质量问题</span><p>点云覆盖不均匀会如何影响目标表征？</p></div><div class="project-actions"><a href="https://doi.org/10.1061/JTEPBS.TEENG-9741" target="_blank" rel="noopener" class="text-link">阅读 MulDet3D ↗</a><a href="https://github.com/siyuanmengmax/MulDet3D" target="_blank" rel="noopener" class="text-link code-link">GitHub 代码 ↗</a></div></div><div class="study-panel" data-method="MulTrack3D" data-overlay="显示历史轨迹与身份" hidden><div class="eyebrow">研究阶段 03</div><h3>在时间中保持目标身份。</h3><p>跟踪连接不同帧中的观测。轨迹线与身份标签用于说明连续车辆轨迹的概念，并非跟踪算法的实际输出。</p><div class="study-question"><span>质量问题</span><p>观测稀疏或遮挡时，目标身份和轨迹能否保持连续？</p></div><div class="project-actions"><a class="text-link" href="#paper-meng_multrack3d">查看相关手稿 ↓</a></div></div><div class="study-panel" data-method="Safety analysis" data-overlay="显示位置不确定性" hidden><div class="eyebrow">研究阶段 04</div><h3>审慎理解交通交互。</h3><p>基于轨迹的安全分析依赖其背后的观测质量。色带表示两条交叉路径周围的位置不确定性；这里不计算 TTC、PET 或风险分数。</p><div class="study-question"><span>质量问题</span><p>轨迹不确定性可能如何改变对近距离交互的判断？</p></div><div class="project-actions"><a class="text-link" href="#paper-meng_conflict">查看相关研究 ↓</a></div></div><p class="demo-disclaimer">动画仅说明研究问题与模块关系，使用合成场景；不是论文算法的运行结果，也不用于比较性能。</p></div></div><p class="framework-note">点选上方阶段查看对应示意。整体关系图用于概括研究脉络，并不表示四项工作已采用同一个端到端训练目标。</p>
   <noscript><style>.study-panel[hidden]{display:block!important;margin-top:2rem}.demo-controls,.framework-steps{display:none}</style><p class="framework-note">动画与筛选需要 JavaScript；论文及研究说明仍可直接阅读。</p></noscript></section>
-  <section class="section" id="projects" aria-labelledby="projects-title"><div class="section-head"><div><div class="eyebrow">03 / 更多研究项目</div><h2 id="projects-title">面向实际问题的方法。</h2></div><p>从路侧点云到路网决策，了解论文背后的研究问题。</p></div><div class="project-grid"><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>MulDet3D</h3><p>基于多目标优化的多路侧激光雷达无监督目标检测</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2026</p><a class="text-link" href="/zh/projects/1_project/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>FRGB3D</h3><p>面向路侧激光雷达交通监测的快速可靠性加权高斯背景建模</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2027</p><a class="text-link" href="/zh/projects/2_project/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>MulTrack3D</h3><p>基于投票共识的多路侧激光雷达鲁棒多点跟踪</p><p class="project-status"><strong>论文状态：</strong> 大修后在审 · 2026</p><a class="text-link" href="/zh/projects/3_project/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">交通优化</span><h3>道路资产管理优化</h3><p>考虑交通动态与环境影响的道路资产综合养护多目标优化</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2026</p><a class="text-link" href="/zh/projects/4_project/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">交通优化</span><h3>不确定性下的路面养护规划</h3><p>基于机会约束规划的路网级路面养护决策</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2024</p><a class="text-link" href="/zh/projects/5_project/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">计算机视觉</span><h3>机场路侧车辆检测</h3><p>基于深度学习的机场出发层违规接客车辆检测</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2022</p><a class="text-link" href="/zh/projects/6_project/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>质量感知交通冲突分析</h3><p>路侧激光雷达系统中的空间精度、跟踪质量与交通冲突可检测性</p><p class="project-status"><strong>论文状态：</strong> 已投稿 · 2026</p><a class="text-link" href="/zh/projects/traffic_conflict_analysis/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">交通优化</span><h3>电动汽车充电与排队管理</h3><p>面向高速公路走廊与混合车队的充电站信息、请求时机和排队感知选站</p><p class="project-status"><strong>论文状态：</strong> 已投稿 · 2026</p><a class="text-link" href="/zh/projects/ev_charging/">项目详情 ↗</a></article><article class="project-item"><span class="eyebrow">计算机视觉</span><h3>路侧相机—激光雷达标定可靠性</h3><p>标定漂移、点云着色误差与场地特定的重标定预算</p><p class="project-status"><strong>论文状态：</strong> 已投稿 · 2026</p><a class="text-link" href="/zh/projects/camera_lidar_calibration/">项目详情 ↗</a></article></div><div class="actions"><a class="text-link" href="/zh/projects/">全部研究项目 ↗</a></div></section>
+  <section class="section" id="projects" aria-labelledby="projects-title"><div class="section-head"><div><div class="eyebrow">03 / 更多研究项目</div><h2 id="projects-title">面向实际问题的方法。</h2></div><p>从路侧点云到路网决策，了解论文背后的研究问题。</p></div><div class="project-grid"><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>MulDet3D</h3><p>基于多目标优化的多路侧激光雷达无监督目标检测</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2026</p><div class="project-actions"><a class="text-link" href="/zh/projects/1_project/">项目详情 ↗</a><a href="https://github.com/siyuanmengmax/MulDet3D" target="_blank" rel="noopener" class="text-link code-link">GitHub 代码 ↗</a></div></article><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>FRGB3D</h3><p>面向路侧激光雷达交通监测的快速可靠性加权高斯背景建模</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2027</p><div class="project-actions"><a class="text-link" href="/zh/projects/2_project/">项目详情 ↗</a><a href="https://github.com/siyuanmengmax/FRGB3D" target="_blank" rel="noopener" class="text-link code-link">GitHub 代码 ↗</a></div></article><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>MulTrack3D</h3><p>基于投票共识的多路侧激光雷达鲁棒多点跟踪</p><p class="project-status"><strong>论文状态：</strong> 大修后在审 · 2026</p><div class="project-actions"><a class="text-link" href="/zh/projects/3_project/">项目详情 ↗</a></div></article><article class="project-item"><span class="eyebrow">交通优化</span><h3>道路资产管理优化</h3><p>考虑交通动态与环境影响的道路资产综合养护多目标优化</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2026</p><div class="project-actions"><a class="text-link" href="/zh/projects/4_project/">项目详情 ↗</a></div></article><article class="project-item"><span class="eyebrow">交通优化</span><h3>不确定性下的路面养护规划</h3><p>基于机会约束规划的路网级路面养护决策</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2024</p><div class="project-actions"><a class="text-link" href="/zh/projects/5_project/">项目详情 ↗</a></div></article><article class="project-item"><span class="eyebrow">计算机视觉</span><h3>机场路侧车辆检测</h3><p>基于深度学习的机场出发层违规接客车辆检测</p><p class="project-status"><strong>论文状态：</strong> 已发表 · 2022</p><div class="project-actions"><a class="text-link" href="/zh/projects/6_project/">项目详情 ↗</a></div></article><article class="project-item"><span class="eyebrow">激光雷达感知</span><h3>质量感知交通冲突分析</h3><p>路侧激光雷达系统中的空间精度、跟踪质量与交通冲突可检测性</p><p class="project-status"><strong>论文状态：</strong> 已投稿 · 2026</p><div class="project-actions"><a class="text-link" href="/zh/projects/traffic_conflict_analysis/">项目详情 ↗</a></div></article><article class="project-item"><span class="eyebrow">交通优化</span><h3>电动汽车充电与排队管理</h3><p>面向高速公路走廊与混合车队的充电站信息、请求时机和排队感知选站</p><p class="project-status"><strong>论文状态：</strong> 已投稿 · 2026</p><div class="project-actions"><a class="text-link" href="/zh/projects/ev_charging/">项目详情 ↗</a></div></article><article class="project-item"><span class="eyebrow">计算机视觉</span><h3>路侧相机—激光雷达标定可靠性</h3><p>标定漂移、点云着色误差与场地特定的重标定预算</p><p class="project-status"><strong>论文状态：</strong> 已投稿 · 2026</p><div class="project-actions"><a class="text-link" href="/zh/projects/camera_lidar_calibration/">项目详情 ↗</a></div></article></div><div class="actions"><a class="text-link" href="/zh/projects/">全部研究项目 ↗</a></div></section>
   <section class="section" id="publications" aria-labelledby="publications-title">
   <div class="section-head"><div><div class="eyebrow">04 / 论文与手稿</div><h2 id="publications-title">研究成果。</h2></div>
   <div class="pub-controls" role="group" aria-label="论文分类"><button type="button" class="filter active" data-filter="all" aria-pressed="true">全部</button><button type="button" class="filter" data-filter="journals" aria-pressed="false">期刊论文</button><button type="button" class="filter" data-filter="preprints" aria-pressed="false">预印本</button><button type="button" class="filter" data-filter="conferences" aria-pressed="false">会议论文</button><button type="button" class="filter" data-filter="manuscripts" aria-pressed="false">在研手稿</button></div></div>
@@ -44,7 +44,7 @@
   <div id="papers"><article class="pub" id="paper-meng2026frgb3d" data-category="journals">
   <div class="year">2027</div><div class="pub-copy" id="meng2026frgb3d"><h3>FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring</h3>
   <p><strong>Siyuan Meng</strong>, Pravar Parashar, Yu-Min Yang, Chengbo Ai</p>
-  <p class="venue">Journal of Computing in Civil Engineering</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng2026frgb3d,
+  <p class="venue">Journal of Computing in Civil Engineering</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng2026frgb3d,
   title = {FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring},
   author = {Meng, Siyuan and Parashar, Pravar and Yang, Yu-Min and Ai, Chengbo},
   journal = {Journal of Computing in Civil Engineering},
@@ -57,11 +57,11 @@
   url = {https://ascelibrary.org/doi/abs/10.1061/JCCEE5.CPENG-7710},
   eprint = {https://ascelibrary.org/doi/pdf/10.1061/JCCEE5.CPENG-7710}
 }
-</pre></details></div>
+</pre></details><a href="https://github.com/siyuanmengmax/FRGB3D" target="_blank" rel="noopener" class="text-link code-link">GitHub 代码 ↗</a></div></div>
   <a href="https://doi.org/10.1061/JCCEE5.CPENG-7710" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring">↗</a></article><article class="pub" id="paper-meng_muldet3d" data-category="journals">
   <div class="year">2026</div><div class="pub-copy" id="meng_muldet3d"><h3>MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs</h3>
   <p><strong>Siyuan Meng</strong>, Yanan Zhang, David Raucci, Chengbo Ai</p>
-  <p class="venue">Journal of Transportation Engineering Part A: Systems</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_muldet3d,
+  <p class="venue">Journal of Transportation Engineering Part A: Systems</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_muldet3d,
   title = {MulDet3D: multi-objective optimization based unsupervised object detection for multiple roadside LiDARs},
   author = {Meng, Siyuan and Zhang, Yanan and Raucci, David and Ai, Chengbo},
   journal = {Journal of Transportation Engineering Part A: Systems},
@@ -72,11 +72,11 @@
   doi = {10.1061/JTEPBS.TEENG-9741},
   publisher = {ASCE}
 }
-</pre></details></div>
+</pre></details><a href="https://github.com/siyuanmengmax/MulDet3D" target="_blank" rel="noopener" class="text-link code-link">GitHub 代码 ↗</a></div></div>
   <a href="https://doi.org/10.1061/JTEPBS.TEENG-9741" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: MulDet3D: Multi-Objective Optimization Based Unsupervised Object Detection for Multiple Roadside LiDARs">↗</a></article><article class="pub" id="paper-meng2026asset" data-category="journals">
   <div class="year">2026</div><div class="pub-copy" id="meng2026asset"><h3>A Multi-Objective Optimization Method for Integrated Road Asset Management Considering Traffic Dynamics and Environmental Impacts</h3>
   <p><strong>Siyuan Meng</strong>, Qiang Bai, Yuqi Shao</p>
-  <p class="venue">Transportation Research Record</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng2026asset,
+  <p class="venue">Transportation Research Record</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng2026asset,
   title = {A multi-objective optimization method for integrated road asset management considering traffic dynamics and environmental impacts},
   author = {Meng, Siyuan and Bai, Qiang and Shao, Yuqi},
   journal = {Transportation Research Record},
@@ -87,87 +87,87 @@
   publisher = {Sage},
   doi = {10.1177/03611981261441294}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.1177/03611981261441294" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: A Multi-Objective Optimization Method for Integrated Road Asset Management Considering Traffic Dynamics and Environmental Impacts">↗</a></article><article class="pub" id="paper-meng_multrack3d" data-category="manuscripts">
   <div class="year">2026</div><div class="pub-copy" id="meng_multrack3d"><h3>MulTrack3D: Robust Multi-Point Tracking for Multiple Roadside LiDARs via Voting-Based Consensus</h3>
   <p><strong>Siyuan Meng</strong>, Runan Cheng, Chengbo Ai</p>
-  <p class="venue">Automation in Construction · 大修后在审</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_multrack3d,
+  <p class="venue">Automation in Construction · 大修后在审</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_multrack3d,
   title = {MulTrack3D: robust multi-point tracking for multiple roadside LiDARs via voting-based consensus},
   author = {Meng, Siyuan and Cheng, Runan and Ai, Chengbo},
   journal = {Automation in Construction},
   year = {2026},
   note = {Under Review after Major Revision}
 }
-</pre></details></div>
+</pre></details></div></div>
   </article><article class="pub" id="paper-meng_conflict" data-category="manuscripts">
   <div class="year">2026</div><div class="pub-copy" id="meng_conflict"><h3>Quality-Aware Vehicle Conflict Detection with Spatial Precision Enhancement for Roadside Multi-LiDAR Systems</h3>
   <p><strong>Siyuan Meng</strong>, Yu-Min Yang, Eleni Christofa, Michael Knodler, Chengbo Ai</p>
-  <p class="venue">Transportation Research Part C: Emerging Technologies · 已投稿</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_conflict,
+  <p class="venue">Transportation Research Part C: Emerging Technologies · 已投稿</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_conflict,
   title = {Quality-aware vehicle conflict detection with spatial precision enhancement for roadside multi-LiDAR systems},
   author = {Meng, Siyuan and Yang, Yu-Min and Christofa, Eleni and Knodler, Michael and Ai, Chengbo},
   journal = {Transportation Research Part C: Emerging Technologies},
   year = {2026},
   note = {Submitted}
 }
-</pre></details></div>
+</pre></details></div></div>
   </article><article class="pub" id="paper-meng_highway_charging" data-category="manuscripts">
   <div class="year">2026</div><div class="pub-copy" id="meng_highway_charging"><h3>Station Information and Request Timing for Reducing Fast-Charging Queues on Intercity Highway Corridors</h3>
   <p><strong>Siyuan Meng</strong>, Chengbo Ai</p>
-  <p class="venue">Transportation Research Part D: Transport and Environment · 已投稿</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_highway_charging,
+  <p class="venue">Transportation Research Part D: Transport and Environment · 已投稿</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_highway_charging,
   title = {Station information and request timing for reducing fast-charging queues on intercity highway corridors},
   author = {Meng, Siyuan and Ai, Chengbo},
   journal = {Transportation Research Part D: Transport and Environment},
   year = {2026},
   note = {Submitted}
 }
-</pre></details></div>
+</pre></details></div></div>
   </article><article class="pub" id="paper-meng_queue_aware_charging" data-category="manuscripts">
   <div class="year">2026</div><div class="pub-copy" id="meng_queue_aware_charging"><h3>When Does Queue-Aware Charging-Station Choice Pay Off in Mixed Autonomous and Human-Driven Electric Ride-Hailing Fleets?</h3>
   <p><strong>Siyuan Meng</strong>, Chengbo Ai</p>
-  <p class="venue">IEEE Transactions on Intelligent Transportation Systems · 已投稿</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_queue_aware_charging,
+  <p class="venue">IEEE Transactions on Intelligent Transportation Systems · 已投稿</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_queue_aware_charging,
   title = {When does queue-aware charging-station choice pay off in mixed autonomous and human-driven electric ride-hailing fleets?},
   author = {Meng, Siyuan and Ai, Chengbo},
   journal = {IEEE Transactions on Intelligent Transportation Systems},
   year = {2026},
   note = {Submitted}
 }
-</pre></details></div>
+</pre></details></div></div>
   </article><article class="pub" id="paper-meng_calibration_drift" data-category="manuscripts">
   <div class="year">2026</div><div class="pub-copy" id="meng_calibration_drift"><h3>Calibration Drift and Colorization Error in Roadside Camera–LiDAR Systems: A Saturating Law and Site-Specific Recalibration Budgets</h3>
   <p><strong>Siyuan Meng</strong>, Chengbo Ai</p>
-  <p class="venue">IEEE Transactions on Intelligent Transportation Systems · 已投稿</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_calibration_drift,
+  <p class="venue">IEEE Transactions on Intelligent Transportation Systems · 已投稿</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_calibration_drift,
   title = {Calibration drift and colorization error in roadside camera–LiDAR systems: a saturating law and site-specific recalibration budgets},
   author = {Meng, Siyuan and Ai, Chengbo},
   journal = {IEEE Transactions on Intelligent Transportation Systems},
   year = {2026},
   note = {Submitted}
 }
-</pre></details></div>
+</pre></details></div></div>
   </article><article class="pub" id="paper-meng_clustertrack3d" data-category="manuscripts">
   <div class="year">2026</div><div class="pub-copy" id="meng_clustertrack3d"><h3>Tracking Quality Determines Traffic Conflict Detectability in Roadside LiDAR Systems: Evidence from ClusterTrack3D</h3>
   <p><strong>Siyuan Meng</strong>, Chengbo Ai</p>
-  <p class="venue">Journal of Computing in Civil Engineering · 已投稿</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng_clustertrack3d,
+  <p class="venue">Journal of Computing in Civil Engineering · 已投稿</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng_clustertrack3d,
   title = {Tracking quality determines traffic conflict detectability in roadside LiDAR systems: evidence from ClusterTrack3D},
   author = {Meng, Siyuan and Ai, Chengbo},
   journal = {Journal of Computing in Civil Engineering},
   year = {2026},
   note = {Submitted}
 }
-</pre></details></div>
+</pre></details></div></div>
   </article><article class="pub" id="paper-meng2026iwm" data-category="preprints">
   <div class="year">2026</div><div class="pub-copy" id="meng2026iwm"><h3>Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception</h3>
   <p><strong>Siyuan Meng</strong>, Chengbo Ai</p>
-  <p class="venue">arXiv preprint arXiv:2604.17651</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng2026iwm,
+  <p class="venue">arXiv preprint arXiv:2604.17651</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng2026iwm,
   title = {Infrastructure-centric world models: bridging temporal depth and spatial breadth for roadside perception},
   author = {Meng, Siyuan and Ai, Chengbo},
   journal = {arXiv preprint arXiv:2604.17651},
   year = {2026}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://arxiv.org/abs/2604.17651" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception">↗</a></article><article class="pub" id="paper-fang2025estimating" data-category="conferences">
   <div class="year">2025</div><div class="pub-copy" id="fang2025estimating"><h3>Estimating Travel Mode Choices of Residents in Stockholm Region Based on Multinomial Logit Model and Mixed Logit Model</h3>
   <p>Zhehao Fang, <strong>Siyuan Meng</strong></p>
-  <p class="venue">Proceedings of SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)</p><details class="citation"><summary>BibTeX</summary><pre>@inproceedings{fang2025estimating,
+  <p class="venue">Proceedings of SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@inproceedings{fang2025estimating,
   title = {Estimating travel mode choices of residents in Stockholm region based on multinomial logit model and mixed logit model},
   author = {Fang, Zhehao and Meng, Siyuan},
   booktitle = {Proceedings of SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)},
@@ -176,11 +176,11 @@
   doi = {10.1117/12.3060925},
   publisher = {SPIE}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.1117/12.3060925" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: Estimating Travel Mode Choices of Residents in Stockholm Region Based on Multinomial Logit Model and Mixed Logit Model">↗</a></article><article class="pub" id="paper-li2025analysis" data-category="conferences">
   <div class="year">2025</div><div class="pub-copy" id="li2025analysis"><h3>Analysis of Expressway Maintenance Decision Based on Complete Information Static Game Theory</h3>
   <p>Chenyao Li, <strong>Siyuan Meng</strong></p>
-  <p class="venue">Proceedings of SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)</p><details class="citation"><summary>BibTeX</summary><pre>@inproceedings{li2025analysis,
+  <p class="venue">Proceedings of SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@inproceedings{li2025analysis,
   title = {Analysis of expressway maintenance decision based on complete information static game theory},
   author = {Li, Chenyao and Meng, Siyuan},
   booktitle = {Proceedings of SPIE 13575, International Conference on Smart Transportation and City Engineering (STCE 2024)},
@@ -189,11 +189,11 @@
   doi = {10.1117/12.3061486},
   publisher = {SPIE}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.1117/12.3061486" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: Analysis of Expressway Maintenance Decision Based on Complete Information Static Game Theory">↗</a></article><article class="pub" id="paper-cao2024network" data-category="journals">
   <div class="year">2024</div><div class="pub-copy" id="cao2024network"><h3>Network-Level Pavement Maintenance and Rehabilitation Planning Considering Uncertainties Using Chance-Constrained Programming</h3>
   <p>Rui Cao, <strong>Siyuan Meng</strong>, Shengkai Feng, Shi Dong, Qiang Bai</p>
-  <p class="venue">International Journal of Pavement Engineering</p><details class="citation"><summary>BibTeX</summary><pre>@article{cao2024network,
+  <p class="venue">International Journal of Pavement Engineering</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{cao2024network,
   title = {Network-level pavement maintenance and rehabilitation planning considering uncertainties using chance-constrained programming},
   author = {Cao, Rui and Meng, Siyuan and Feng, Shengkai and Dong, Shi and Bai, Qiang},
   journal = {International Journal of Pavement Engineering},
@@ -204,11 +204,11 @@
   publisher = {Taylor \&amp; Francis},
   doi = {10.1080/10298436.2024.2340001}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.1080/10298436.2024.2340001" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: Network-Level Pavement Maintenance and Rehabilitation Planning Considering Uncertainties Using Chance-Constrained Programming">↗</a></article><article class="pub" id="paper-meng2023multiobjective" data-category="journals">
   <div class="year">2023</div><div class="pub-copy" id="meng2023multiobjective"><h3>Multiobjective Optimization Method for Pavement Segment Grouping in Multiyear Network-Level Planning of Maintenance and Rehabilitation</h3>
   <p><strong>Siyuan Meng</strong>, Qiang Bai, Lin Chen, Aihui Hu</p>
-  <p class="venue">Journal of Infrastructure Systems</p><details class="citation"><summary>BibTeX</summary><pre>@article{meng2023multiobjective,
+  <p class="venue">Journal of Infrastructure Systems</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{meng2023multiobjective,
   title = {Multiobjective optimization method for pavement segment grouping in multiyear network-level planning of maintenance and rehabilitation},
   author = {Meng, Siyuan and Bai, Qiang and Chen, Lin and Hu, Aihui},
   journal = {Journal of Infrastructure Systems},
@@ -219,11 +219,11 @@
   publisher = {ASCE},
   doi = {10.1061/JITSE4.ISENG-2175}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.1061/JITSE4.ISENG-2175" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: Multiobjective Optimization Method for Pavement Segment Grouping in Multiyear Network-Level Planning of Maintenance and Rehabilitation">↗</a></article><article class="pub" id="paper-hu2022review" data-category="journals">
   <div class="year">2022</div><div class="pub-copy" id="hu2022review"><h3>A Review on Empirical Methods of Pavement Performance Modeling</h3>
   <p>Aihui Hu, Qiang Bai, Lin Chen, <strong>Siyuan Meng</strong>, Qihui Li, Zhiman Xu</p>
-  <p class="venue">Construction and Building Materials · Cited 80+</p><details class="citation"><summary>BibTeX</summary><pre>@article{hu2022review,
+  <p class="venue">Construction and Building Materials · Cited 80+</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{hu2022review,
   title = {A review on empirical methods of pavement performance modeling},
   author = {Hu, Aihui and Bai, Qiang and Chen, Lin and Meng, Siyuan and Li, Qihui and Xu, Zhiman},
   journal = {Construction and Building Materials},
@@ -234,11 +234,11 @@
   doi = {10.1016/j.conbuildmat.2022.127968},
   note = {Cited 80+}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.1016/j.conbuildmat.2022.127968" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: A Review on Empirical Methods of Pavement Performance Modeling">↗</a></article><article class="pub" id="paper-bai2022review" data-category="journals">
   <div class="year">2022</div><div class="pub-copy" id="bai2022review"><h3>民用机场乘客登机流程优化综述</h3>
   <p>柏强，武帅，曹蕊，<strong>蒙思源</strong>，徐誌蔓</p>
-  <p class="venue">交通运输工程学报，2022，22(4)：68–88</p><details class="citation"><summary>BibTeX</summary><pre>@article{bai2022review,
+  <p class="venue">交通运输工程学报，2022，22(4)：68–88</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{bai2022review,
   title = {民用机场乘客登机流程优化综述},
   author = {柏强 and 武帅 and 曹蕊 and 蒙思源 and 徐誌蔓},
   journal = {交通运输工程学报},
@@ -249,11 +249,11 @@
   doi = {10.19818/j.cnki.1671-1637.2022.04.005},
   note = {中文}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.19818/j.cnki.1671-1637.2022.04.005" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: 民用机场乘客登机流程优化综述">↗</a></article><article class="pub" id="paper-bai2022video" data-category="journals">
   <div class="year">2022</div><div class="pub-copy" id="bai2022video"><h3>基于视频的机场出发层违规接客车辆识别方法</h3>
   <p>柏强，邵宇麒，<strong>蒙思源</strong>，王宇轩，陈兴，冯红霞</p>
-  <p class="venue">长安大学学报（自然科学版），2022，42(4)：73–86</p><details class="citation"><summary>BibTeX</summary><pre>@article{bai2022video,
+  <p class="venue">长安大学学报（自然科学版），2022，42(4)：73–86</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@article{bai2022video,
   title = {基于视频的机场出发层违规接客车辆识别方法},
   author = {柏强 and 邵宇麒 and 蒙思源 and 王宇轩 and 陈兴 and 冯红霞},
   journal = {长安大学学报（自然科学版）},
@@ -264,11 +264,11 @@
   doi = {10.19721/j.cnki.1671-8879.2022.04.008},
   note = {中文}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.19721/j.cnki.1671-8879.2022.04.008" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: 基于视频的机场出发层违规接客车辆识别方法">↗</a></article><article class="pub" id="paper-meng2022multiobjective" data-category="conferences">
   <div class="year">2022</div><div class="pub-copy" id="meng2022multiobjective"><h3>考虑用户成本的网级路面养护决策多目标优化</h3>
   <p><strong>蒙思源</strong>，邵宇麒，曹蕊，武帅</p>
-  <p class="venue">2022世界交通运输大会（WTC2022）论文集（运输规划与交叉学科篇），2022：693–701</p><details class="citation"><summary>BibTeX</summary><pre>@inproceedings{meng2022multiobjective,
+  <p class="venue">2022世界交通运输大会（WTC2022）论文集（运输规划与交叉学科篇），2022：693–701</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>@inproceedings{meng2022multiobjective,
   title = {考虑用户成本的网级路面养护决策多目标优化},
   author = {蒙思源 and 邵宇麒 and 曹蕊 and 武帅},
   booktitle = {2022世界交通运输大会（WTC2022）论文集（运输规划与交叉学科篇）},
@@ -277,7 +277,7 @@
   doi = {10.26914/c.cnkihy.2022.019338},
   note = {中文}
 }
-</pre></details></div>
+</pre></details></div></div>
   <a href="https://doi.org/10.26914/c.cnkihy.2022.019338" target="_blank" rel="noopener" class="paper-link" aria-label="阅读论文: 考虑用户成本的网级路面养护决策多目标优化">↗</a></article></div><p id="no-papers" hidden>未找到匹配的论文，请尝试其他关键词或分类。</p>
   <div class="actions"><a class="text-link" href="/assets/portfolio/publications-zh.bib" download>下载全部 BibTeX ↓</a><a href="https://scholar.google.com/citations?user=9L4TQh0AAAAJ" target="_blank" rel="noopener" class="text-link">Google Scholar ↗</a>
   <a class="text-link" href="/zh/publications/">完整论文列表 ↗</a></div></section><section class="section" id="about" aria-labelledby="about-title"><div class="section-head"><div><div class="eyebrow">05 / 个人简介</div><h2 id="about-title">立足工程，拓展视野。</h2></div></div>

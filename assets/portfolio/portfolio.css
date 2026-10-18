@@ -678,6 +678,25 @@ details li {
 .project-item .text-link {
   font-size: 12px;
 }
+.project-actions,
+.paper-resources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0 20px;
+}
+.project-actions {
+  margin: 16px 0;
+  font-size: 12px;
+}
+.paper-resources .citation {
+  min-width: 0;
+  max-width: 100%;
+}
+.paper-resources .code-link {
+  padding: 9px 0;
+  font-size: 12px;
+}
 .publication-search {
   display: flex;
   align-items: center;
