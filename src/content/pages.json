@@ -15,7 +15,7 @@
     },
     "repositories": {
       "title": "repositories",
-      "description": "My GitHub profile and research-related repositories."
+      "description": "Research code for roadside LiDAR background modeling and unsupervised multi-LiDAR object detection."
     },
     "news": {
       "title": "news",
@@ -43,7 +43,7 @@
     },
     "repositories": {
       "title": "代码仓库",
-      "description": "我的 GitHub 主页与研究相关代码仓库。"
+      "description": "路侧激光雷达背景建模与多激光雷达无监督目标检测的研究代码。"
     },
     "news": {
       "title": "最新动态",

@@ -69,6 +69,8 @@ For papers published in Chinese, the optional `zh` object provides the original 
 
 Chinese pages use the original Chinese metadata for these papers in both inline BibTeX and the download at `/assets/portfolio/publications-zh.bib`; other papers retain their original metadata. English pages continue to use `/assets/portfolio/publications.bib`. Both files are generated from the same publication records. Preserve existing publication IDs so links and research-framework references continue to work. Both `/publications/#PUBLICATION_ID` and `/#paper-PUBLICATION_ID` anchors are supported.
 
+For a paper with public code, add a top-level `repository` URL outside `fields`. Its GitHub link appears with the paper, in linked project cards and details, and in the homepage research framework. The repositories page lists projects whose linked papers have code. This keeps repository URLs in one place and leaves the paper's DOI and BibTeX unchanged.
+
 ### Projects and news
 
 A project ID determines its English and Chinese routes: `/projects/ID/` and `/zh/projects/ID/`. Preserve existing IDs when updating content. News dates use `YYYY-MM-DD` and represent calendar dates, independent of the development machine's time zone.

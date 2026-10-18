@@ -7,6 +7,8 @@ export const prefix = (lang) => (lang === "zh" ? "/zh" : "");
 export const route = (lang, page = "") => `${prefix(lang)}/${page ? `${page}/` : ""}`;
 export const external = (url, label, attributes = "") =>
   `<a href="${esc(url)}" target="_blank" rel="noopener" ${attributes}>${label}</a>`;
+export const repositoryLink = (url, lang) =>
+  url ? external(url, lang === "zh" ? "GitHub 代码 ↗" : "GitHub code ↗", 'class="text-link code-link"') : "";
 export const heading = (section, id) =>
   `<div class="section-head"><div><div class="eyebrow">${section.eyebrow}</div><h2 id="${id}">${
     section.title

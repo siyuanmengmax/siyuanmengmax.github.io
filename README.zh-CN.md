@@ -69,6 +69,8 @@ docs/                  # 重构记录与回退说明
 
 中文页面的展开 BibTeX 与“下载全部 BibTeX”均使用中文论文的原始中文信息，其他论文保留原始信息。中文下载地址为 `/assets/portfolio/publications-zh.bib`，英文页面沿用 `/assets/portfolio/publications.bib`；两个文件均由同一份论文记录生成。保留已有论文 `id`，以免旧链接和研究框架的关联失效。原 `/publications/#论文ID` 和首页 `/#paper-论文ID` 均可继续使用。
 
+论文有公开代码时，在 `fields` 之外添加顶层 `repository` 网址。该链接会同步出现在论文条目、关联项目的卡片与详情页，以及首页研究框架中。“代码仓库”页自动列出有代码的关联项目；仓库地址只需维护一处，论文 DOI 和 BibTeX 保持独立。
+
 ### 项目与动态
 
 项目 `id` 对应 `/projects/ID/` 与 `/zh/projects/ID/`，请保留已存在的 ID。动态日期使用 `YYYY-MM-DD`，表示事件的日历日期，不随开发电脑的时区偏移。

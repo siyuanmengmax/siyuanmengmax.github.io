@@ -1,4 +1,4 @@
-import { esc, external, route } from "./shared.mjs";
+import { esc, external, repositoryLink, route } from "./shared.mjs";
 
 const minorTitleWords = new Set(
   "a an and as at but by for from in into nor of on onto or per so than the to via with yet".split(" "),
@@ -92,9 +92,9 @@ export function paperCard(paper, ui, lang) {
   return `<article class="pub" id="paper-${paper.id}" data-category="${paper.category}">
   <div class="year">${paper.year}</div><div class="pub-copy" id="${paper.id}"><h3>${esc(title)}</h3>
   <p>${authors.map((a) => (a.self ? `<strong>${esc(a.name)}</strong>` : esc(a.name))).join(zh ? "，" : ", ")}</p>
-  <p class="venue">${esc(venue)}</p><details class="citation"><summary>BibTeX</summary><pre>${esc(
+  <p class="venue">${esc(venue)}</p><div class="paper-resources"><details class="citation"><summary>BibTeX</summary><pre>${esc(
     bibtex(paper, lang),
-  )}</pre></details></div>
+  )}</pre></details>${repositoryLink(paper.repository, lang)}</div></div>
   ${
     paper.url ? external(paper.url, "↗", `class="paper-link" aria-label="${esc(`${ui.read}: ${title}`)}"`) : ""
   }</article>`;

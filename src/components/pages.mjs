@@ -1,7 +1,7 @@
 import { esc, external, route } from "./shared.mjs";
 import { about, newsRow, projectCard } from "./home.mjs";
 import { publications } from "./publications.mjs";
-import { projectReferences, projectStatus } from "./projects.mjs";
+import { projectCode, projectPapers, projectReferences, projectStatus } from "./projects.mjs";
 import { cvDownloads } from "./cv.mjs";
 
 export function innerPage(data, lang, page) {
@@ -15,7 +15,10 @@ export function innerPage(data, lang, page) {
   if (page === "news") content = `<div class="news-list">${data.news.map((n) => newsRow(n, lang)).join("")}</div>`;
   if (page === "teaching") content = `<div class="prose">${meta.body}</div>`;
   if (page === "repositories")
-    content = `<div class="prose"><h2>GitHub</h2><p>${
+    content = `<div class="project-grid">${data.projects
+      .filter((project) => projectPapers(project, data).some((paper) => paper.repository))
+      .map((project) => projectCard(project, data, lang))
+      .join("")}</div><div class="prose"><h2>GitHub</h2><p>${
       zh
         ? "研究代码与开源项目请访问我的 GitHub 主页。"
         : "Visit my GitHub profile for research code and open-source projects."
@@ -38,7 +41,8 @@ export function innerPage(data, lang, page) {
   if (page.startsWith("projects/")) {
     const project = data.projects.find((p) => `projects/${p.id}` === page);
     meta = project[lang];
-    content = `<article class="prose">${projectStatus(project, data, lang)}${meta.body}${projectReferences(project, data, lang)}</article><div class="actions"><a class="text-link" href="${route(
+    const code = projectCode(project, data, lang);
+    content = `<article class="prose">${projectStatus(project, data, lang)}${code ? `<div class="project-actions">${code}</div>` : ""}${meta.body}${projectReferences(project, data, lang)}</article><div class="actions"><a class="text-link" href="${route(
       lang,
       "projects",
     )}">${ui.projects.archive}</a></div>`;

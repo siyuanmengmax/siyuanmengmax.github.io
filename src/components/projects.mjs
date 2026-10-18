@@ -1,4 +1,4 @@
-import { esc, external, route } from "./shared.mjs";
+import { esc, external, repositoryLink, route } from "./shared.mjs";
 import { publication, publicationStatus } from "./publications.mjs";
 
 export function projectPapers(project, data) {
@@ -25,6 +25,11 @@ export function projectStatus(project, data, lang, { compact = false } = {}) {
   return `<p class="project-status"><strong>${lang === "zh" ? "论文状态：" : "Paper status:"}</strong> ${
     publicationStatus(paper, lang)
   } · ${compact ? esc(paper.year) : citation(paper, lang)}</p>`;
+}
+
+export function projectCode(project, data, lang) {
+  const repositories = new Set(projectPapers(project, data).map((paper) => paper.repository).filter(Boolean));
+  return [...repositories].map((url) => repositoryLink(url, lang)).join("");
 }
 
 export function projectReferences(project, data, lang) {

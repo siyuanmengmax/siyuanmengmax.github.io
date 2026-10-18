@@ -54,6 +54,13 @@ for (const [url, html] of htmlByRoute) {
     for (const p of publications) {
       assert(ids.includes(`paper-${p.id}`) && ids.includes(p.id), `${url}: lost publication anchor ${p.id}`);
       if (lang === "zh" && p.zh) assert(html.includes(p.zh.title), `${url}: untranslated Chinese paper`);
+      const card = html.split(`id="paper-${p.id}"`)[1].split("</article>")[0];
+      assert.equal(card.includes('class="text-link code-link"'), Boolean(p.repository), `${url}/${p.id}: code availability`);
+      if (p.repository) {
+        assert(card.includes(`href="${esc(p.repository)}"`), `${url}/${p.id}: wrong code repository`);
+        assert(card.includes(lang === "zh" ? "GitHub 代码 ↗" : "GitHub code ↗"), `${url}/${p.id}: code label language`);
+        if (p.fields.doi) assert(card.includes(`href="https://doi.org/${p.fields.doi}"`), `${p.id}: code replaced paper link`);
+      }
     }
     assert(html.includes('id="paper-search"') && html.includes('id="no-papers"'));
   }
@@ -93,6 +100,10 @@ for (const project of projects) {
       assert(html.includes(esc(title)), `${project.id}/${lang}: missing current paper title`);
       if (paper.fields.doi)
         assert(html.includes(`href="https://doi.org/${esc(paper.fields.doi)}"`), `${project.id}: missing DOI`);
+      if (paper.repository) {
+        for (const view of [html, htmlByRoute.get(`${lang === "zh" ? "/zh" : ""}/repositories/`)])
+          assert(view.includes(`href="${esc(paper.repository)}"`), `${project.id}/${lang}: missing project repository`);
+      }
     }
   }
   if (ids.length)
@@ -130,6 +141,21 @@ for (const [note, year, labels] of [
     assert(detail.includes("Updated Research Title") && detail.includes("Updated journal"));
     assert(!detail.includes("0(0)"), "Unassigned volume/issue must not appear as 0(0)");
     assert(detail.includes(note ? `#paper-${changedPaper.id}` : "https://doi.org/10.1000/project-sync"));
+  }
+}
+// Repository changes propagate through publications and projects independently of citation fields.
+for (const repository of ["https://github.com/example/updated-code", undefined]) {
+  changedPaper.repository = repository;
+  for (const lang of ["en", "zh"]) {
+    const views = [
+      paperCard(publication(changedPaper), site[lang].publications, lang),
+      projectCard(linkedProject, fixture, lang),
+      innerPage(fixture, lang, `projects/${linkedProject.id}`).body,
+      innerPage(fixture, lang, "repositories").body,
+    ];
+    for (const html of views)
+      assert.equal(html.includes('href="https://github.com/example/updated-code"'), Boolean(repository),
+        `${lang}: changed or removed repository did not propagate`);
   }
 }
 for (const lang of ["en", "zh"]) {

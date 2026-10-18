@@ -2,6 +2,7 @@
   {
     "id": "meng_muldet3d",
     "type": "article",
+    "repository": "https://github.com/siyuanmengmax/MulDet3D",
     "fields": {
       "title": "MulDet3D: multi-objective optimization based unsupervised object detection for multiple roadside LiDARs",
       "author": "Meng, Siyuan and Zhang, Yanan and Raucci, David and Ai, Chengbo",
@@ -17,6 +18,7 @@
   {
     "id": "meng2026frgb3d",
     "type": "article",
+    "repository": "https://github.com/siyuanmengmax/FRGB3D",
     "fields": {
       "title": "FRGB3D: Fast Reliability-Weighted Gaussian Background Modeling for Roadside LiDAR Traffic Monitoring",
       "author": "Meng, Siyuan and Parashar, Pravar and Yang, Yu-Min and Ai, Chengbo",

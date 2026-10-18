@@ -1,6 +1,6 @@
-import { esc, external, heading, route } from "./shared.mjs";
+import { esc, external, heading, repositoryLink, route } from "./shared.mjs";
 import { publications, sortedPapers } from "./publications.mjs";
-import { projectStatus } from "./projects.mjs";
+import { projectCode, projectStatus } from "./projects.mjs";
 import { cvSection } from "./cv.mjs";
 
 export const newsRow = (item, lang) =>
@@ -8,10 +8,10 @@ export const newsRow = (item, lang) =>
 export const projectCard = (p, data, lang) =>
   `<article class="project-item"><span class="eyebrow">${
     data.pages[lang].categories[p.category] || esc(p.category)
-  }</span><h3>${esc(p[lang].title)}</h3><p>${esc(p[lang].description)}</p>${projectStatus(p, data, lang, { compact: true })}<a class="text-link" href="${route(
+  }</span><h3>${esc(p[lang].title)}</h3><p>${esc(p[lang].description)}</p>${projectStatus(p, data, lang, { compact: true })}<div class="project-actions"><a class="text-link" href="${route(
     lang,
     `projects/${p.id}`,
-  )}">${data.site[lang].projects.details} ↗</a></article>`;
+  )}">${data.site[lang].projects.details} ↗</a>${projectCode(p, data, lang)}</div></article>`;
 
 export function framework(data, lang) {
   const ui = data.site[lang].framework,
@@ -52,11 +52,11 @@ export function framework(data, lang) {
         i ? " hidden" : ""
       }><div class="eyebrow">${ui.study_label} 0${i + 1}</div><h3>${s.title}</h3><p>${
         s.description
-      }</p><div class="study-question"><span>${ui.question_label}</span><p>${s.quality}</p></div>${
+      }</p><div class="study-question"><span>${ui.question_label}</span><p>${s.quality}</p></div><div class="project-actions">${
         paper.url
           ? external(paper.url, s.link, 'class="text-link"')
           : `<a class="text-link" href="#paper-${s.paper_key}">${s.link}</a>`
-      }</div>`;
+      }${repositoryLink(paper.repository, lang)}</div></div>`;
     })
     .join("")}<p class="demo-disclaimer">${ui.disclaimer}</p></div></div><p class="framework-note">${ui.note}</p>
   <noscript><style>.study-panel[hidden]{display:block!important;margin-top:2rem}.demo-controls,.framework-steps{display:none}</style><p class="framework-note">${
