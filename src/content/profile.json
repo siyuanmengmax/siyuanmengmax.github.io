@@ -10,7 +10,7 @@
       "affiliation": "University of Massachusetts Amherst",
       "degree": "Ph.D. 2026",
       "bio": [
-        "I received my Ph.D. in Civil Engineering (Transportation Engineering) from the University of Massachusetts Amherst in September 2026, advised by <a class=\"inline-link\" href=\"https://aichengbo.com/\">Dr. Chengbo Ai</a>.",
+        "I received my Ph.D. in Civil Engineering from the University of Massachusetts Amherst in September 2026, with a concentration in Transportation Engineering. My doctoral advisor was <a class=\"inline-link\" href=\"https://aichengbo.com/\">Dr. Chengbo Ai</a>. My research focuses on roadside intelligent perception, transportation safety, and transportation system optimization.",
         "My dissertation, <em>Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis</em>, connects background modeling, unsupervised 3D detection, multi-object tracking, and quality-aware traffic conflict analysis. I am extending this work toward infrastructure-centric world models (I-WM), multi-sensor calibration reliability, and spatial intelligence.",
         "A complementary research direction studies transportation system optimization under uncertainty, including EV routing and charging, charging queues, and roadway asset management.",
         "Before UMass Amherst, I earned my M.S. and B.S. degrees at Chang’an University, where my master’s research was advised by <a class=\"inline-link\" href=\"https://js.chd.edu.cn/ysgcxy/bq/list.htm\">Dr. Qiang Bai</a>. My earlier work focused on pavement maintenance optimization and deep learning-based airport curbside vehicle detection."
@@ -19,7 +19,7 @@
         {
           "years": "Sep. 2023–Sep. 2026",
           "institution": "University of Massachusetts Amherst",
-          "description": "Ph.D. · Civil Engineering (Transportation Engineering) · Fully funded<br>Advisor: Dr. Chengbo Ai · GPA: 3.97/4.0<br>Dissertation: Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis"
+          "description": "Ph.D. in Civil Engineering · Fully funded<br>Concentration: Transportation Engineering<br>Advisor: Dr. Chengbo Ai · GPA: 3.97/4.0<br>Dissertation: Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis"
         },
         {
           "years": "Sep. 2020–Jul. 2023",
@@ -69,7 +69,7 @@
       "affiliation": "麻省大学阿默斯特分校 (UMass Amherst)",
       "degree": "博士 · 2026",
       "bio": [
-        "我于 2026 年 9 月获得麻省大学阿默斯特分校 (UMass Amherst) 土木工程（交通运输工程方向）博士学位，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 副教授</a>。",
+        "我于 2026 年 9 月获得麻省大学阿默斯特分校（UMass Amherst）博士学位（Ph.D.），专业方向为交通运输工程，导师为 <a class=\"inline-link\" href=\"https://aichengbo.com/\">Chengbo Ai 副教授</a>。我的研究主要聚焦路侧智能感知、交通安全分析与交通系统优化。",
         "博士论文 <em>面向交通感知与安全分析的质量感知多激光雷达框架</em>围绕路侧多激光雷达感知，连接背景建模、无监督三维目标检测、多目标跟踪与质量感知交通冲突分析，并进一步拓展至基础设施中心世界模型（I-WM）、多传感器标定可靠性与空间智能。",
         "另一条研究主线聚焦不确定性条件下的交通系统优化，包括电动汽车路径与充电调度、充电排队和道路资产养护决策。",
         "在赴美攻读博士之前，我在长安大学获得工学硕士和工学学士学位，硕士导师为<a class=\"inline-link\" href=\"https://js.chd.edu.cn/ysgcxy/bq/list.htm\">柏强教授</a>。此前的研究聚焦于路面养护优化及基于深度学习的机场路侧车辆检测。"
@@ -78,7 +78,7 @@
         {
           "years": "2023.09–2026.09",
           "institution": "麻省大学阿默斯特分校 (UMass Amherst)",
-          "description": "博士 · 土木工程（交通运输工程方向）· 全额奖学金<br>导师：Chengbo Ai 副教授 · GPA：3.97/4.0<br>博士论文：Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis"
+          "description": "博士（Ph.D.）· 全额奖学金<br>专业方向：交通运输工程<br>导师：Chengbo Ai 副教授 · GPA：3.97/4.0<br>博士论文：Quality-Aware Multi-LiDAR Framework for Traffic Perception and Safety Analysis"
         },
         {
           "years": "2020.09–2023.07",
